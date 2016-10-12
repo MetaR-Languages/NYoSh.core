@@ -4,6 +4,7 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.background/org.campagnelab.background.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.clusterConfig/org.campagnelab.clusterConfig.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.nyosh.gstring/org.campagnelab.nyosh.gstring.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.nyosh.lib/org.campagnelab.nyosh.lib.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.ssh/org.campagnelab.ssh.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.textoutput/org.campagnelab.textoutput.mpl" folder="" />
