@@ -13,7 +13,10 @@ else
 	ANT_BIN="$1/ant"
         shift
 	PROPS="$@"
-        rm -rf  ${MPS_PLUGINS_HOME}/XChart
+        if [ ! -d "${MPS_PLUGINS_HOME}" ]; then
+  		mkdir -p "${MPS_PLUGINS_HOME}";
+	fi
+	rm -rf  ${MPS_PLUGINS_HOME}/XChart
 	cp ../XChart/build/artifacts/XChart/XChart_*.zip ${MPS_PLUGINS_HOME}
 	cd ${MPS_PLUGINS_HOME}
 	unzip XChart_*.zip
