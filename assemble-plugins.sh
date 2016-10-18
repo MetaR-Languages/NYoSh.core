@@ -25,7 +25,7 @@ else
 	#cp -r ../XChart/solutions/XChart.build0 solutions/
 fi
 
-function assemble-plugin {
+function assemble_plugin {
  xml=$1
  keyword=$2
  rm -fr build/artifacts/*${keyword}* 
@@ -35,11 +35,11 @@ function assemble-plugin {
 
 mkdir -p target/plugins
 
-assemble-plugin ui.xml UI && \
-assemble-plugin TextOutput.xml TextOutput && \
-assemble-plugin logger.xml Logger && \
-assemble-plugin background.xml Background && \
-assemble-plugin ClusterConfig.xml ClusterConfig && \
-assemble-plugin NYoSh.xml NYoSh # && \
-#assemble-plugin GobyWeb.xml GobyWeb && \
-#assemble-plugin Interactive.xml Interactive
+assemble_plugin ui.xml UI && \
+assemble_plugin TextOutput.xml TextOutput && \
+assemble_plugin logger.xml Logger && \
+assemble_plugin background.xml Background && \
+assemble_plugin ClusterConfig.xml ClusterConfig && \
+assemble_plugin NYoSh.xml NYoSh # && \
+#assemble_plugin GobyWeb.xml GobyWeb && \
+#assemble_plugin Interactive.xml Interactive
