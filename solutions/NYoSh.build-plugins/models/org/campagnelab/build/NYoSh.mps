@@ -10,7 +10,7 @@
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
     <import index="ael0" ref="r:cc7a346d-c5cf-4c03-b1fd-d5006736ae3a(org.campagnelab.build.UI)" />
     <import index="h9g5" ref="r:7aca3565-24aa-4c08-aaaf-0fe7bbf3b79f(org.campagnelab.build.Logger)" />
-    <import index="9b59" ref="r:d2c1095a-594a-4ff4-97d7-a186cca5ed85(XChart.build)" />
+    <import index="vh2l" ref="r:64aeeca7-3a4b-4dcc-b81a-48f20fa34cb4(org.campangelab.xchart)" />
   </imports>
   <registry>
     <language id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml">
@@ -222,25 +222,8 @@
         </node>
       </node>
     </node>
-    <node concept="2sgV4H" id="2VIDuG4dXOB" role="1l3spa">
-      <ref role="1l3spb" to="9b59:7XxitGzkyrh" resolve="XChart" />
-      <node concept="55IIr" id="2VIDuG4emrR" role="2JcizS">
-        <node concept="2Ry0Ak" id="2VIDuG4emuz" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="2VIDuG4emuC" role="2Ry0An">
-            <property role="2Ry0Am" value="XChart" />
-            <node concept="2Ry0Ak" id="2VIDuG4emuH" role="2Ry0An">
-              <property role="2Ry0Am" value="build" />
-              <node concept="2Ry0Ak" id="2VIDuG4emuM" role="2Ry0An">
-                <property role="2Ry0Am" value="artifacts" />
-                <node concept="2Ry0Ak" id="2VIDuG4emuR" role="2Ry0An">
-                  <property role="2Ry0Am" value="XChart" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
+    <node concept="2sgV4H" id="m2dhZuFn9K" role="1l3spa">
+      <ref role="1l3spb" to="vh2l:7XxitGzkyrh" resolve="XChart" />
     </node>
     <node concept="1l3spV" id="2mFg1uCD9qq" role="1l3spN">
       <node concept="3981dG" id="2mFg1uCD9qr" role="39821P">
@@ -550,7 +533,7 @@
         <ref role="m$_y1" to="h9g5:7ZmC9JYEfXD" resolve="org.campagnelab.logger" />
       </node>
       <node concept="m$_yC" id="2VIDuG4dY4J" role="m$_yJ">
-        <ref role="m$_y1" to="9b59:7XxitGzkyrN" resolve="XChart" />
+        <ref role="m$_y1" to="vh2l:7XxitGzkyrN" resolve="XChart" />
       </node>
       <node concept="3_J27D" id="2mFg1uCD9qo" role="m_cZH">
         <node concept="3Mxwew" id="2mFg1uCD9qp" role="3MwsjC">
