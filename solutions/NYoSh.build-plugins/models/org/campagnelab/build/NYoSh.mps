@@ -222,8 +222,25 @@
         </node>
       </node>
     </node>
-    <node concept="2sgV4H" id="m2dhZuFn9K" role="1l3spa">
+    <node concept="2sgV4H" id="FXZ5xlI4aG" role="1l3spa">
       <ref role="1l3spb" to="vh2l:7XxitGzkyrh" resolve="XChart" />
+      <node concept="55IIr" id="FXZ5xlI4cW" role="2JcizS">
+        <node concept="2Ry0Ak" id="FXZ5xlI4eB" role="iGT6I">
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="FXZ5xlI4eK" role="2Ry0An">
+            <property role="2Ry0Am" value="XChart" />
+            <node concept="2Ry0Ak" id="FXZ5xlI4eT" role="2Ry0An">
+              <property role="2Ry0Am" value="build" />
+              <node concept="2Ry0Ak" id="FXZ5xlI4f2" role="2Ry0An">
+                <property role="2Ry0Am" value="artifacts" />
+                <node concept="2Ry0Ak" id="FXZ5xlI4fb" role="2Ry0An">
+                  <property role="2Ry0Am" value="XChart" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1l3spV" id="2mFg1uCD9qq" role="1l3spN">
       <node concept="3981dG" id="2mFg1uCD9qr" role="39821P">
@@ -532,7 +549,7 @@
       <node concept="m$_yC" id="2mFg1uCDpM7" role="m$_yJ">
         <ref role="m$_y1" to="h9g5:7ZmC9JYEfXD" resolve="org.campagnelab.logger" />
       </node>
-      <node concept="m$_yC" id="2VIDuG4dY4J" role="m$_yJ">
+      <node concept="m$_yC" id="FXZ5xlHLkX" role="m$_yJ">
         <ref role="m$_y1" to="vh2l:7XxitGzkyrN" resolve="XChart" />
       </node>
       <node concept="3_J27D" id="2mFg1uCD9qo" role="m_cZH">
