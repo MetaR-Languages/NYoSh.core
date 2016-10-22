@@ -272,7 +272,7 @@
         <node concept="2pNUuL" id="7ZmC9JYEfXT" role="2pNNFR">
           <property role="2pNUuO" value="since-build" />
           <node concept="2pMdtt" id="7ZmC9JYEfXU" role="2pMdts">
-            <property role="2pMdty" value="142.1616" />
+            <property role="2pMdty" value="162.1616" />
           </node>
         </node>
       </node>
@@ -280,7 +280,7 @@
     <node concept="2G$12M" id="7ZmC9JYEfXV" role="3989C9">
       <property role="TrG5h" value="Logger" />
       <node concept="1E1JtD" id="7ZmC9JYEfXW" role="2G$12L">
-        <property role="BnDLt" value="true" />
+        <property role="BnDLt" value="false" />
         <property role="TrG5h" value="org.campagnelab.logger" />
         <property role="3LESm3" value="82ffebe3-3685-4fd9-b560-0c1d348d295c" />
         <property role="2GAjPV" value="false" />
