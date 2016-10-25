@@ -11,10 +11,10 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
-        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -27,12 +27,14 @@
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
+        <property id="241647608299431129" name="propertyId" index="IQ2nx" />
         <reference id="1082985295845" name="dataType" index="AX2Wp" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <property id="241647608299431140" name="linkId" index="IQ2ns" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -46,12 +48,13 @@
     <property role="TrG5h" value="NYoShUsers" />
     <property role="19KtqR" value="true" />
     <property role="R4oN_" value="list of users in the environment" />
-    <property role="1pbfSe" value="1441386017" />
+    <property role="EcuMT" value="5865189911928298169" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="55_lMpoGuz9" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="users" />
       <property role="20lbJX" value="0..n" />
+      <property role="IQ2ns" value="5865189911928367305" />
       <ref role="20lvS9" node="55_lMpoGoaY" resolve="User" />
     </node>
   </node>
@@ -59,10 +62,11 @@
     <property role="TrG5h" value="User" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <property role="1pbfSe" value="1441343004" />
+    <property role="EcuMT" value="5865189911928341182" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="55_lMpoGocq" role="1TKVEl">
       <property role="TrG5h" value="id" />
+      <property role="IQ2nx" value="5865189911928341274" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="PrWs8" id="55_lMpoGoco" role="PzmwI">
@@ -71,12 +75,13 @@
   </node>
   <node concept="1TIwiD" id="7MCNdh5tnMB">
     <property role="TrG5h" value="UserRef" />
-    <property role="1pbfSe" value="1038202501" />
+    <property role="EcuMT" value="8982654668860914855" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7MCNdh5tnMH" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="user" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="8982654668860914861" />
       <ref role="20lvS9" node="55_lMpoGoaY" resolve="User" />
     </node>
   </node>

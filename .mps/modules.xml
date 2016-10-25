@@ -10,6 +10,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.gobyweb.tags/org.campagnelab.gobyweb.tags.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.gobyweb/org.campagnelab.gobyweb.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.logger/org.campagnelab.logger.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.nyosh.functions/org.campagnelab.nyosh.functions.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.nyosh.gstring/org.campagnelab.nyosh.gstring.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.nyosh.interactive/org.campagnelab.nyosh.interactive.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.nyosh.lib/org.campagnelab.nyosh.lib.mpl" folder="" />
