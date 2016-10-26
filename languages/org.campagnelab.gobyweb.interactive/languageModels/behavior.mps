@@ -307,8 +307,6 @@
       </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
         <property id="1238684351431" name="asCast" index="1BlNFB" />
-        <reference id="1140138128738" name="concept_old" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression_old" index="1PxMeX" />
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -4807,9 +4805,9 @@
                       <node concept="3clFbF" id="1msVhua4SHj" role="3cqZAp">
                         <node concept="BsUDl" id="1msVhua4SHk" role="3clFbG">
                           <ref role="37wK5l" node="1msVhua4SHw" resolve="addToRange" />
-                          <node concept="1PxgMI" id="1msVhua4SHl" role="37wK5m">
-                            <ref role="1PxNhF" to="dzk5:1ORG9zeKa7P" resolve="ResourceConfig" />
-                            <node concept="37vLTw" id="1msVhua4SHm" role="1PxMeX">
+                          <node concept="1PxgMI" id="67UmuxuEkFh" role="37wK5m">
+                            <ref role="1m5ApE" to="dzk5:1ORG9zeKa7P" resolve="ResourceConfig" />
+                            <node concept="37vLTw" id="67UmuxuEipN" role="1m5AlR">
                               <ref role="3cqZAo" node="1msVhua4SHo" resolve="it" />
                             </node>
                           </node>

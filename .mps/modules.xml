@@ -4,7 +4,9 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/NYoSh/org.campagnelab.NYoSh.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.background/org.campagnelab.background.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.bio.species/org.campagnelab.bio.species.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.clusterConfig/org.campagnelab.clusterConfig.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.gobyweb.interactive.mappings/org.campagnelab.gobyweb.interactive.mappings.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.gobyweb.interactive.users/org.campagnelab.gobyweb.interactive.users.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.gobyweb.interactive/org.campagnelab.gobyweb.interactive.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.gobyweb.plugins/org.campagnelab.gobyweb.plugins.mpl" folder="" />
@@ -19,6 +21,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.textoutput/org.campagnelab.textoutput.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.ui/org.campagnelab.ui.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/NYoSh.build-plugins/NYoSh.build-plugins.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.campagnelab.bio.species.morgs/org.campagnelab.bio.species.morgs.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.campagnelab.ui.code/org.campagnelab.ui.code.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.campagnelab.util/org.campagnelab.util.msd" folder="" />
     </projectModules>
