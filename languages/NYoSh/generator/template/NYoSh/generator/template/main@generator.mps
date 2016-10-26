@@ -220,10 +220,6 @@
       <concept id="1112730859144" name="jetbrains.mps.lang.generator.structure.TemplateSwitch" flags="ig" index="jVnub">
         <child id="1167340453568" name="reductionMappingRule" index="3aUrZf" />
       </concept>
-      <concept id="1112731569622" name="jetbrains.mps.lang.generator.structure.SwitchMacro" flags="ng" index="jY4Nl">
-        <reference id="1112731629154" name="templateSwitch" index="jYjtx" />
-        <child id="1168380395224" name="sourceNodeQuery" index="8TvZ8" />
-      </concept>
       <concept id="1168619357332" name="jetbrains.mps.lang.generator.structure.RootTemplateAnnotation" flags="lg" index="n94m4">
         <reference id="1168619429071" name="applicableConcept" index="n9lRv" />
       </concept>
@@ -285,6 +281,7 @@
       <concept id="982871510064032177" name="jetbrains.mps.lang.generator.structure.IParameterizedTemplate" flags="ng" index="1s_3nv">
         <child id="982871510064032342" name="parameter" index="1s_3oS" />
       </concept>
+      <concept id="982871510068000147" name="jetbrains.mps.lang.generator.structure.TemplateSwitchMacro" flags="lg" index="1sPUBX" />
       <concept id="1167756080639" name="jetbrains.mps.lang.generator.structure.PropertyMacro_GetPropertyValue" flags="in" index="3zFVjK" />
       <concept id="1167770111131" name="jetbrains.mps.lang.generator.structure.ReferenceMacro_GetReferent" flags="in" index="3$xsQk" />
       <concept id="1167945743726" name="jetbrains.mps.lang.generator.structure.IfMacro_Condition" flags="in" index="3IZrLx" />
@@ -1049,10 +1046,10 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="Xl_RD" id="4hyaPfkMR0g" role="37wK5m">
+                    <node concept="Xl_RD" id="3Qp3OgcRs_C" role="37wK5m">
                       <property role="Xl_RC" value="command|operator|bash fragment" />
-                      <node concept="jY4Nl" id="4hyaPfkMR0h" role="lGtFl">
-                        <ref role="jYjtx" node="6P11ZzXaf2D" resolve="CommandOperatorSwitch" />
+                      <node concept="1sPUBX" id="3Qp3OgcR_Eh" role="lGtFl">
+                        <ref role="v9R2y" node="6P11ZzXaf2D" resolve="CommandOperatorSwitch" />
                       </node>
                     </node>
                   </node>
@@ -1140,10 +1137,10 @@
                 <node concept="2OqwBi" id="3kQl0GsJP6g" role="3clFbG">
                   <node concept="liA8E" id="3kQl0GsJP6h" role="2OqNvi">
                     <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
-                    <node concept="Xl_RD" id="3kQl0GsJP6A" role="37wK5m">
+                    <node concept="Xl_RD" id="3Qp3OgcRA9X" role="37wK5m">
                       <property role="Xl_RC" value="command|operator|bash fragment" />
-                      <node concept="jY4Nl" id="3kQl0GsJP6B" role="lGtFl">
-                        <ref role="jYjtx" node="6P11ZzXaf2D" resolve="CommandOperatorSwitch" />
+                      <node concept="1sPUBX" id="3Qp3OgcRAlK" role="lGtFl">
+                        <ref role="v9R2y" node="6P11ZzXaf2D" resolve="CommandOperatorSwitch" />
                       </node>
                     </node>
                   </node>
@@ -1275,40 +1272,16 @@
                   </node>
                 </node>
               </node>
-              <node concept="9aQIb" id="4gsmYrkYbwU" role="3cqZAp">
-                <node concept="3clFbS" id="4gsmYrkYbwW" role="9aQI4">
-                  <node concept="3SKdUt" id="4gsmYrl0fn9" role="3cqZAp">
-                    <node concept="3SKdUq" id="4gsmYrl0fnc" role="3SKWNk">
+              <node concept="9aQIb" id="5NSqnYyXPRo" role="3cqZAp">
+                <node concept="3clFbS" id="5NSqnYyXPRq" role="9aQI4">
+                  <node concept="3SKdUt" id="5NSqnYyXRDm" role="3cqZAp">
+                    <node concept="3SKdUq" id="5NSqnYyXRDn" role="3SKWNk">
                       <property role="3SKdUp" value=" process output according to type" />
                     </node>
                   </node>
                 </node>
-                <node concept="jY4Nl" id="4gsmYrkYhKm" role="lGtFl">
-                  <ref role="jYjtx" node="4gsmYrkYpMo" resolve="MapOutputs" />
-                  <node concept="3NFfHV" id="4gsmYrkYoAQ" role="8TvZ8">
-                    <node concept="3clFbS" id="4gsmYrkYoAR" role="2VODD2">
-                      <node concept="3cpWs8" id="4gsmYrkYoDc" role="3cqZAp">
-                        <node concept="3cpWsn" id="4gsmYrkYoDd" role="3cpWs9">
-                          <property role="TrG5h" value="lastCommand" />
-                          <node concept="2OqwBi" id="4gsmYrkYoDe" role="33vP2m">
-                            <node concept="1yVyf7" id="4gsmYrkYoDf" role="2OqNvi" />
-                            <node concept="2OqwBi" id="4gsmYrkYoDg" role="2Oq$k0">
-                              <node concept="3Tsc0h" id="4gsmYrkYoDh" role="2OqNvi">
-                                <ref role="3TtcxE" to="4tvk:JisDMEUBsb" resolve="commands" />
-                              </node>
-                              <node concept="30H73N" id="4gsmYrkYoDi" role="2Oq$k0" />
-                            </node>
-                          </node>
-                          <node concept="3Tqbb2" id="4gsmYrkYoDj" role="1tU5fm" />
-                        </node>
-                      </node>
-                      <node concept="3clFbF" id="4gsmYrkYpj0" role="3cqZAp">
-                        <node concept="37vLTw" id="4gsmYrkYpiZ" role="3clFbG">
-                          <ref role="3cqZAo" node="4gsmYrkYoDd" resolve="lastCommand" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
+                <node concept="1sPUBX" id="5NSqnYyXRYq" role="lGtFl">
+                  <ref role="v9R2y" node="4gsmYrkYpMo" resolve="MapOutputs" />
                 </node>
               </node>
               <node concept="3cpWs8" id="7VhJRqKnJvo" role="3cqZAp">
