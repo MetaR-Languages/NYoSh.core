@@ -625,11 +625,6 @@
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
   </node>
-  <node concept="1TIwiD" id="5fDViOiociU">
-    <property role="TrG5h" value="LocalFunction" />
-    <property role="EcuMT" value="6046624752559244474" />
-    <ref role="1TJDcQ" to="tpee:fIYIFWa" resolve="StaticMethodDeclaration" />
-  </node>
   <node concept="1TIwiD" id="54MWBCLlg">
     <property role="3GE5qa" value="commandOperators" />
     <property role="TrG5h" value="CheckExitCode" />
