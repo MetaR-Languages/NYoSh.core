@@ -64,7 +64,7 @@
         <depends>org.campagnelab.logger</depends>
         <depends>org.campagnelab.TextOutput</depends>
         <depends>org.campagnelab.NYoSh</depends>
-        <idea-version until-build="144.1" since-build="143.1" />
+        <idea-version until-build="163.1" since-build="162.1616" />
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
