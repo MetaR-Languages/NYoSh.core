@@ -398,8 +398,6 @@
       </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
         <property id="1238684351431" name="asCast" index="1BlNFB" />
-        <reference id="1140138128738" name="concept_old" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression_old" index="1PxMeX" />
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -2910,8 +2908,8 @@
                                               <ref role="3Tt5mk" to="4tvk:74HGF0nFn9s" resolve="streamExpression" />
                                             </node>
                                             <node concept="1PxgMI" id="4gsmYrkYtTk" role="2Oq$k0">
-                                              <ref role="1PxNhF" to="4tvk:74HGF0nFm_H" resolve="ConsumeCommandOutputWithStream" />
-                                              <node concept="30H73N" id="4gsmYrkYw1V" role="1PxMeX" />
+                                              <ref role="1m5ApE" to="4tvk:74HGF0nFm_H" resolve="ConsumeCommandOutputWithStream" />
+                                              <node concept="30H73N" id="4gsmYrkYw1V" role="1m5AlR" />
                                             </node>
                                           </node>
                                         </node>

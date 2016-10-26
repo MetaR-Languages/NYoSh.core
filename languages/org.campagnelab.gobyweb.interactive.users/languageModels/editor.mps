@@ -2,7 +2,7 @@
 <model ref="r:320e4eb9-42db-43ba-adad-ce47a4cc61b9(org.campagnelab.gobyweb.interactive.users.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -111,7 +111,7 @@
       <node concept="3EZMnI" id="55_lMppp1Z8" role="3EZMnx">
         <node concept="l2Vlx" id="55_lMppp1Z9" role="2iSdaV" />
         <node concept="3F2HdR" id="55_lMppo_NK" role="3EZMnx">
-          <ref role="1NtTu8" to="czzw:55_lMpoGuz9" />
+          <ref role="1NtTu8" to="czzw:55_lMpoGuz9" resolve="users" />
           <node concept="2iRkQZ" id="55_lMppo_NM" role="2czzBx" />
           <node concept="pj6Ft" id="55_lMppo_Pu" role="3F10Kt">
             <property role="VOm3f" value="true" />
@@ -134,7 +134,7 @@
     <ref role="1XX52x" to="czzw:7MCNdh5tnMB" resolve="UserRef" />
     <node concept="3EZMnI" id="7MCNdh5tnOb" role="2wV5jI">
       <node concept="1iCGBv" id="7MCNdh5tnOi" role="3EZMnx">
-        <ref role="1NtTu8" to="czzw:7MCNdh5tnMH" />
+        <ref role="1NtTu8" to="czzw:7MCNdh5tnMH" resolve="user" />
         <node concept="1sVBvm" id="7MCNdh5tnOk" role="1sWHZn">
           <node concept="3F0A7n" id="7MCNdh5tnOr" role="2wV5jI">
             <property role="1Intyy" value="true" />

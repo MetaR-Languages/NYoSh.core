@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:2151664b-13bc-4072-a76b-815bb37c415e(org.campagnelab.gobyweb.interactive.users.structure)">
+<model ref="r:8750ca3b-69d3-462f-a344-0d90d0dcd74b(org.campagnelab.bio.species.structure)">
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
@@ -45,45 +45,82 @@
       </concept>
     </language>
   </registry>
-  <node concept="1TIwiD" id="55_lMpoGdET">
-    <property role="TrG5h" value="NYoShUsers" />
+  <node concept="1TIwiD" id="7xbvMFFa_SB">
+    <property role="TrG5h" value="Organism" />
     <property role="19KtqR" value="true" />
-    <property role="R4oN_" value="list of users in the environment" />
-    <property role="EcuMT" value="5865189911928298169" />
+    <property role="EcuMT" value="8668161730115427879" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="55_lMpoGuz9" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="users" />
-      <property role="20lbJX" value="0..n" />
-      <property role="IQ2ns" value="5865189911928367305" />
-      <ref role="20lvS9" node="55_lMpoGoaY" resolve="User" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="55_lMpoGoaY">
-    <property role="TrG5h" value="User" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <property role="EcuMT" value="5865189911928341182" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="55_lMpoGocq" role="1TKVEl">
-      <property role="TrG5h" value="id" />
-      <property role="IQ2nx" value="5865189911928341274" />
+    <node concept="1TJgyi" id="7xbvMFFa_Tt" role="1TKVEl">
+      <property role="TrG5h" value="species" />
+      <property role="IQ2nx" value="8668161730115427933" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
-    <node concept="PrWs8" id="55_lMpoGoco" role="PzmwI">
+    <node concept="PrWs8" id="7xbvMFFa_Tr" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
-  <node concept="1TIwiD" id="7MCNdh5tnMB">
-    <property role="TrG5h" value="UserRef" />
-    <property role="EcuMT" value="8982654668860914855" />
+  <node concept="1TIwiD" id="7xbvMFFaMkq">
+    <property role="TrG5h" value="GenomeBuild" />
+    <property role="19KtqR" value="true" />
+    <property role="R4oN_" value="genome build" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="EcuMT" value="8668161730115478810" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="7MCNdh5tnMH" role="1TKVEi">
+    <node concept="1TJgyi" id="2c$PAgEwbtY" role="1TKVEl">
+      <property role="TrG5h" value="description" />
+      <property role="IQ2nx" value="2532384616187213694" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="7xbvMFFaMm3" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="user" />
+      <property role="20kJfa" value="species" />
       <property role="20lbJX" value="1" />
-      <property role="IQ2ns" value="8982654668860914861" />
-      <ref role="20lvS9" node="55_lMpoGoaY" resolve="User" />
+      <property role="IQ2ns" value="8668161730115478915" />
+      <ref role="20lvS9" node="7xbvMFFa_SB" resolve="Organism" />
+    </node>
+    <node concept="PrWs8" id="7xbvMFFaMm5" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7xbvMFFaMm9">
+    <property role="TrG5h" value="EnsemblBuild" />
+    <property role="19KtqR" value="true" />
+    <property role="R4oN_" value="ensembl build" />
+    <property role="EcuMT" value="8668161730115478921" />
+    <ref role="1TJDcQ" node="7xbvMFFaMkq" resolve="GenomeBuild" />
+    <node concept="1TJgyi" id="7xbvMFFaMma" role="1TKVEl">
+      <property role="TrG5h" value="id" />
+      <property role="IQ2nx" value="8668161730115478922" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="7xbvMFFaMmc" role="1TKVEl">
+      <property role="TrG5h" value="version" />
+      <property role="IQ2nx" value="8668161730115478924" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2c$PAgEvj7R">
+    <property role="TrG5h" value="OrganismSet" />
+    <property role="19KtqR" value="true" />
+    <property role="EcuMT" value="2532384616186982903" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2c$PAgEvj8H" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="elements" />
+      <property role="20lbJX" value="0..n" />
+      <property role="IQ2ns" value="2532384616186982957" />
+      <ref role="20lvS9" node="7xbvMFFa_SB" resolve="Organism" />
+    </node>
+    <node concept="1TJgyj" id="2c$PAgEvmed" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="builds" />
+      <property role="20lbJX" value="0..n" />
+      <property role="IQ2ns" value="2532384616186995597" />
+      <ref role="20lvS9" node="7xbvMFFaMkq" resolve="GenomeBuild" />
+    </node>
+    <node concept="PrWs8" id="2c$PAgEvj8F" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
 </model>
