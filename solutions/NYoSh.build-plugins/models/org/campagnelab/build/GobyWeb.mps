@@ -12,7 +12,6 @@
     <import index="t9i9" ref="r:006098bf-146e-48ca-a752-e9a7c66a9eb3(org.campagnelab.build.NYoSh)" />
     <import index="ael0" ref="r:cc7a346d-c5cf-4c03-b1fd-d5006736ae3a(org.campagnelab.build.UI)" />
     <import index="nr1s" ref="r:41c5e6e6-d21c-4739-aa05-3b0328c9486c(org.campagnelab.build.TextOutput)" />
-    <import index="vh2l" ref="r:64aeeca7-3a4b-4dcc-b81a-48f20fa34cb4(org.campangelab.xchart)" />
   </imports>
   <registry>
     <language id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml">
@@ -247,26 +246,6 @@
         </node>
       </node>
     </node>
-    <node concept="2sgV4H" id="5$CBfkTUI4u" role="1l3spa">
-      <ref role="1l3spb" to="vh2l:7XxitGzkyrh" resolve="XChart" />
-      <node concept="55IIr" id="5$CBfkTUI6z" role="2JcizS">
-        <node concept="2Ry0Ak" id="5$CBfkTUIap" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="5$CBfkTUIaE" role="2Ry0An">
-            <property role="2Ry0Am" value="XChart" />
-            <node concept="2Ry0Ak" id="5$CBfkTUIaP" role="2Ry0An">
-              <property role="2Ry0Am" value="build" />
-              <node concept="2Ry0Ak" id="5$CBfkTUIb0" role="2Ry0An">
-                <property role="2Ry0Am" value="artifacts" />
-                <node concept="2Ry0Ak" id="5$CBfkTUIbb" role="2Ry0An">
-                  <property role="2Ry0Am" value="XChart" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="2sgV4H" id="2mFg1uCEls6" role="1l3spa">
       <ref role="1l3spb" to="nr1s:2mFg1uCEgGu" resolve="org.campagnelab.TextOutput" />
       <node concept="55IIr" id="2mFg1uCEluX" role="2JcizS">
@@ -343,9 +322,6 @@
       </node>
       <node concept="m$_yC" id="2mFg1uCEfSu" role="m$_yJ">
         <ref role="m$_y1" to="t9i9:2mFg1uCD9qh" resolve="org.campagnelab.NYoSh" />
-      </node>
-      <node concept="m$_yC" id="2mFg1uCEgxX" role="m$_yJ">
-        <ref role="m$_y1" to="vh2l:7XxitGzkyrN" resolve="XChart" />
       </node>
       <node concept="3_J27D" id="2mFg1uCEf65" role="m_cZH">
         <node concept="3Mxwew" id="2mFg1uCEf66" role="3MwsjC">
