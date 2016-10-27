@@ -491,7 +491,7 @@
   
   <target name="generate" depends="declare-mps-tasks, fetchDependencies">
     <echo message="generating" />
-    <generate strictMode="true" parallelMode="true" parallelThreads="8" useInplaceTransform="false" hideWarnings="false" createStaticRefs="true" fork="true" targetJavaVersion="1.7">
+    <generate strictMode="true" parallelMode="true" parallelThreads="8" useInplaceTransform="false" hideWarnings="false" createStaticRefs="true" fork="true" targetJavaVersion="1.8">
       <plugin path="${artifacts.mps}/plugins/mps-build" />
       <plugin path="${artifacts.mps}/plugins/mps-core/META-INF/plugin.xml/../.." />
       <plugin path="${artifacts.mps}/plugins/mps-testing" />
@@ -643,7 +643,7 @@
   <target name="java.compile.org.campagnelab.bio.species" depends="fetchDependencies">
     <mkdir dir="${org.campagnelab.goby.workbench.home}/languages/org.campagnelab.bio.species/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.campagnelab.bio.species" />
-    <javac destdir="${build.tmp}/java/out/org.campagnelab.bio.species" fork="true" encoding="utf8" includeantruntime="false" source="1.7" target="1.7">
+    <javac destdir="${build.tmp}/java/out/org.campagnelab.bio.species" fork="true" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${org.campagnelab.goby.workbench.home}/languages/org.campagnelab.bio.species/source_gen" />
@@ -687,7 +687,7 @@
   <target name="java.compile.org.campagnelab.bio.species#8668161730115426850" depends="java.compile.org.campagnelab.bio.species, fetchDependencies">
     <mkdir dir="${org.campagnelab.goby.workbench.home}/languages/org.campagnelab.bio.species/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.campagnelab.bio.species#8668161730115426850" />
-    <javac destdir="${build.tmp}/java/out/org.campagnelab.bio.species#8668161730115426850" fork="true" encoding="utf8" includeantruntime="false" source="1.7" target="1.7">
+    <javac destdir="${build.tmp}/java/out/org.campagnelab.bio.species#8668161730115426850" fork="true" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${org.campagnelab.goby.workbench.home}/languages/org.campagnelab.bio.species/generator/source_gen" />
@@ -732,7 +732,7 @@
   <target name="java.compile.org.campagnelab.gobyweb.interactive" depends="java.compile.org.campagnelab.bio.species, java.compile.org.campagnelab.bio.species.morgs, java.compile.org.campagnelab.gobyweb.interactive.mappings, java.compile.org.campagnelab.gobyweb.interactive.users, fetchDependencies">
     <mkdir dir="${org.campagnelab.goby.workbench.home}/languages/org.campagnelab.gobyweb.interactive/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.campagnelab.gobyweb.interactive" />
-    <javac destdir="${build.tmp}/java/out/org.campagnelab.gobyweb.interactive" fork="true" encoding="utf8" includeantruntime="false" source="1.7" target="1.7">
+    <javac destdir="${build.tmp}/java/out/org.campagnelab.gobyweb.interactive" fork="true" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${org.campagnelab.goby.workbench.home}/languages/org.campagnelab.gobyweb.interactive/source_gen" />
@@ -822,7 +822,7 @@
   <target name="java.compile.org.campagnelab.gobyweb.interactive#2051553890368756015" depends="java.compile.org.campagnelab.gobyweb.interactive, java.compile.org.campagnelab.gobyweb.interactive.users, fetchDependencies">
     <mkdir dir="${org.campagnelab.goby.workbench.home}/languages/org.campagnelab.gobyweb.interactive/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.campagnelab.gobyweb.interactive#2051553890368756015" />
-    <javac destdir="${build.tmp}/java/out/org.campagnelab.gobyweb.interactive#2051553890368756015" fork="true" encoding="utf8" includeantruntime="false" source="1.7" target="1.7">
+    <javac destdir="${build.tmp}/java/out/org.campagnelab.gobyweb.interactive#2051553890368756015" fork="true" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${org.campagnelab.goby.workbench.home}/languages/org.campagnelab.gobyweb.interactive/generator/source_gen" />
@@ -882,7 +882,7 @@
   <target name="java.compile.org.campagnelab.gobyweb.interactive.users" depends="fetchDependencies">
     <mkdir dir="${org.campagnelab.goby.workbench.home}/languages/org.campagnelab.gobyweb.interactive.users/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.campagnelab.gobyweb.interactive.users" />
-    <javac destdir="${build.tmp}/java/out/org.campagnelab.gobyweb.interactive.users" fork="true" encoding="utf8" includeantruntime="false" source="1.7" target="1.7">
+    <javac destdir="${build.tmp}/java/out/org.campagnelab.gobyweb.interactive.users" fork="true" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${org.campagnelab.goby.workbench.home}/languages/org.campagnelab.gobyweb.interactive.users/source_gen" />
@@ -926,7 +926,7 @@
   <target name="java.compile.org.campagnelab.gobyweb.interactive.users#5865189911928297062" depends="java.compile.org.campagnelab.gobyweb.interactive.users, fetchDependencies">
     <mkdir dir="${org.campagnelab.goby.workbench.home}/languages/org.campagnelab.gobyweb.interactive.users/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.campagnelab.gobyweb.interactive.users#5865189911928297062" />
-    <javac destdir="${build.tmp}/java/out/org.campagnelab.gobyweb.interactive.users#5865189911928297062" fork="true" encoding="utf8" includeantruntime="false" source="1.7" target="1.7">
+    <javac destdir="${build.tmp}/java/out/org.campagnelab.gobyweb.interactive.users#5865189911928297062" fork="true" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${org.campagnelab.goby.workbench.home}/languages/org.campagnelab.gobyweb.interactive.users/generator/source_gen" />
@@ -971,7 +971,7 @@
   <target name="java.compile.org.campagnelab.gobyweb.interactive.platforms" depends="java.compile.org.campagnelab.gobyweb.interactive, java.compile.org.campagnelab.gobyweb.interactive.users, fetchDependencies">
     <mkdir dir="${org.campagnelab.goby.workbench.home}/languages/org.campagnelab.gobyweb.interactive.platforms/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.campagnelab.gobyweb.interactive.platforms" />
-    <javac destdir="${build.tmp}/java/out/org.campagnelab.gobyweb.interactive.platforms" fork="true" encoding="utf8" includeantruntime="false" source="1.7" target="1.7">
+    <javac destdir="${build.tmp}/java/out/org.campagnelab.gobyweb.interactive.platforms" fork="true" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${org.campagnelab.goby.workbench.home}/languages/org.campagnelab.gobyweb.interactive.platforms/source_gen" />
@@ -1032,7 +1032,7 @@
   <target name="java.compile.org.campagnelab.gobyweb.interactive.platforms#518208688751652421" depends="java.compile.org.campagnelab.gobyweb.interactive, java.compile.org.campagnelab.gobyweb.interactive.platforms, java.compile.org.campagnelab.gobyweb.interactive.users, fetchDependencies">
     <mkdir dir="${org.campagnelab.goby.workbench.home}/languages/org.campagnelab.gobyweb.interactive.platforms/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.campagnelab.gobyweb.interactive.platforms#518208688751652421" />
-    <javac destdir="${build.tmp}/java/out/org.campagnelab.gobyweb.interactive.platforms#518208688751652421" fork="true" encoding="utf8" includeantruntime="false" source="1.7" target="1.7">
+    <javac destdir="${build.tmp}/java/out/org.campagnelab.gobyweb.interactive.platforms#518208688751652421" fork="true" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${org.campagnelab.goby.workbench.home}/languages/org.campagnelab.gobyweb.interactive.platforms/generator/source_gen" />
@@ -1093,7 +1093,7 @@
   <target name="java.compile.org.campagnelab.gobyweb.interactive.organisms" depends="java.compile.org.campagnelab.bio.species, java.compile.org.campagnelab.gobyweb.interactive, java.compile.org.campagnelab.gobyweb.interactive.users, fetchDependencies">
     <mkdir dir="${org.campagnelab.goby.workbench.home}/languages/org.campagnelab.gobyweb.interactive.organisms/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.campagnelab.gobyweb.interactive.organisms" />
-    <javac destdir="${build.tmp}/java/out/org.campagnelab.gobyweb.interactive.organisms" fork="true" encoding="utf8" includeantruntime="false" source="1.7" target="1.7">
+    <javac destdir="${build.tmp}/java/out/org.campagnelab.gobyweb.interactive.organisms" fork="true" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${org.campagnelab.goby.workbench.home}/languages/org.campagnelab.gobyweb.interactive.organisms/source_gen" />
@@ -1154,7 +1154,7 @@
   <target name="java.compile.org.campagnelab.gobyweb.interactive.organisms#7026862576601472488" depends="java.compile.org.campagnelab.bio.species.morgs, java.compile.org.campagnelab.gobyweb.interactive, java.compile.org.campagnelab.gobyweb.interactive.organisms, java.compile.org.campagnelab.gobyweb.interactive.users, fetchDependencies">
     <mkdir dir="${org.campagnelab.goby.workbench.home}/languages/org.campagnelab.gobyweb.interactive.organisms/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.campagnelab.gobyweb.interactive.organisms#7026862576601472488" />
-    <javac destdir="${build.tmp}/java/out/org.campagnelab.gobyweb.interactive.organisms#7026862576601472488" fork="true" encoding="utf8" includeantruntime="false" source="1.7" target="1.7">
+    <javac destdir="${build.tmp}/java/out/org.campagnelab.gobyweb.interactive.organisms#7026862576601472488" fork="true" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${org.campagnelab.goby.workbench.home}/languages/org.campagnelab.gobyweb.interactive.organisms/generator/source_gen" />
@@ -1216,7 +1216,7 @@
   <target name="java.compile.org.campagnelab.gobyweb.interactive.mappings" depends="java.compile.org.campagnelab.bio.species, fetchDependencies">
     <mkdir dir="${org.campagnelab.goby.workbench.home}/languages/org.campagnelab.gobyweb.interactive.mappings/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.campagnelab.gobyweb.interactive.mappings" />
-    <javac destdir="${build.tmp}/java/out/org.campagnelab.gobyweb.interactive.mappings" fork="true" encoding="utf8" includeantruntime="false" source="1.7" target="1.7">
+    <javac destdir="${build.tmp}/java/out/org.campagnelab.gobyweb.interactive.mappings" fork="true" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${org.campagnelab.goby.workbench.home}/languages/org.campagnelab.gobyweb.interactive.mappings/source_gen" />
@@ -1261,7 +1261,7 @@
   <target name="java.compile.org.campagnelab.gobyweb.interactive.mappings#6726552014277525798" depends="java.compile.org.campagnelab.gobyweb.interactive.mappings, fetchDependencies">
     <mkdir dir="${org.campagnelab.goby.workbench.home}/languages/org.campagnelab.gobyweb.interactive.mappings/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.campagnelab.gobyweb.interactive.mappings#6726552014277525798" />
-    <javac destdir="${build.tmp}/java/out/org.campagnelab.gobyweb.interactive.mappings#6726552014277525798" fork="true" encoding="utf8" includeantruntime="false" source="1.7" target="1.7">
+    <javac destdir="${build.tmp}/java/out/org.campagnelab.gobyweb.interactive.mappings#6726552014277525798" fork="true" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${org.campagnelab.goby.workbench.home}/languages/org.campagnelab.gobyweb.interactive.mappings/generator/source_gen" />
@@ -1306,7 +1306,7 @@
   <target name="java.compile.org.campagnelab.bio.species.morgs" depends="java.compile.org.campagnelab.bio.species, fetchDependencies">
     <mkdir dir="${org.campagnelab.goby.workbench.home}/solutions/org.campagnelab.bio.species.morgs/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.campagnelab.bio.species.morgs" />
-    <javac destdir="${build.tmp}/java/out/org.campagnelab.bio.species.morgs" fork="true" encoding="utf8" includeantruntime="false" source="1.7" target="1.7">
+    <javac destdir="${build.tmp}/java/out/org.campagnelab.bio.species.morgs" fork="true" encoding="utf8" includeantruntime="false" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${org.campagnelab.goby.workbench.home}/solutions/org.campagnelab.bio.species.morgs/source_gen" />
