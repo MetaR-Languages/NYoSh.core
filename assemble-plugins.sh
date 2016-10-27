@@ -41,5 +41,5 @@ assemble_plugin logger.xml Logger && \
 assemble_plugin background.xml Background && \
 assemble_plugin ClusterConfig.xml ClusterConfig && \
 assemble_plugin NYoSh.xml NYoSh && \
-assemble_plugin GobyWeb.xml GobyWeb #&& \
-#assemble_plugin Interactive.xml Interactive
+assemble_plugin GobyWeb.xml GobyWeb && \
+assemble_plugin Interactive.xml Interactive
