@@ -599,69 +599,45 @@
       <ref role="1YaFvo" to="bs99:1LS_mj901FT" resolve="FileSetArea" />
     </node>
   </node>
-  <node concept="18kY7G" id="2ax7lfypjnP">
-    <property role="3GE5qa" value="config" />
-    <property role="TrG5h" value="check_FileSetArea" />
-    <node concept="3clFbS" id="2ax7lfypjnQ" role="18ibNy">
-      <node concept="3clFbJ" id="2ax7lfypwO9" role="3cqZAp">
-        <node concept="3clFbS" id="2ax7lfypwOc" role="3clFbx">
-          <node concept="2MkqsV" id="2ax7lfypx2A" role="3cqZAp">
-            <node concept="Xl_RD" id="2ax7lfypx2M" role="2MkJ7o">
-              <property role="Xl_RC" value="Manager is null" />
+  <node concept="18kY7G" id="1e0XlmfjiZQ">
+    <property role="TrG5h" value="MandatoryAttribute" />
+    <node concept="3clFbS" id="1e0Xlmfjj5m" role="18ibNy">
+      <node concept="3clFbJ" id="3uDfvGbrk3r" role="3cqZAp">
+        <node concept="3clFbS" id="3uDfvGbrk3u" role="3clFbx">
+          <node concept="2MkqsV" id="3uDfvGbrl5s" role="3cqZAp">
+            <node concept="Xl_RD" id="3uDfvGbrl5I" role="2MkJ7o">
+              <property role="Xl_RC" value="Mandatory attribute" />
             </node>
-            <node concept="1YBJjd" id="2ax7lfypx3W" role="2OEOjV">
-              <ref role="1YBMHb" node="2ax7lfypjzJ" resolve="fileSetArea" />
+            <node concept="1YBJjd" id="3uDfvGbrl6G" role="2OEOjV">
+              <ref role="1YBMHb" node="1e0Xlmfjj5o" resolve="attribute" />
             </node>
           </node>
         </node>
-        <node concept="2OqwBi" id="2ax7lfypwQC" role="3clFbw">
-          <node concept="2OqwBi" id="2ax7lfypwQD" role="2Oq$k0">
-            <node concept="3TrEf2" id="2ax7lfypwQE" role="2OqNvi">
-              <ref role="3Tt5mk" to="bs99:$Ux0GySJj$" resolve="manager" />
-            </node>
-            <node concept="1YBJjd" id="2ax7lfypwQF" role="2Oq$k0">
-              <ref role="1YBMHb" node="2ax7lfypjzJ" resolve="fileSetArea" />
-            </node>
-          </node>
-          <node concept="3w_OXm" id="2ax7lfypwQG" role="2OqNvi" />
-        </node>
-        <node concept="3eNFk2" id="2ax7lfypwYq" role="3eNLev">
-          <node concept="3clFbS" id="2ax7lfypwYs" role="3eOfB_">
-            <node concept="2MkqsV" id="2ax7lfypx4n" role="3cqZAp">
-              <node concept="Xl_RD" id="2ax7lfypx4z" role="2MkJ7o">
-                <property role="Xl_RC" value="Manager is not connected or the connection is lost" />
+        <node concept="1Wc70l" id="3uDfvGbrkC8" role="3clFbw">
+          <node concept="3fqX7Q" id="3uDfvGbrkE7" role="3uHU7w">
+            <node concept="2OqwBi" id="3uDfvGbrkJ3" role="3fr31v">
+              <node concept="1YBJjd" id="3uDfvGbrkG1" role="2Oq$k0">
+                <ref role="1YBMHb" node="1e0Xlmfjj5o" resolve="attribute" />
               </node>
-              <node concept="2OqwBi" id="2ax7lfypx7W" role="2OEOjV">
-                <node concept="1YBJjd" id="2ax7lfypx6u" role="2Oq$k0">
-                  <ref role="1YBMHb" node="2ax7lfypjzJ" resolve="fileSetArea" />
-                </node>
-                <node concept="3TrEf2" id="2ax7lfypxnN" role="2OqNvi">
-                  <ref role="3Tt5mk" to="bs99:$Ux0GySJj$" resolve="manager" />
-                </node>
+              <node concept="2qgKlT" id="3uDfvGbrl39" role="2OqNvi">
+                <ref role="37wK5l" to="lcm8:3uDfvGbrg$l" resolve="hasValue" />
               </node>
             </node>
           </node>
-          <node concept="3fqX7Q" id="2ax7lfypwZt" role="3eO9$A">
-            <node concept="2OqwBi" id="2ax7lfypwZu" role="3fr31v">
-              <node concept="2OqwBi" id="2ax7lfypwZv" role="2Oq$k0">
-                <node concept="3TrEf2" id="2ax7lfypwZw" role="2OqNvi">
-                  <ref role="3Tt5mk" to="bs99:$Ux0GySJj$" resolve="manager" />
-                </node>
-                <node concept="1YBJjd" id="2ax7lfypwZx" role="2Oq$k0">
-                  <ref role="1YBMHb" node="2ax7lfypjzJ" resolve="fileSetArea" />
-                </node>
-              </node>
-              <node concept="2qgKlT" id="2ax7lfypwZy" role="2OqNvi">
-                <ref role="37wK5l" to="lcm8:$Ux0GyR_MD" resolve="isConnected" />
-              </node>
+          <node concept="2OqwBi" id="3uDfvGbrk67" role="3uHU7B">
+            <node concept="1YBJjd" id="3uDfvGbrk3L" role="2Oq$k0">
+              <ref role="1YBMHb" node="1e0Xlmfjj5o" resolve="attribute" />
+            </node>
+            <node concept="2qgKlT" id="3uDfvGbrkov" role="2OqNvi">
+              <ref role="37wK5l" to="lcm8:3uDfvGbibFA" resolve="isMandatory" />
             </node>
           </node>
         </node>
       </node>
     </node>
-    <node concept="1YaCAy" id="2ax7lfypjzJ" role="1YuTPh">
-      <property role="TrG5h" value="fileSetArea" />
-      <ref role="1YaFvo" to="bs99:1LS_mj901FT" resolve="FileSetArea" />
+    <node concept="1YaCAy" id="1e0Xlmfjj5o" role="1YuTPh">
+      <property role="TrG5h" value="attribute" />
+      <ref role="1YaFvo" to="bs99:7arfhhdt3J1" resolve="Attribute" />
     </node>
   </node>
 </model>

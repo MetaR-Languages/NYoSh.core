@@ -18,10 +18,11 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
+        <property id="4628067390765956807" name="final" index="R5$K2" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -53,6 +54,43 @@
       </concept>
     </language>
   </registry>
+  <node concept="1TIwiD" id="1LS_mj901_A">
+    <property role="TrG5h" value="Job" />
+    <property role="19KtqR" value="true" />
+    <property role="3GE5qa" value="job" />
+    <property role="EcuMT" value="2051553890368756070" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="25FkwWk6rec" role="1TKVEl">
+      <property role="TrG5h" value="assignedTag" />
+      <property role="IQ2nx" value="2408108650474877836" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="5aiAmxxHVSf" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="1LS_mj902O4" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="options" />
+      <property role="20lbJX" value="0..n" />
+      <property role="IQ2ns" value="2051553890368761092" />
+      <ref role="20lvS9" node="1LS_mj902O9" resolve="OptionValue" />
+    </node>
+    <node concept="1TJgyj" id="1LS_mj901Dp" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="executionPlugin" />
+      <property role="IQ2ns" value="2051553890368756313" />
+      <ref role="20lvS9" to="dzk5:1ORG9zeIXZ$" resolve="ExecutableConfig" />
+    </node>
+    <node concept="1TJgyj" id="1LS_mj90dTE" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="executionEnvironment" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="2051553890368806506" />
+      <ref role="20lvS9" node="1LS_mj9079W" resolve="ExecutionEnvironment" />
+    </node>
+    <node concept="asaX9" id="7ZDUr_Gq59P" role="lGtFl" />
+  </node>
   <node concept="1TIwiD" id="1LS_mj901FT">
     <property role="TrG5h" value="FileSetArea" />
     <property role="3GE5qa" value="config" />
@@ -70,14 +108,14 @@
       <property role="IQ2ns" value="6449713081311510412" />
       <ref role="20lvS9" to="9k5:2DkpMLSFhUj" resolve="ExecutionNode" />
     </node>
-    <node concept="1TJgyj" id="$Ux0GySJj$" role="1TKVEi">
+    <node concept="1TJgyj" id="1LS_mj908Ey" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="manager" />
-      <property role="20lbJX" value="0..1" />
-      <property role="IQ2ns" value="664989078355375332" />
-      <ref role="20lvS9" node="$Ux0GyPB94" resolve="IFileSetAreaManager" />
+      <property role="20lbJX" value="0..n" />
+      <property role="20kJfa" value="instances" />
+      <property role="IQ2ns" value="2051553890368785058" />
+      <ref role="20lvS9" node="1LS_mj907aN" resolve="FileSetInstance" />
+      <node concept="asaX9" id="4Haygs2vWHc" role="lGtFl" />
     </node>
-    <node concept="asaX9" id="6NmDFVREZDs" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="1LS_mj902NV">
     <property role="TrG5h" value="JobArea" />
@@ -89,7 +127,7 @@
       <property role="20kJfa" value="jobs" />
       <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="3472136550992836012" />
-      <ref role="20lvS9" node="6NmDFVRF2bw" resolve="Job" />
+      <ref role="20lvS9" node="1LS_mj901_A" resolve="Job" />
       <node concept="asaX9" id="2tqsND01hJg" role="lGtFl" />
     </node>
     <node concept="1TJgyi" id="5A1YY0qJIFc" role="1TKVEl">
@@ -114,17 +152,27 @@
       <property role="IQ2ns" value="6449713081311050445" />
       <ref role="20lvS9" to="9k5:2DkpMLSFhUj" resolve="ExecutionNode" />
     </node>
-    <node concept="1TJgyj" id="7zA_Ur2aPdA" role="1TKVEi">
+    <node concept="1TJgyj" id="5KK2jWpvY9V" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="brokerPortForMonitor" />
-      <property role="IQ2ns" value="8711817271672787814" />
-      <ref role="20lvS9" to="9k5:$Ux0GypvBU" resolve="ConnectionPort" />
+      <property role="20kJfa" value="container" />
+      <property role="IQ2ns" value="6642819616986882683" />
+      <ref role="20lvS9" node="5KK2jWpvK3u" resolve="JobContainer" />
     </node>
-    <node concept="1TJgyj" id="13iHFDMzFm7" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="brokerPortForJobs" />
-      <property role="IQ2ns" value="1212232161618212231" />
-      <ref role="20lvS9" to="9k5:$Ux0GypvBU" resolve="ConnectionPort" />
+  </node>
+  <node concept="1TIwiD" id="1LS_mj902O9">
+    <property role="TrG5h" value="OptionValue" />
+    <property role="R5$K7" value="false" />
+    <property role="R5$K2" value="false" />
+    <property role="3GE5qa" value="job" />
+    <property role="EcuMT" value="2051553890368761097" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="xEyJFnkuiF" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <property role="IQ2nx" value="606449909793678507" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="1LS_mj902Pz" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="1LS_mj9079W">
@@ -172,6 +220,15 @@
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="5865189911929158304" />
       <ref role="20lvS9" node="55_lMpoJvEA" resolve="NYoShUser" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1LS_mj907aN">
+    <property role="TrG5h" value="FileSetInstance" />
+    <property role="3GE5qa" value="fileset" />
+    <property role="EcuMT" value="2051553890368778931" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1LS_mj907aO" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="1ISEu8LK1G2">
@@ -232,21 +289,21 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
-  <node concept="PlHQZ" id="$Ux0GyPB94">
-    <property role="3GE5qa" value="config" />
-    <property role="TrG5h" value="IFileSetAreaManager" />
-    <property role="EcuMT" value="664989078354555460" />
-    <node concept="1TJgyi" id="6e2GqsnpJNE" role="1TKVEl">
-      <property role="TrG5h" value="description" />
-      <property role="IQ2nx" value="7170488887937531114" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+  <node concept="1TIwiD" id="7arfhhdt3J1">
+    <property role="3GE5qa" value="fileset.attributes" />
+    <property role="TrG5h" value="Attribute" />
+    <property role="R4oN_" value="FileSet attribute" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="EcuMT" value="8258261499122039745" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="3uDfvGbibwK" role="1TKVEl">
+      <property role="TrG5h" value="mandatory" />
+      <property role="IQ2nx" value="4010805091585538096" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
-    <node concept="1TJgyj" id="$Ux0GyipGZ" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="fileSetArea" />
-      <property role="20lbJX" value="1" />
-      <property role="IQ2ns" value="664989078345325375" />
-      <ref role="20lvS9" node="1LS_mj901FT" resolve="FileSetArea" />
+    <node concept="PrWs8" id="7arfhhdt3Kv" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="5DSEw1Q$otC">
@@ -273,7 +330,6 @@
       <property role="IQ2ns" value="202400229140351977" />
       <ref role="20lvS9" node="bf4uYwo2AP" resolve="DownloadLocation" />
     </node>
-    <node concept="asaX9" id="6NmDFVRF29M" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="bf4uYwo2AP">
     <property role="3GE5qa" value="config" />
@@ -286,7 +342,129 @@
       <property role="IQ2nx" value="202400229140474294" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
-    <node concept="asaX9" id="6NmDFVRF29T" role="lGtFl" />
+  </node>
+  <node concept="1TIwiD" id="$2Tbw0xEph">
+    <property role="TrG5h" value="FileSetInstanceViewerReference" />
+    <property role="3GE5qa" value="filesetviewers" />
+    <property role="EcuMT" value="649332775228712529" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="$2Tbw0xEpi" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="fileSetInstanceViewer" />
+      <property role="IQ2ns" value="649332775228712530" />
+      <ref role="20lvS9" node="$2Tbw0mnOP" resolve="FileSetInstanceViewer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5KK2jWpvK3u">
+    <property role="3GE5qa" value="job" />
+    <property role="TrG5h" value="JobContainer" />
+    <property role="19KtqR" value="true" />
+    <property role="R4oN_" value="Job Container" />
+    <property role="EcuMT" value="6642819616986824926" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5KK2jWpvK6l" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="environment" />
+      <property role="IQ2ns" value="6642819616986825109" />
+      <ref role="20lvS9" node="1LS_mj9079W" resolve="ExecutionEnvironment" />
+    </node>
+    <node concept="1TJgyj" id="5KK2jWpvK6j" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="jobs" />
+      <property role="20lbJX" value="0..n" />
+      <property role="IQ2ns" value="6642819616986825107" />
+      <ref role="20lvS9" node="1LS_mj901_A" resolve="Job" />
+    </node>
+    <node concept="PrWs8" id="5KK2jWpzgeD" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2mB5EVdWKbG">
+    <property role="3GE5qa" value="filesetviewers" />
+    <property role="TrG5h" value="FileSetInstanceLuceneTableViewer" />
+    <property role="19KtqR" value="true" />
+    <property role="EcuMT" value="2713162240549389036" />
+    <ref role="1TJDcQ" node="$2Tbw0mnOP" resolve="FileSetInstanceViewer" />
+  </node>
+  <node concept="1TIwiD" id="$2Tbw0pIPE">
+    <property role="3GE5qa" value="filesetviewers" />
+    <property role="TrG5h" value="SequenceVariationsViewer" />
+    <property role="19KtqR" value="true" />
+    <property role="EcuMT" value="649332775226633578" />
+    <ref role="1TJDcQ" node="$2Tbw0mnOP" resolve="FileSetInstanceViewer" />
+  </node>
+  <node concept="1TIwiD" id="2b$kHwkZyDL">
+    <property role="3GE5qa" value="filesetviewers" />
+    <property role="TrG5h" value="ReadQualityScoreViewer" />
+    <property role="19KtqR" value="true" />
+    <property role="EcuMT" value="2514225579998194289" />
+    <ref role="1TJDcQ" node="$2Tbw0mnOP" resolve="FileSetInstanceViewer" />
+  </node>
+  <node concept="1TIwiD" id="$2Tbw0mnOP">
+    <property role="TrG5h" value="FileSetInstanceViewer" />
+    <property role="3GE5qa" value="filesetviewers" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="EcuMT" value="649332775225752885" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="1e0XlmeCLB7">
+    <property role="3GE5qa" value="fileset.attributes" />
+    <property role="TrG5h" value="BooleanAttribute" />
+    <property role="EcuMT" value="1405392831553673671" />
+    <ref role="1TJDcQ" node="7arfhhdt3J1" resolve="Attribute" />
+    <node concept="1TJgyi" id="1e0XlmeCLB8" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <property role="IQ2nx" value="1405392831553673672" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1e0XlmeCO9J">
+    <property role="3GE5qa" value="fileset.attributes" />
+    <property role="TrG5h" value="StringAttribute" />
+    <property role="EcuMT" value="1405392831553684079" />
+    <ref role="1TJDcQ" node="7arfhhdt3J1" resolve="Attribute" />
+    <node concept="1TJgyi" id="1e0XlmeCObn" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <property role="IQ2nx" value="1405392831553684183" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1e0XlmeCQEc">
+    <property role="3GE5qa" value="fileset.attributes" />
+    <property role="TrG5h" value="NumericAttribute" />
+    <property role="EcuMT" value="1405392831553694348" />
+    <ref role="1TJDcQ" node="7arfhhdt3J1" resolve="Attribute" />
+    <node concept="1TJgyi" id="1e0XlmeCQFH" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <property role="IQ2nx" value="1405392831553694445" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1e0XlmeCTdu">
+    <property role="3GE5qa" value="fileset.attributes" />
+    <property role="TrG5h" value="CategoricalAttribute" />
+    <property role="EcuMT" value="1405392831553704798" />
+    <ref role="1TJDcQ" node="7arfhhdt3J1" resolve="Attribute" />
+    <node concept="1TJgyj" id="1e0XlmeHNQy" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="IQ2ns" value="1405392831554993570" />
+      <ref role="20lvS9" to="tpee:f$Xl_Og" resolve="StringLiteral" />
+    </node>
+    <node concept="1TJgyj" id="1e0XlmeCTdv" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="allowed_values" />
+      <property role="20lbJX" value="0..n" />
+      <property role="IQ2ns" value="1405392831553704799" />
+      <ref role="20lvS9" to="tpee:f$Xl_Og" resolve="StringLiteral" />
+    </node>
+    <node concept="1TJgyi" id="1e0XlmeCTgZ" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <property role="IQ2nx" value="1405392831553705023" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="63NezpqqxKy">
     <property role="3GE5qa" value="config" />
@@ -353,13 +531,6 @@
     <node concept="PrWs8" id="1msVhua4SBe" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="6NmDFVRF2bw">
-    <property role="EcuMT" value="7842639140241548000" />
-    <property role="3GE5qa" value="config" />
-    <property role="TrG5h" value="Job" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="asaX9" id="6NmDFVRF2bx" role="lGtFl" />
   </node>
 </model>
 
