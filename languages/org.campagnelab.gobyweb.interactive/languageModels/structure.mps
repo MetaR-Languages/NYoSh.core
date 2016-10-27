@@ -343,19 +343,6 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
-  <node concept="1TIwiD" id="$2Tbw0xEph">
-    <property role="TrG5h" value="FileSetInstanceViewerReference" />
-    <property role="3GE5qa" value="filesetviewers" />
-    <property role="EcuMT" value="649332775228712529" />
-    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
-    <node concept="1TJgyj" id="$2Tbw0xEpi" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20lbJX" value="1" />
-      <property role="20kJfa" value="fileSetInstanceViewer" />
-      <property role="IQ2ns" value="649332775228712530" />
-      <ref role="20lvS9" node="$2Tbw0mnOP" resolve="FileSetInstanceViewer" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="5KK2jWpvK3u">
     <property role="3GE5qa" value="job" />
     <property role="TrG5h" value="JobContainer" />
@@ -379,35 +366,6 @@
     <node concept="PrWs8" id="5KK2jWpzgeD" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="2mB5EVdWKbG">
-    <property role="3GE5qa" value="filesetviewers" />
-    <property role="TrG5h" value="FileSetInstanceLuceneTableViewer" />
-    <property role="19KtqR" value="true" />
-    <property role="EcuMT" value="2713162240549389036" />
-    <ref role="1TJDcQ" node="$2Tbw0mnOP" resolve="FileSetInstanceViewer" />
-  </node>
-  <node concept="1TIwiD" id="$2Tbw0pIPE">
-    <property role="3GE5qa" value="filesetviewers" />
-    <property role="TrG5h" value="SequenceVariationsViewer" />
-    <property role="19KtqR" value="true" />
-    <property role="EcuMT" value="649332775226633578" />
-    <ref role="1TJDcQ" node="$2Tbw0mnOP" resolve="FileSetInstanceViewer" />
-  </node>
-  <node concept="1TIwiD" id="2b$kHwkZyDL">
-    <property role="3GE5qa" value="filesetviewers" />
-    <property role="TrG5h" value="ReadQualityScoreViewer" />
-    <property role="19KtqR" value="true" />
-    <property role="EcuMT" value="2514225579998194289" />
-    <ref role="1TJDcQ" node="$2Tbw0mnOP" resolve="FileSetInstanceViewer" />
-  </node>
-  <node concept="1TIwiD" id="$2Tbw0mnOP">
-    <property role="TrG5h" value="FileSetInstanceViewer" />
-    <property role="3GE5qa" value="filesetviewers" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <property role="EcuMT" value="649332775225752885" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="1e0XlmeCLB7">
     <property role="3GE5qa" value="fileset.attributes" />
