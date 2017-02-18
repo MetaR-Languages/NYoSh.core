@@ -365,7 +365,9 @@
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
       <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
+        <property id="1238684351431" name="asCast" index="1BlNFB" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -1275,19 +1277,20 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="4PxeyvBCjpa" role="3cqZAp">
-              <node concept="2OqwBi" id="4PxeyvBCkNt" role="3clFbG">
-                <node concept="2OqwBi" id="4PxeyvBCjC4" role="2Oq$k0">
-                  <node concept="1PxgMI" id="4PxeyvBCjz8" role="2Oq$k0">
+            <node concept="3clFbF" id="62h8M2GLxLV" role="3cqZAp">
+              <node concept="2OqwBi" id="62h8M2GL$a5" role="3clFbG">
+                <node concept="2OqwBi" id="62h8M2GLygV" role="2Oq$k0">
+                  <node concept="1PxgMI" id="62h8M2GLy6Z" role="2Oq$k0">
+                    <property role="1BlNFB" value="true" />
                     <ref role="1m5ApE" to="440p:4PxeyvB$uiJ" resolve="ExplicitFileBag" />
-                    <node concept="2wRBzz" id="4PxeyvBCjp9" role="1m5AlR" />
+                    <node concept="2wRBzz" id="62h8M2GLxLT" role="1m5AlR" />
                   </node>
-                  <node concept="3Tsc0h" id="4PxeyvBCjTJ" role="2OqNvi">
+                  <node concept="3Tsc0h" id="62h8M2GLytV" role="2OqNvi">
                     <ref role="3TtcxE" to="440p:4PxeyvB$vgA" resolve="files" />
                   </node>
                 </node>
-                <node concept="TSZUe" id="4PxeyvBCo2Q" role="2OqNvi">
-                  <node concept="37vLTw" id="4PxeyvBCodS" role="25WWJ7">
+                <node concept="TSZUe" id="62h8M2GLBoT" role="2OqNvi">
+                  <node concept="37vLTw" id="62h8M2GLByX" role="25WWJ7">
                     <ref role="3cqZAo" node="4PxeyvBCm96" resolve="file" />
                   </node>
                 </node>
@@ -1338,15 +1341,16 @@
         </node>
         <node concept="2wNt1V" id="4PxeyvBChTB" role="2wNjSg">
           <node concept="3clFbS" id="4PxeyvBChY7" role="2VODD2">
-            <node concept="3clFbF" id="4PxeyvBChZ0" role="3cqZAp">
-              <node concept="37vLTI" id="4PxeyvBCiW8" role="3clFbG">
-                <node concept="2wNhmY" id="4PxeyvBCiWW" role="37vLTx" />
-                <node concept="2OqwBi" id="4PxeyvBCin_" role="37vLTJ">
-                  <node concept="1PxgMI" id="4PxeyvBCiiC" role="2Oq$k0">
+            <node concept="3clFbF" id="62h8M2GLC45" role="3cqZAp">
+              <node concept="37vLTI" id="62h8M2GLES8" role="3clFbG">
+                <node concept="2wNhmY" id="62h8M2GLET9" role="37vLTx" />
+                <node concept="2OqwBi" id="62h8M2GLCRj" role="37vLTJ">
+                  <node concept="1PxgMI" id="62h8M2GLCHy" role="2Oq$k0">
+                    <property role="1BlNFB" value="true" />
                     <ref role="1m5ApE" to="440p:4PxeyvB$uTD" resolve="File" />
-                    <node concept="2wRBzz" id="4PxeyvBChYZ" role="1m5AlR" />
+                    <node concept="2wRBzz" id="62h8M2GLC43" role="1m5AlR" />
                   </node>
-                  <node concept="3TrcHB" id="4PxeyvBCi$V" role="2OqNvi">
+                  <node concept="3TrcHB" id="62h8M2GLElw" role="2OqNvi">
                     <ref role="3TsBF5" to="440p:4PxeyvB$v1i" resolve="fullPath" />
                   </node>
                 </node>

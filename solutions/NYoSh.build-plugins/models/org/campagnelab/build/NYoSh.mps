@@ -222,7 +222,7 @@
         </node>
       </node>
     </node>
-    <node concept="2sgV4H" id="3ijARjAGeyY" role="1l3spa">
+    <node concept="2sgV4H" id="62h8M2GIu_V" role="1l3spa">
       <ref role="1l3spb" to="vh2l:7XxitGzkyrh" resolve="XChart" />
     </node>
     <node concept="1l3spV" id="2mFg1uCD9qq" role="1l3spN">
@@ -532,7 +532,7 @@
       <node concept="m$_yC" id="2mFg1uCDpM7" role="m$_yJ">
         <ref role="m$_y1" to="h9g5:7ZmC9JYEfXD" resolve="org.campagnelab.logger" />
       </node>
-      <node concept="m$_yC" id="3ijARjAGez0" role="m$_yJ">
+      <node concept="m$_yC" id="62h8M2GIu_T" role="m$_yJ">
         <ref role="m$_y1" to="vh2l:7XxitGzkyrN" resolve="XChart" />
       </node>
       <node concept="3_J27D" id="2mFg1uCD9qo" role="m_cZH">
