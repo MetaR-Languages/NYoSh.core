@@ -501,15 +501,6 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="7wWmVpyrPjO" role="3cqZAp">
-          <node concept="3cpWsn" id="7wWmVpyrPjR" role="3cpWs9">
-            <property role="TrG5h" value="count" />
-            <node concept="10Oyi0" id="7wWmVpyrPjM" role="1tU5fm" />
-            <node concept="3cmrfG" id="7wWmVpyrPmC" role="33vP2m">
-              <property role="3cmrfH" value="0" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbH" id="7wWmVpyrQ75" role="3cqZAp" />
         <node concept="2Gpval" id="7wWmVpyrOZo" role="3cqZAp">
           <node concept="2GrKxI" id="7wWmVpyrOZp" role="2Gsz3X">

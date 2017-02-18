@@ -14,6 +14,7 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
+        <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
         <reference id="1083241965437" name="defaultMember" index="Qgau1" />
         <child id="1083172003582" name="member" index="M5hS2" />
@@ -189,6 +190,7 @@
   <node concept="AxPO7" id="4PxeyvBAmu9">
     <property role="3GE5qa" value="parallel" />
     <property role="TrG5h" value="EnumerationStrategy" />
+    <property role="3lZH7k" value="derive_from_internal_value" />
     <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
     <ref role="Qgau1" node="4PxeyvBAmua" />
     <node concept="M4N5e" id="4PxeyvBAmua" role="M5hS2">
