@@ -145,6 +145,9 @@
         <reference id="1143235391024" name="concept" index="I8UWU" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
       <concept id="1176109685393" name="jetbrains.mps.lang.smodel.structure.Model_RootsIncludingImportedOperation" flags="nn" index="3lApI0">
         <reference id="1176109685394" name="concept" index="3lApI3" />
       </concept>
@@ -166,9 +169,6 @@
       </concept>
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
-      </concept>
-      <concept id="1172424058054" name="jetbrains.mps.lang.smodel.structure.ConceptRefExpression" flags="nn" index="3TUQnm">
-        <reference id="1172424100906" name="conceptDeclaration" index="3TV0OU" />
       </concept>
       <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
@@ -384,8 +384,8 @@
                   <node concept="2qgKlT" id="6oQbsK$mk0P" role="2OqNvi">
                     <ref role="37wK5l" to="p3sh:7bhX9q5D8Vi" resolve="create" />
                   </node>
-                  <node concept="3TUQnm" id="7bhX9q5Esx6" role="2Oq$k0">
-                    <ref role="3TV0OU" to="si8h:7bhX9q5D8Vg" resolve="RandomTag" />
+                  <node concept="35c_gC" id="62h8M2GW2bQ" role="2Oq$k0">
+                    <ref role="35c_gD" to="si8h:7bhX9q5D8Vg" resolve="RandomTag" />
                   </node>
                 </node>
               </node>
