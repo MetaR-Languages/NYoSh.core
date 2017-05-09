@@ -161,7 +161,7 @@
         <node concept="3clFbF" id="664r$yjOtl5" role="3cqZAp">
           <node concept="37vLTI" id="664r$yjOu2_" role="3clFbG">
             <node concept="Xl_RD" id="664r$yjOvFZ" role="37vLTx">
-              <property role="Xl_RC" value="ORGANISM" />
+              <property role="Xl_RC" value="organism" />
             </node>
             <node concept="2OqwBi" id="664r$yjOtmY" role="37vLTJ">
               <node concept="13iPFW" id="664r$yjOtl4" role="2Oq$k0" />
@@ -219,7 +219,7 @@
             <node concept="2OqwBi" id="664r$yjOFVc" role="37vLTJ">
               <node concept="13iPFW" id="664r$yjOFTl" role="2Oq$k0" />
               <node concept="3TrEf2" id="664r$yjOGgk" role="2OqNvi">
-                <ref role="3Tt5mk" to="2c0d:664r$yjOrk$" />
+                <ref role="3Tt5mk" to="2c0d:664r$yjOrk$" resolve="value" />
               </node>
             </node>
           </node>
@@ -292,7 +292,7 @@
                   <ref role="2Gs0qQ" node="664r$yjOGz8" resolve="definedOrganismSet" />
                 </node>
                 <node concept="3Tsc0h" id="664r$yjOMAU" role="2OqNvi">
-                  <ref role="3TtcxE" to="6llb:2c$PAgEvj8H" />
+                  <ref role="3TtcxE" to="6llb:2c$PAgEvj8H" resolve="elements" />
                 </node>
               </node>
               <node concept="3clFbS" id="664r$yjOLGd" role="2LFqv$">
@@ -307,11 +307,11 @@
                           <node concept="2OqwBi" id="664r$yjOOm_" role="2Oq$k0">
                             <node concept="13iPFW" id="664r$yjOOkF" role="2Oq$k0" />
                             <node concept="3TrEf2" id="664r$yjOOVn" role="2OqNvi">
-                              <ref role="3Tt5mk" to="2c0d:664r$yjOrk$" />
+                              <ref role="3Tt5mk" to="2c0d:664r$yjOrk$" resolve="value" />
                             </node>
                           </node>
                           <node concept="3TrEf2" id="664r$yjOPmE" role="2OqNvi">
-                            <ref role="3Tt5mk" to="2c0d:664r$yjOsb$" />
+                            <ref role="3Tt5mk" to="2c0d:664r$yjOsb$" resolve="organism" />
                           </node>
                         </node>
                       </node>
@@ -358,7 +358,7 @@
             <node concept="2OqwBi" id="664r$yjOqEI" role="2Oq$k0">
               <node concept="13iPFW" id="664r$yjOqCq" role="2Oq$k0" />
               <node concept="3TrEf2" id="664r$yjOrEc" role="2OqNvi">
-                <ref role="3Tt5mk" to="2c0d:664r$yjOrk$" />
+                <ref role="3Tt5mk" to="2c0d:664r$yjOrk$" resolve="value" />
               </node>
             </node>
             <node concept="2qgKlT" id="664r$yjOs75" role="2OqNvi">
@@ -382,7 +382,7 @@
             <node concept="2OqwBi" id="664r$yjOlQk" role="2Oq$k0">
               <node concept="13iPFW" id="664r$yjOlP7" role="2Oq$k0" />
               <node concept="3TrEf2" id="664r$yjOsry" role="2OqNvi">
-                <ref role="3Tt5mk" to="2c0d:664r$yjOsb$" />
+                <ref role="3Tt5mk" to="2c0d:664r$yjOsb$" resolve="organism" />
               </node>
             </node>
             <node concept="2qgKlT" id="664r$yjOsV9" role="2OqNvi">
