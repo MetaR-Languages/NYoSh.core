@@ -6,4 +6,5 @@
 trace.info
 dependencies
 generated
+*.history
 #QueriesGenerated.java

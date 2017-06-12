@@ -2,10 +2,20 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/NYoSh/org.campagnelab.NYoSh.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.background/org.campagnelab.background.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.bio.species/org.campagnelab.bio.species.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.clusterConfig/org.campagnelab.clusterConfig.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.gobyweb.interactive.mappings/org.campagnelab.gobyweb.interactive.mappings.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.gobyweb.interactive.organisms/org.campagnelab.gobyweb.interactive.organisms.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.gobyweb.interactive.platforms/org.campagnelab.gobyweb.interactive.platforms.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.gobyweb.interactive.users/org.campagnelab.gobyweb.interactive.users.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.gobyweb.interactive/org.campagnelab.gobyweb.interactive.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.gobyweb.plugins/org.campagnelab.gobyweb.plugins.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.gobyweb.tags/org.campagnelab.gobyweb.tags.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.gobyweb/org.campagnelab.gobyweb.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.logger/org.campagnelab.logger.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.nyosh.functions/org.campagnelab.nyosh.functions.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.nyosh.gstring/org.campagnelab.nyosh.gstring.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.nyosh.interactive/org.campagnelab.nyosh.interactive.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.nyosh.lib/org.campagnelab.nyosh.lib.mpl" folder="" />
@@ -13,8 +23,32 @@
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.textoutput/org.campagnelab.textoutput.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.ui/org.campagnelab.ui.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/NYoSh.build-plugins/NYoSh.build-plugins.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.campagnelab.bio.species.morgs/org.campagnelab.bio.species.morgs.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.campagnelab.ui.code/org.campagnelab.ui.code.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.campagnelab.util/org.campagnelab.util.msd" folder="" />
+      <modulePath path="$APPLICATION_PLUGINS_DIR$/Background/languages/org.campagnelab.background.jar!/META-INF/module.xml" folder="" />
+      <modulePath path="$APPLICATION_PLUGINS_DIR$/ClusterConfig/languages/ClusterConfig/org.campagnelab.clusterConfig.jar!/META-INF/module.xml" folder="" />
+      <modulePath path="$APPLICATION_PLUGINS_DIR$/ClusterConfig/languages/ClusterConfig/org.campagnelab.ssh.jar!/META-INF/module.xml" folder="" />
+      <modulePath path="$APPLICATION_PLUGINS_DIR$/GobyWeb/languages/GobyWeb/org.campagnelab.gobyweb.jar!/META-INF/module.xml" folder="" />
+      <modulePath path="$APPLICATION_PLUGINS_DIR$/GobyWeb/languages/GobyWeb/org.campagnelab.gobyweb.plugins.jar!/META-INF/module.xml" folder="" />
+      <modulePath path="$APPLICATION_PLUGINS_DIR$/Interactive/languages/org.campagnelab.Interactive/org.campagnelab.bio.species.jar!/META-INF/module.xml" folder="" />
+      <modulePath path="$APPLICATION_PLUGINS_DIR$/Interactive/languages/org.campagnelab.Interactive/org.campagnelab.bio.species.morgs.jar!/META-INF/module.xml" folder="" />
+      <modulePath path="$APPLICATION_PLUGINS_DIR$/Interactive/languages/org.campagnelab.Interactive/org.campagnelab.gobyweb.interactive.jar!/META-INF/module.xml" folder="" />
+      <modulePath path="$APPLICATION_PLUGINS_DIR$/Interactive/languages/org.campagnelab.Interactive/org.campagnelab.gobyweb.interactive.mappings.jar!/META-INF/module.xml" folder="" />
+      <modulePath path="$APPLICATION_PLUGINS_DIR$/Interactive/languages/org.campagnelab.Interactive/org.campagnelab.gobyweb.interactive.organisms.jar!/META-INF/module.xml" folder="" />
+      <modulePath path="$APPLICATION_PLUGINS_DIR$/Interactive/languages/org.campagnelab.Interactive/org.campagnelab.gobyweb.interactive.platforms.jar!/META-INF/module.xml" folder="" />
+      <modulePath path="$APPLICATION_PLUGINS_DIR$/Interactive/languages/org.campagnelab.Interactive/org.campagnelab.gobyweb.interactive.users.jar!/META-INF/module.xml" folder="" />
+      <modulePath path="$APPLICATION_PLUGINS_DIR$/Logger/languages/org.campagnelab.logger.jar!/META-INF/module.xml" folder="" />
+      <modulePath path="$APPLICATION_PLUGINS_DIR$/NYoSh/languages/NYoSh/org.campagnelab.NYoSh.jar!/META-INF/module.xml" folder="" />
+      <modulePath path="$APPLICATION_PLUGINS_DIR$/NYoSh/languages/NYoSh/org.campagnelab.gobyweb.tags.jar!/META-INF/module.xml" folder="" />
+      <modulePath path="$APPLICATION_PLUGINS_DIR$/NYoSh/languages/NYoSh/org.campagnelab.nyosh.functions.jar!/META-INF/module.xml" folder="" />
+      <modulePath path="$APPLICATION_PLUGINS_DIR$/NYoSh/languages/NYoSh/org.campagnelab.nyosh.gstring.jar!/META-INF/module.xml" folder="" />
+      <modulePath path="$APPLICATION_PLUGINS_DIR$/NYoSh/languages/NYoSh/org.campagnelab.nyosh.interactive.jar!/META-INF/module.xml" folder="" />
+      <modulePath path="$APPLICATION_PLUGINS_DIR$/NYoSh/languages/NYoSh/org.campagnelab.nyosh.lib.jar!/META-INF/module.xml" folder="" />
+      <modulePath path="$APPLICATION_PLUGINS_DIR$/NYoSh/languages/NYoSh/org.campagnelab.util.jar!/META-INF/module.xml" folder="" />
+      <modulePath path="$APPLICATION_PLUGINS_DIR$/TextOutput/languages/TextOutput/org.campagnelab.textoutput.jar!/META-INF/module.xml" folder="" />
+      <modulePath path="$APPLICATION_PLUGINS_DIR$/UI/languages/org.campagnelab.ui.code.jar!/META-INF/module.xml" folder="" />
+      <modulePath path="$APPLICATION_PLUGINS_DIR$/UI/languages/org.campagnelab.ui.jar!/META-INF/module.xml" folder="" />
     </projectModules>
   </component>
 </project>
