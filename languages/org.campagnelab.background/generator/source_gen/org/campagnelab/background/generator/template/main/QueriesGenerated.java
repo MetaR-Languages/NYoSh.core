@@ -9,6 +9,8 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.generator.template.PropertyMacroContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.generator.template.ReferenceMacroContext;
+import jetbrains.mps.lang.behavior.generator.template.util.Constants;
 import jetbrains.mps.generator.template.IfMacroContext;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodeContext;
@@ -45,6 +47,9 @@ public class QueriesGenerated {
   public static Object propertyMacro_GetPropertyValue_155084157471587299(final PropertyMacroContext _context) {
     return (SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x20d83b64d10f48d1L, 0x990d513b574c4956L, 0x21c94420e72fcbc4L, 0x21c94420e730edefL, "onCancel")) != null);
   }
+  public static Object referenceMacro_GetReferent_7759303383167650441(final ReferenceMacroContext _context) {
+    return Constants.THIS_NODE_VARIABLE_NAME;
+  }
   public static boolean ifMacro_Condition_2434551981679026277(final IfMacroContext _context) {
     return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x20d83b64d10f48d1L, 0x990d513b574c4956L, 0x21c94420e72fcbc4L, 0x21c94420e7351e50L, "access")), MetaAdapterFactory.getConcept(0x20d83b64d10f48d1L, 0x990d513b574c4956L, 0x21c94420e7351e4eL, "org.campagnelab.background.structure.WriteAccessType"));
   }
@@ -57,7 +62,7 @@ public class QueriesGenerated {
   public static boolean ifMacro_Condition_8912022532306604756(final IfMacroContext _context) {
     return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x20d83b64d10f48d1L, 0x990d513b574c4956L, 0x21c94420e72fcbc4L, 0x21c94420e7351e50L, "access")), MetaAdapterFactory.getConcept(0x20d83b64d10f48d1L, 0x990d513b574c4956L, 0x21c94420e7351e49L, "org.campagnelab.background.structure.ReadAccessType"));
   }
-  public static boolean ifMacro_Condition_572350672214579331(final IfMacroContext _context) {
+  public static boolean ifMacro_Condition_7759303383167653407(final IfMacroContext _context) {
     SNode enclosingMethod = SNodeOperations.getNodeAncestor(_context.getNode(), MetaAdapterFactory.getConcept(0xaf65afd8f0dd4942L, 0x87d963a55f2a9db1L, 0x11d4348057eL, "jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration"), false, false);
     return ((enclosingMethod != null) && SPropertyOperations.getBoolean(enclosingMethod, MetaAdapterFactory.getProperty(0xaf65afd8f0dd4942L, 0x87d963a55f2a9db1L, 0x11d4348057eL, 0x51613f7fe129b24dL, "isStatic")));
   }
