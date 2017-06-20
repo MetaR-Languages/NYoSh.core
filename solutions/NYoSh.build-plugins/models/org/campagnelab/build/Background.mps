@@ -281,7 +281,7 @@
           </node>
         </node>
         <node concept="1yeLz9" id="7ZmC9JYDoQJ" role="1TViLv">
-          <property role="TrG5h" value="org.campagnelab.background#2434551981678683241" />
+          <property role="TrG5h" value="org.campagnelab.background#5727908157482241423" />
           <property role="3LESm3" value="b3fbb0a9-d1eb-4569-b506-1ced4fe8b64f" />
           <property role="2GAjPV" value="false" />
           <node concept="1SiIV0" id="7ZmC9JYDoQK" role="3bR37C">
@@ -336,6 +336,18 @@
             <node concept="3bR9La" id="7ZmC9JYDyvD" role="1SiIV1">
               <property role="3bR36h" value="false" />
               <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="Okyg3n7EZg" role="3bR37C">
+            <node concept="3bR9La" id="Okyg3n7EZh" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:7YI57w6K0hX" resolve="jetbrains.mps.lang.behavior#1225195312923" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="Okyg3n7EZi" role="3bR37C">
+            <node concept="3bR9La" id="Okyg3n7EZj" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
             </node>
           </node>
         </node>

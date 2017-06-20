@@ -26,6 +26,7 @@
     <import index="czzw" ref="r:2151664b-13bc-4072-a76b-815bb37c415e(org.campagnelab.gobyweb.interactive.users.structure)" />
     <import index="tp2q" ref="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
@@ -529,7 +530,7 @@
   </node>
   <node concept="3dkpOd" id="5HtPvjgShst">
     <property role="TrG5h" value="CreateExecutionNodeAndAssignTo" />
-    <ref role="2ZfgGC" to="9k5:6II_l42n3jF" resolve="HasExecutionNodeReference" />
+    <ref role="2ZfgGC" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1jPt1T" id="5HtPvjgShsu" role="2ZfVej">
       <node concept="3clFbS" id="5HtPvjgShsv" role="2VODD2">
         <node concept="3clFbF" id="5HtPvjgSAY$" role="3cqZAp">
