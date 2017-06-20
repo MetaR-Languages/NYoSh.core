@@ -2,7 +2,7 @@
 <model ref="r:58e0b35e-5075-4967-8a9c-19cbb1c60e9c(org.campagnelab.clusterConfig.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="0" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="2" />
     <use id="d8f591ec-4d86-4af2-9f92-a9e93c803ffa" name="jetbrains.mps.lang.scopes" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -50,7 +50,7 @@
         <child id="1152963095733" name="propertySetter" index="1LXaQT" />
       </concept>
       <concept id="1147468365020" name="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_node" flags="nn" index="EsrRn" />
-      <concept id="5676632058862809931" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Scope" flags="in" index="13QW63" />
+      <concept id="5564765827938091039" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Scope" flags="ig" index="3dgokm" />
       <concept id="1152959968041" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertySetter" flags="in" index="1LLf8_" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
@@ -109,8 +109,8 @@
   <node concept="1M2fIO" id="7$CvuSwOQ66">
     <ref role="1M2myG" to="9k5:2DkpMLT2INw" resolve="NodeRef" />
     <node concept="1N5Pfh" id="7$CvuSwOQ78" role="1Mr941">
-      <ref role="1N5Vy1" to="9k5:2DkpMLT2IOk" />
-      <node concept="13QW63" id="2GvbEExVbqn" role="1N6uqs">
+      <ref role="1N5Vy1" to="9k5:2DkpMLT2IOk" resolve="node" />
+      <node concept="3dgokm" id="2GvbEExVbqn" role="1N6uqs">
         <node concept="3clFbS" id="2GvbEExVbqo" role="2VODD2">
           <node concept="3cpWs6" id="2GvbEExVjdC" role="3cqZAp">
             <node concept="2YIFZM" id="2GvbEExVaf2" role="3cqZAk">

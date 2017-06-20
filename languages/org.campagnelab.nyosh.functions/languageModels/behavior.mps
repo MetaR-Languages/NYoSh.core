@@ -2,7 +2,7 @@
 <model ref="r:2f60864f-994c-4413-b324-244fab1c0017(org.campagnelab.nyosh.functions.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -26,8 +26,8 @@
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
       </concept>
-      <concept id="1225194628440" name="jetbrains.mps.lang.behavior.structure.SuperNodeExpression" flags="nn" index="13iAh5">
-        <reference id="5299096511375896640" name="superConcept" index="3eA5LN" />
+      <concept id="7613853987897845671" name="jetbrains.mps.lang.behavior.structure.SuperConceptExpression" flags="ng" index="3pZB1V">
+        <reference id="7613853987897845672" name="superConcept" index="3pZB1O" />
       </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -152,8 +152,8 @@
               </node>
             </node>
             <node concept="2OqwBi" id="6_HhEAkiIKN" role="33vP2m">
-              <node concept="13iAh5" id="6_HhEAkiIKO" role="2Oq$k0">
-                <ref role="3eA5LN" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+              <node concept="3pZB1V" id="6II_l42cEJL" role="2Oq$k0">
+                <ref role="3pZB1O" to="tpee:gyVMwX8" resolve="ConceptFunction" />
               </node>
               <node concept="2qgKlT" id="6_HhEAkiIKP" role="2OqNvi">
                 <ref role="37wK5l" to="tpek:2D1PBM_bxJg" resolve="getApplicableConceptFunctionParameter" />
@@ -249,8 +249,8 @@
               </node>
             </node>
             <node concept="2OqwBi" id="6_HhEAkiILr" role="33vP2m">
-              <node concept="13iAh5" id="6_HhEAkiILs" role="2Oq$k0">
-                <ref role="3eA5LN" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+              <node concept="3pZB1V" id="6II_l42cEJM" role="2Oq$k0">
+                <ref role="3pZB1O" to="tpee:gyVMwX8" resolve="ConceptFunction" />
               </node>
               <node concept="2qgKlT" id="6_HhEAkiILt" role="2OqNvi">
                 <ref role="37wK5l" to="tpek:2D1PBM_bxJg" resolve="getApplicableConceptFunctionParameter" />
@@ -333,8 +333,8 @@
               </node>
             </node>
             <node concept="2OqwBi" id="6_HhEAkiX$p" role="33vP2m">
-              <node concept="13iAh5" id="6_HhEAkiX$q" role="2Oq$k0">
-                <ref role="3eA5LN" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+              <node concept="3pZB1V" id="6II_l42cEJN" role="2Oq$k0">
+                <ref role="3pZB1O" to="tpee:gyVMwX8" resolve="ConceptFunction" />
               </node>
               <node concept="2qgKlT" id="6_HhEAkiX$r" role="2OqNvi">
                 <ref role="37wK5l" to="tpek:2D1PBM_bxJg" resolve="getApplicableConceptFunctionParameter" />
@@ -425,8 +425,8 @@
               </node>
             </node>
             <node concept="2OqwBi" id="6_HhEAkiX$Y" role="33vP2m">
-              <node concept="13iAh5" id="6_HhEAkiX$Z" role="2Oq$k0">
-                <ref role="3eA5LN" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+              <node concept="3pZB1V" id="6II_l42cEJK" role="2Oq$k0">
+                <ref role="3pZB1O" to="tpee:gyVMwX8" resolve="ConceptFunction" />
               </node>
               <node concept="2qgKlT" id="6_HhEAkiX_0" role="2OqNvi">
                 <ref role="37wK5l" to="tpek:2D1PBM_bxJg" resolve="getApplicableConceptFunctionParameter" />

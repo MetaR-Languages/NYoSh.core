@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="3" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -149,8 +149,8 @@
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1143224066846" name="jetbrains.mps.lang.smodel.structure.Node_InsertNextSiblingOperation" flags="nn" index="HtI8k">
         <child id="1143224066849" name="insertedNode" index="HtI8F" />
@@ -1133,12 +1133,14 @@
                 <node concept="TSZUe" id="3dPG257RBV0" role="2OqNvi">
                   <node concept="1PxgMI" id="3dPG257RDH_" role="25WWJ7">
                     <property role="1BlNFB" value="true" />
-                    <ref role="1m5ApE" to="p6sl:1th2JjMn4te" resolve="Phrase" />
                     <node concept="2OqwBi" id="3dPG257RC98" role="1m5AlR">
                       <node concept="2GrUjf" id="3dPG257RC1q" role="2Oq$k0">
                         <ref role="2Gs0qQ" node="3dPG257RzNT" resolve="sibling" />
                       </node>
                       <node concept="3YRAZt" id="3dPG257RCwX" role="2OqNvi" />
+                    </node>
+                    <node concept="chp4Y" id="6II_l42mpax" role="3oSUPX">
+                      <ref role="cht4Q" to="p6sl:1th2JjMn4te" resolve="Phrase" />
                     </node>
                   </node>
                 </node>

@@ -2,7 +2,7 @@
 <model ref="r:7451299a-d0ed-43ae-a5b3-6d2009cbe6ce(org.campagnelab.nyosh.gstring.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="0" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -126,7 +126,7 @@
   <node concept="1M2fIO" id="3yTLPkAUjBK">
     <ref role="1M2myG" to="f2ff:Scn7avjSAp" resolve="GStringVarReference" />
     <node concept="1N5Pfh" id="5VDr8Pe$BUS" role="1Mr941">
-      <ref role="1N5Vy1" to="f2ff:3yTLPkAUjD7" />
+      <ref role="1N5Vy1" to="f2ff:3yTLPkAUjD7" resolve="varRef" />
       <node concept="1dDu$B" id="5VDr8Pe$BUW" role="1N6uqs">
         <ref role="1dDu$A" to="tpee:fz3uBXI" resolve="VariableDeclaration" />
       </node>

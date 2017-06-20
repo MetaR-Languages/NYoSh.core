@@ -2,7 +2,7 @@
 <model ref="r:0ff087a1-f767-41f6-81fe-c71f624aed9d(org.campagnelab.gobyweb.interactive.mappings.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
     <use id="166cc73c-4d0f-4757-a007-8527cb58de2e" name="org.campagnelab.bio.species" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>

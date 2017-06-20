@@ -2,7 +2,7 @@
 <model ref="r:88895bb3-ffc1-49c0-97ec-2c49d3499b4b(org.campagnelab.gobyweb.tags.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -122,8 +122,8 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-      <concept id="1172424058054" name="jetbrains.mps.lang.smodel.structure.ConceptRefExpression" flags="nn" index="3TUQnm">
-        <reference id="1172424100906" name="conceptDeclaration" index="3TV0OU" />
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -142,14 +142,14 @@
       <node concept="3clFbS" id="7bhX9q5D8Vl" role="3clF47">
         <node concept="3cpWs6" id="7bhX9q5EswD" role="3cqZAp">
           <node concept="2OqwBi" id="7bhX9q5EsAD" role="3cqZAk">
-            <node concept="3TUQnm" id="7bhX9q5Esx6" role="2Oq$k0">
-              <ref role="3TV0OU" to="si8h:7bhX9q5D8Vg" resolve="RandomTag" />
-            </node>
             <node concept="2qgKlT" id="7bhX9q5EsHU" role="2OqNvi">
               <ref role="37wK5l" node="7bhX9q5D8Vp" resolve="randomCreate" />
               <node concept="3cmrfG" id="7bhX9q5EsJU" role="37wK5m">
                 <property role="3cmrfH" value="7" />
               </node>
+            </node>
+            <node concept="35c_gC" id="6II_l42movK" role="2Oq$k0">
+              <ref role="35c_gD" to="si8h:7bhX9q5D8Vg" resolve="RandomTag" />
             </node>
           </node>
         </node>

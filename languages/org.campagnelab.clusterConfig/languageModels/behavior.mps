@@ -2,9 +2,9 @@
 <model ref="r:bf68e0f8-5137-4e77-a465-6eead8ac55fe(org.campagnelab.clusterConfig.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
     <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="0" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -252,7 +252,7 @@
             <node concept="2OqwBi" id="2DkpMLSTQlP" role="2Oq$k0">
               <node concept="13iPFW" id="2DkpMLSTQhL" role="2Oq$k0" />
               <node concept="3Tsc0h" id="2DkpMLSTQU9" role="2OqNvi">
-                <ref role="3TtcxE" to="9k5:2DkpMLSTPn3" />
+                <ref role="3TtcxE" to="9k5:2DkpMLSTPn3" resolve="nodes" />
               </node>
             </node>
             <node concept="1MD8d$" id="2DkpMLSUfvV" role="2OqNvi">
@@ -278,11 +278,11 @@
                           </node>
                           <node concept="2OqwBi" id="1nOyJ0DFHOO" role="3K4E3e">
                             <node concept="2OqwBi" id="2DkpMLSUttj" role="2Oq$k0">
+                              <node concept="3TrEf2" id="1nOyJ0DFGTz" role="2OqNvi">
+                                <ref role="3Tt5mk" to="9k5:2DkpMLT2IOk" resolve="node" />
+                              </node>
                               <node concept="37vLTw" id="2DkpMLSUtff" role="2Oq$k0">
                                 <ref role="3cqZAo" node="2DkpMLSUfw0" resolve="it" />
-                              </node>
-                              <node concept="3TrEf2" id="1nOyJ0DFGTz" role="2OqNvi">
-                                <ref role="3Tt5mk" to="9k5:2DkpMLT2IOk" />
                               </node>
                             </node>
                             <node concept="3TrcHB" id="1nOyJ0DHHrr" role="2OqNvi">
@@ -352,7 +352,7 @@
             <node concept="2OqwBi" id="1h4o16KVmFJ" role="37vLTJ">
               <node concept="13iPFW" id="1h4o16KVmBS" role="2Oq$k0" />
               <node concept="3TrEf2" id="1h4o16KVnP9" role="2OqNvi">
-                <ref role="3Tt5mk" to="9k5:1h4o16KVmcn" />
+                <ref role="3Tt5mk" to="9k5:1h4o16KVmcn" resolve="tunnel" />
               </node>
             </node>
           </node>
@@ -368,11 +368,11 @@
               <node concept="2OqwBi" id="1h4o16KVrZM" role="2Oq$k0">
                 <node concept="13iPFW" id="1h4o16KVrVF" role="2Oq$k0" />
                 <node concept="3TrEf2" id="1h4o16KVYbk" role="2OqNvi">
-                  <ref role="3Tt5mk" to="9k5:1h4o16KVkVe" />
+                  <ref role="3Tt5mk" to="9k5:1h4o16KVkVe" resolve="remotePort" />
                 </node>
               </node>
               <node concept="3TrEf2" id="1h4o16KVZ4_" role="2OqNvi">
-                <ref role="3Tt5mk" to="9k5:$Ux0GyrBIs" />
+                <ref role="3Tt5mk" to="9k5:$Ux0GyrBIs" resolve="targetNode" />
               </node>
             </node>
           </node>
@@ -391,7 +391,7 @@
               <node concept="2OqwBi" id="1h4o16KVoEv" role="2Oq$k0">
                 <node concept="13iPFW" id="1h4o16KVoAd" role="2Oq$k0" />
                 <node concept="3TrEf2" id="1h4o16KVphu" role="2OqNvi">
-                  <ref role="3Tt5mk" to="9k5:1h4o16KVmcn" />
+                  <ref role="3Tt5mk" to="9k5:1h4o16KVmcn" resolve="tunnel" />
                 </node>
               </node>
               <node concept="3TrcHB" id="366uw29B5nL" role="2OqNvi">
@@ -414,7 +414,7 @@
               <node concept="2OqwBi" id="1h4o16KVvH8" role="2Oq$k0">
                 <node concept="13iPFW" id="1h4o16KVvBT" role="2Oq$k0" />
                 <node concept="3TrEf2" id="1h4o16KVwtB" role="2OqNvi">
-                  <ref role="3Tt5mk" to="9k5:1h4o16KVmcn" />
+                  <ref role="3Tt5mk" to="9k5:1h4o16KVmcn" resolve="tunnel" />
                 </node>
               </node>
               <node concept="3TrcHB" id="1h4o16KVxSE" role="2OqNvi">
@@ -429,7 +429,7 @@
               <node concept="2OqwBi" id="1h4o16KVEFg" role="2Oq$k0">
                 <node concept="13iPFW" id="1h4o16KVE1a" role="2Oq$k0" />
                 <node concept="3TrEf2" id="1h4o16KVG0S" role="2OqNvi">
-                  <ref role="3Tt5mk" to="9k5:1h4o16KVkVe" />
+                  <ref role="3Tt5mk" to="9k5:1h4o16KVkVe" resolve="remotePort" />
                 </node>
               </node>
               <node concept="3TrcHB" id="1h4o16KVIT9" role="2OqNvi">
@@ -440,7 +440,7 @@
               <node concept="2OqwBi" id="1h4o16KVAnv" role="2Oq$k0">
                 <node concept="13iPFW" id="1h4o16KVAhj" role="2Oq$k0" />
                 <node concept="3TrEf2" id="1h4o16KVB6M" role="2OqNvi">
-                  <ref role="3Tt5mk" to="9k5:1h4o16KVmcn" />
+                  <ref role="3Tt5mk" to="9k5:1h4o16KVmcn" resolve="tunnel" />
                 </node>
               </node>
               <node concept="3TrcHB" id="1h4o16KVCsy" role="2OqNvi">
@@ -458,7 +458,7 @@
               <node concept="2OqwBi" id="1h4o16KVJCY" role="2Oq$k0">
                 <node concept="13iPFW" id="1h4o16KVJy4" role="2Oq$k0" />
                 <node concept="3TrEf2" id="1h4o16KVKvp" role="2OqNvi">
-                  <ref role="3Tt5mk" to="9k5:1h4o16KVmcn" />
+                  <ref role="3Tt5mk" to="9k5:1h4o16KVmcn" resolve="tunnel" />
                 </node>
               </node>
               <node concept="3TrcHB" id="366uw29Bqjm" role="2OqNvi">
@@ -481,7 +481,7 @@
             <node concept="2OqwBi" id="75PBcUf_BOR" role="2Oq$k0">
               <node concept="13iPFW" id="75PBcUf_BN0" role="2Oq$k0" />
               <node concept="3TrEf2" id="75PBcUf_BZC" role="2OqNvi">
-                <ref role="3Tt5mk" to="9k5:1h4o16KVmcn" />
+                <ref role="3Tt5mk" to="9k5:1h4o16KVmcn" resolve="tunnel" />
               </node>
             </node>
             <node concept="2qgKlT" id="3F1UVcWNFR4" role="2OqNvi">
@@ -504,7 +504,7 @@
             <node concept="2OqwBi" id="75PBcUf_Bte" role="2Oq$k0">
               <node concept="13iPFW" id="75PBcUf_Btf" role="2Oq$k0" />
               <node concept="3TrEf2" id="75PBcUf_Btg" role="2OqNvi">
-                <ref role="3Tt5mk" to="9k5:1h4o16KVmcn" />
+                <ref role="3Tt5mk" to="9k5:1h4o16KVmcn" resolve="tunnel" />
               </node>
             </node>
             <node concept="2qgKlT" id="75PBcUf_BI1" role="2OqNvi">
@@ -766,7 +766,7 @@
               <node concept="2OqwBi" id="5KK2jWoAFpy" role="2Oq$k0">
                 <node concept="13iPFW" id="5KK2jWoAFns" role="2Oq$k0" />
                 <node concept="3Tsc0h" id="5KK2jWoAFFx" role="2OqNvi">
-                  <ref role="3TtcxE" to="9k5:$Ux0GyD0Oh" />
+                  <ref role="3TtcxE" to="9k5:$Ux0GyD0Oh" resolve="ports" />
                 </node>
               </node>
               <node concept="1z4cxt" id="5KK2jWoAIu3" role="2OqNvi">
@@ -868,7 +868,7 @@
                       <ref role="3cqZAo" node="5KK2jWoAKtv" resolve="port" />
                     </node>
                     <node concept="3TrEf2" id="5KK2jWoAO3C" role="2OqNvi">
-                      <ref role="3Tt5mk" to="9k5:$Ux0GyrBIs" />
+                      <ref role="3Tt5mk" to="9k5:$Ux0GyrBIs" resolve="targetNode" />
                     </node>
                   </node>
                 </node>
@@ -878,7 +878,7 @@
                   <node concept="2OqwBi" id="5KK2jWoAOnY" role="2Oq$k0">
                     <node concept="13iPFW" id="5KK2jWoAOlt" role="2Oq$k0" />
                     <node concept="3Tsc0h" id="5KK2jWoAOG6" role="2OqNvi">
-                      <ref role="3TtcxE" to="9k5:$Ux0GyD0Oh" />
+                      <ref role="3TtcxE" to="9k5:$Ux0GyD0Oh" resolve="ports" />
                     </node>
                   </node>
                   <node concept="TSZUe" id="5KK2jWoARny" role="2OqNvi">

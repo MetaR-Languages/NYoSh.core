@@ -2,7 +2,7 @@
 <model ref="r:43607968-7743-4430-b1dc-a0978a92550b(org.campagnelab.background.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -79,7 +79,7 @@
           <node concept="2OqwBi" id="279h23Bnv6G" role="3clFbG">
             <node concept="13iPFW" id="279h23Bnv47" role="2Oq$k0" />
             <node concept="3TrEf2" id="279h23Bnvyl" role="2OqNvi">
-              <ref role="3Tt5mk" to="t7r0:279h23BdhTg" />
+              <ref role="3Tt5mk" to="t7r0:279h23BdhTg" resolve="access" />
             </node>
           </node>
         </node>
@@ -99,7 +99,7 @@
             <node concept="2OqwBi" id="279h23BliUu" role="37vLTJ">
               <node concept="13iPFW" id="279h23BliRT" role="2Oq$k0" />
               <node concept="3TrEf2" id="279h23Blj8y" role="2OqNvi">
-                <ref role="3Tt5mk" to="t7r0:279h23BdhTg" />
+                <ref role="3Tt5mk" to="t7r0:279h23BdhTg" resolve="access" />
               </node>
             </node>
           </node>
@@ -123,7 +123,7 @@
             <node concept="2OqwBi" id="8AY3wOo_TZ" role="37vLTJ">
               <node concept="13iPFW" id="8AY3wOo_U0" role="2Oq$k0" />
               <node concept="3TrEf2" id="8AY3wOoAJz" role="2OqNvi">
-                <ref role="3Tt5mk" to="t7r0:279h23BdhTg" />
+                <ref role="3Tt5mk" to="t7r0:279h23BdhTg" resolve="access" />
               </node>
             </node>
           </node>

@@ -2,8 +2,8 @@
 <model ref="r:bbce89e8-2bb0-4c95-b1b7-870a649b438d(org.campagnelab.NYoSh.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="2" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -53,7 +53,7 @@
       </concept>
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
-      <concept id="1202989531578" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="nKS2y" />
+      <concept id="6702802731807351367" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="9S07l" />
       <concept id="1147467115080" name="jetbrains.mps.lang.constraints.structure.NodePropertyConstraint" flags="ng" index="EnEH3">
         <reference id="1147467295099" name="applicableProperty" index="EomxK" />
         <child id="1212097481299" name="propertyValidator" index="QCWH9" />
@@ -65,9 +65,9 @@
       </concept>
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
+        <child id="6702802731807737306" name="canBeChild" index="9Vyp8" />
         <child id="1213098023997" name="property" index="1MhHOB" />
         <child id="1213100494875" name="referent" index="1Mr941" />
-        <child id="1213106463729" name="canBeChild" index="1MLUbF" />
       </concept>
       <concept id="1148687176410" name="jetbrains.mps.lang.constraints.structure.NodeReferentConstraint" flags="ng" index="1N5Pfh">
         <reference id="1148687202698" name="applicableLink" index="1N5Vy1" />
@@ -93,58 +93,58 @@
   </registry>
   <node concept="1M2fIO" id="74HGF0nFtIR">
     <ref role="1M2myG" to="4tvk:74HGF0nFm_H" resolve="ConsumeCommandOutputWithStream" />
-    <node concept="nKS2y" id="74HGF0nFtSK" role="1MLUbF">
-      <node concept="3clFbS" id="74HGF0nFtSL" role="2VODD2">
-        <node concept="3clFbJ" id="74HGF0nGFPk" role="3cqZAp">
-          <node concept="2OqwBi" id="74HGF0nGGrR" role="3clFbw">
-            <node concept="3w_OXm" id="74HGF0nGHt$" role="2OqNvi" />
-            <node concept="EsrRn" id="74HGF0nGGe9" role="2Oq$k0" />
+    <node concept="9S07l" id="74HGF0nFtSK" role="9Vyp8">
+      <node concept="3clFbS" id="6II_l42mnE$" role="2VODD2">
+        <node concept="3clFbJ" id="6II_l42mnE_" role="3cqZAp">
+          <node concept="2OqwBi" id="6II_l42mnEA" role="3clFbw">
+            <node concept="3w_OXm" id="6II_l42mnEB" role="2OqNvi" />
+            <node concept="EsrRn" id="6II_l42mnEC" role="2Oq$k0" />
           </node>
-          <node concept="3clFbS" id="74HGF0nGFPn" role="3clFbx">
-            <node concept="3cpWs6" id="74HGF0nGHIn" role="3cqZAp">
-              <node concept="3clFbT" id="74HGF0nGHRi" role="3cqZAk">
+          <node concept="3clFbS" id="6II_l42mnED" role="3clFbx">
+            <node concept="3cpWs6" id="6II_l42mnEE" role="3cqZAp">
+              <node concept="3clFbT" id="6II_l42mnEF" role="3cqZAk">
                 <property role="3clFbU" value="true" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3SKdUt" id="74HGF0nFFJj" role="3cqZAp">
-          <node concept="3SKdUq" id="74HGF0nFFJt" role="3SKWNk">
+        <node concept="3SKdUt" id="6II_l42mnEG" role="3cqZAp">
+          <node concept="3SKdUq" id="6II_l42mnEH" role="3SKWNk">
             <property role="3SKdUp" value=" the previous node must be a GString command, otherwise, we cannot consume the output " />
           </node>
         </node>
-        <node concept="3clFbJ" id="74HGF0nGrtY" role="3cqZAp">
-          <node concept="2OqwBi" id="74HGF0nGtdv" role="3clFbw">
-            <node concept="3w_OXm" id="74HGF0nGueG" role="2OqNvi" />
-            <node concept="2OqwBi" id="74HGF0nGrLI" role="2Oq$k0">
-              <node concept="YBYNd" id="74HGF0nGsFt" role="2OqNvi" />
-              <node concept="EsrRn" id="74HGF0nGrH5" role="2Oq$k0" />
+        <node concept="3clFbJ" id="6II_l42mnEI" role="3cqZAp">
+          <node concept="2OqwBi" id="6II_l42mnEJ" role="3clFbw">
+            <node concept="3w_OXm" id="6II_l42mnEK" role="2OqNvi" />
+            <node concept="2OqwBi" id="6II_l42mnEL" role="2Oq$k0">
+              <node concept="YBYNd" id="6II_l42mnEM" role="2OqNvi" />
+              <node concept="EsrRn" id="6II_l42mnEN" role="2Oq$k0" />
             </node>
           </node>
-          <node concept="3clFbS" id="74HGF0nGru1" role="3clFbx">
-            <node concept="3cpWs6" id="74HGF0nGv4y" role="3cqZAp">
-              <node concept="3clFbT" id="74HGF0nGuuu" role="3cqZAk" />
+          <node concept="3clFbS" id="6II_l42mnEO" role="3clFbx">
+            <node concept="3cpWs6" id="6II_l42mnEP" role="3cqZAp">
+              <node concept="3clFbT" id="6II_l42mnEQ" role="3cqZAk" />
             </node>
           </node>
-          <node concept="9aQIb" id="74HGF0nGwQe" role="9aQIa">
-            <node concept="3clFbS" id="74HGF0nGwQf" role="9aQI4">
-              <node concept="3cpWs6" id="74HGF0nGzRz" role="3cqZAp">
-                <node concept="2OqwBi" id="74HGF0nFDHG" role="3cqZAk">
-                  <node concept="1mIQ4w" id="74HGF0nFFon" role="2OqNvi">
-                    <node concept="chp4Y" id="74HGF0nFFvk" role="cj9EA">
+          <node concept="9aQIb" id="6II_l42mnER" role="9aQIa">
+            <node concept="3clFbS" id="6II_l42mnES" role="9aQI4">
+              <node concept="3cpWs6" id="6II_l42mnET" role="3cqZAp">
+                <node concept="2OqwBi" id="6II_l42mnEU" role="3cqZAk">
+                  <node concept="1mIQ4w" id="6II_l42mnEV" role="2OqNvi">
+                    <node concept="chp4Y" id="6II_l42mnEW" role="cj9EA">
                       <ref role="cht4Q" to="4tvk:74HGF0nFnaW" resolve="GStringCommand" />
                     </node>
                   </node>
-                  <node concept="2OqwBi" id="74HGF0nFu$O" role="2Oq$k0">
-                    <node concept="YBYNd" id="74HGF0nFD8b" role="2OqNvi" />
-                    <node concept="EsrRn" id="74HGF0nFuwb" role="2Oq$k0" />
+                  <node concept="2OqwBi" id="6II_l42mnEX" role="2Oq$k0">
+                    <node concept="YBYNd" id="6II_l42mnEY" role="2OqNvi" />
+                    <node concept="EsrRn" id="6II_l42mnEZ" role="2Oq$k0" />
                   </node>
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="74HGF0nGwlI" role="3cqZAp" />
+        <node concept="3clFbH" id="6II_l42mnF0" role="3cqZAp" />
       </node>
     </node>
   </node>
