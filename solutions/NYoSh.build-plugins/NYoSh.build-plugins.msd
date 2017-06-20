@@ -19,7 +19,6 @@
   </languageVersions>
   <dependencyVersions>
     <module reference="db7b3503-2b94-491e-9afb-40ef2d987a04(NYoSh.build-plugins)" version="0" />
-    <module reference="458e7a44-300a-4712-95cd-255c2e0c289d(XChart.newBuild)" version="0" />
     <module reference="422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)" version="0" />
   </dependencyVersions>
 </solution>
