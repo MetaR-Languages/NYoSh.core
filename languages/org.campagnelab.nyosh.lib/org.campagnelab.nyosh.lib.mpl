@@ -19,12 +19,12 @@
       <sourceRoot location="slf4j-api-1.7.5.jar" />
       <sourceRoot location="scala-library-2.9.2.jar" />
       <sourceRoot location="org.campagnelab.stepslogger-1.1.0.jar" />
-      <sourceRoot location="serverside-dependencies-1.0.13-full.jar" />
       <sourceRoot location="filesets-1.3.3.jar" />
       <sourceRoot location="plugins-2.5.4.jar" />
       <sourceRoot location="nyosh-runtime-support-1.1.3.jar" />
       <sourceRoot location="artifacts-2.3.2.jar" />
     </modelRoot>
+    <modelRoot contentPath="${module}/serverside-dependencies-1.0.15-full-nolog.jar!" type="java_classes" />
   </models>
   <accessoryModels />
   <stubModelEntries>
@@ -42,11 +42,11 @@
     <stubModelEntry path="${module}/slf4j-api-1.7.5.jar" />
     <stubModelEntry path="${module}/scala-library-2.9.2.jar" />
     <stubModelEntry path="${module}/org.campagnelab.stepslogger-1.1.0.jar" />
-    <stubModelEntry path="${module}/serverside-dependencies-1.0.13-full.jar" />
     <stubModelEntry path="${module}/filesets-1.3.3.jar" />
     <stubModelEntry path="${module}/plugins-2.5.4.jar" />
     <stubModelEntry path="${module}/nyosh-runtime-support-1.1.3.jar" />
     <stubModelEntry path="${module}/artifacts-2.3.2.jar" />
+    <stubModelEntry path="${module}/serverside-dependencies-1.0.15-full-nolog.jar" />
   </stubModelEntries>
   <sourcePath />
   <languageVersions>
