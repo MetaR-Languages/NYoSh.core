@@ -39,7 +39,7 @@
         <version>${textoutput_version}</version>
         <vendor url="http://books.campagnelab.org">Campagne Laboratory</vendor>
         <depends>jetbrains.mps.core</depends>
-        <idea-version until-build="171.1" since-build="171.1342" />
+        <idea-version since-build="171.1" until-build="171.1342" />
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
