@@ -60,7 +60,9 @@
       <concept id="7389400916848050060" name="jetbrains.mps.build.structure.BuildLayout_NamedContainer" flags="ng" index="3981dR">
         <child id="4380385936562148502" name="containerName" index="Nbhlr" />
       </concept>
-      <concept id="7389400916848136194" name="jetbrains.mps.build.structure.BuildFolderMacro" flags="ng" index="398rNT" />
+      <concept id="7389400916848136194" name="jetbrains.mps.build.structure.BuildFolderMacro" flags="ng" index="398rNT">
+        <child id="7389400916848144618" name="defaultPath" index="398pKh" />
+      </concept>
       <concept id="7389400916848153117" name="jetbrains.mps.build.structure.BuildSourceMacroRelativePath" flags="ng" index="398BVA">
         <reference id="7389400916848153130" name="macro" index="398BVh" />
       </concept>
@@ -165,15 +167,41 @@
     </node>
     <node concept="10PD9b" id="2mFg1uCD9pt" role="10PD9s" />
     <node concept="3b7kt6" id="2mFg1uCD9pu" role="10PD9s" />
-    <node concept="398rNT" id="2mFg1uCD9pv" role="1l3spd">
+    <node concept="398rNT" id="5KK2jWpWo03" role="1l3spd">
       <property role="TrG5h" value="mps_home" />
+      <node concept="55IIr" id="75YEVFjbJdQ" role="398pKh">
+        <node concept="2Ry0Ak" id="75YEVFjbJeb" role="iGT6I">
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="75YEVFjbJew" role="2Ry0An">
+            <property role="2Ry0Am" value=".." />
+            <node concept="2Ry0Ak" id="75YEVFjbJeS" role="2Ry0An">
+              <property role="2Ry0Am" value=".." />
+              <node concept="2Ry0Ak" id="75YEVFjbJf4" role="2Ry0An">
+                <property role="2Ry0Am" value=".." />
+                <node concept="2Ry0Ak" id="75YEVFjbJfg" role="2Ry0An">
+                  <property role="2Ry0Am" value=".." />
+                  <node concept="2Ry0Ak" id="75YEVFjbJfT" role="2Ry0An">
+                    <property role="2Ry0Am" value="Applications" />
+                    <node concept="2Ry0Ak" id="75YEVFjbJgp" role="2Ry0An">
+                      <property role="2Ry0Am" value="MPS 2017.1.app" />
+                      <node concept="2Ry0Ak" id="75YEVFjbJgT" role="2Ry0An">
+                        <property role="2Ry0Am" value="Contents" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2kB4xC" id="7ZmC9JYEfXs" role="1l3spd">
       <property role="TrG5h" value="nyosh_version" />
       <node concept="aVJcg" id="7ZmC9JYEfXt" role="aVJcv">
         <node concept="NbPM2" id="7ZmC9JYEfXu" role="aVJcq">
           <node concept="3Mxwew" id="7ZmC9JYEfXv" role="3MwsjC">
-            <property role="3MwjfP" value="3.1.1" />
+            <property role="3MwjfP" value="3.1.2" />
           </node>
         </node>
       </node>
@@ -191,7 +219,7 @@
     <node concept="2sgV4H" id="2mFg1uCD9pw" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="2mFg1uCD9px" role="2JcizS">
-        <ref role="398BVh" node="2mFg1uCD9pv" resolve="mps_home" />
+        <ref role="398BVh" node="5KK2jWpWo03" resolve="mps_home" />
       </node>
     </node>
     <node concept="2sgV4H" id="2mFg1uCDdHK" role="1l3spa">
@@ -454,8 +482,8 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="8cuIHOBdLO" role="2Ry0An">
                   <property role="2Ry0Am" value="org.campagnelab.nyosh.lib" />
-                  <node concept="2Ry0Ak" id="4tpnhtOZoF1" role="2Ry0An">
-                    <property role="2Ry0Am" value="serverside-dependencies-1.0.13-full.jar" />
+                  <node concept="2Ry0Ak" id="3A7G9Ay0zl$" role="2Ry0An">
+                    <property role="2Ry0Am" value="serverside-dependencies-1.0.15-full-nolog.jar" />
                   </node>
                 </node>
               </node>
@@ -492,18 +520,18 @@
     </node>
     <node concept="m$_wf" id="2mFg1uCD9qh" role="3989C9">
       <property role="m$_wk" value="org.campagnelab.NYoSh" />
-      <node concept="2pNNFK" id="7ZmC9JYEfXQ" role="20twgj">
+      <node concept="2pNNFK" id="5ofm9qDUuFn" role="20twgj">
         <property role="2pNNFO" value="idea-version" />
-        <node concept="2pNUuL" id="7ZmC9JYEfXR" role="2pNNFR">
+        <node concept="2pNUuL" id="5ofm9qDUuFo" role="2pNNFR">
           <property role="2pNUuO" value="until-build" />
-          <node concept="2pMdtt" id="7ZmC9JYEfXS" role="2pMdts">
-            <property role="2pMdty" value="163.1" />
+          <node concept="2pMdtt" id="5ofm9qDUuFp" role="2pMdts">
+            <property role="2pMdty" value="171.1" />
           </node>
         </node>
-        <node concept="2pNUuL" id="7ZmC9JYEfXT" role="2pNNFR">
+        <node concept="2pNUuL" id="5ofm9qDUuFq" role="2pNNFR">
           <property role="2pNUuO" value="since-build" />
-          <node concept="2pMdtt" id="7ZmC9JYEfXU" role="2pMdts">
-            <property role="2pMdty" value="162.1616" />
+          <node concept="2pMdtt" id="5ofm9qDUuFr" role="2pMdts">
+            <property role="2pMdty" value="171.1342" />
           </node>
         </node>
       </node>
@@ -654,7 +682,7 @@
         </node>
       </node>
       <node concept="1E1JtD" id="2mFg1uCD9q3" role="2G$12L">
-        <property role="BnDLt" value="true" />
+        <property role="BnDLt" value="false" />
         <property role="TrG5h" value="org.campagnelab.nyosh.lib" />
         <property role="3LESm3" value="0202ed86-955d-4227-9c20-377dd6b1f9ff" />
         <property role="2GAjPV" value="false" />
@@ -894,21 +922,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="8cuIHODPK_" role="3bR37C">
-          <node concept="1BurEX" id="8cuIHODPKA" role="1SiIV1">
-            <node concept="55IIr" id="8cuIHODPKx" role="1BurEY">
-              <node concept="2Ry0Ak" id="8cuIHODPKy" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="8cuIHODPKz" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.campagnelab.nyosh.lib" />
-                  <node concept="2Ry0Ak" id="4tpnhtOZop1" role="2Ry0An">
-                    <property role="2Ry0Am" value="serverside-dependencies-1.0.13-full.jar" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1SiIV0" id="8cuIHODPKF" role="3bR37C">
           <node concept="1BurEX" id="8cuIHODPKG" role="1SiIV1">
             <node concept="55IIr" id="8cuIHODPKB" role="1BurEY">
@@ -948,6 +961,21 @@
                   <property role="2Ry0Am" value="org.campagnelab.nyosh.lib" />
                   <node concept="2Ry0Ak" id="4tpnhtOZorA" role="2Ry0An">
                     <property role="2Ry0Am" value="plugins-2.5.4.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="75YEVFjcM_K" role="3bR37C">
+          <node concept="1BurEX" id="75YEVFjcM_L" role="1SiIV1">
+            <node concept="55IIr" id="75YEVFjcM_G" role="1BurEY">
+              <node concept="2Ry0Ak" id="75YEVFjcM_H" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="75YEVFjcM_I" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.campagnelab.nyosh.lib" />
+                  <node concept="2Ry0Ak" id="75YEVFjcM_J" role="2Ry0An">
+                    <property role="2Ry0Am" value="serverside-dependencies-1.0.15-full-nolog.jar" />
                   </node>
                 </node>
               </node>

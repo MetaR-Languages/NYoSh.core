@@ -23,6 +23,7 @@
       <sourceRoot location="plugins-2.5.4.jar" />
       <sourceRoot location="nyosh-runtime-support-1.1.3.jar" />
       <sourceRoot location="artifacts-2.3.2.jar" />
+      <sourceRoot location="serverside-dependencies-1.0.15-full-nolog.jar" />
     </modelRoot>
     <modelRoot contentPath="${module}/serverside-dependencies-1.0.15-full-nolog.jar!" type="java_classes" />
   </models>

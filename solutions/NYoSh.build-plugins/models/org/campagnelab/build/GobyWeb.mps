@@ -161,8 +161,34 @@
     </node>
     <node concept="10PD9b" id="2mFg1uCEf5m" role="10PD9s" />
     <node concept="3b7kt6" id="2mFg1uCEf5n" role="10PD9s" />
-    <node concept="398rNT" id="2mFg1uCEf5o" role="1l3spd">
+    <node concept="398rNT" id="5KK2jWpWo03" role="1l3spd">
       <property role="TrG5h" value="mps_home" />
+      <node concept="55IIr" id="75YEVFjbJdQ" role="398pKh">
+        <node concept="2Ry0Ak" id="75YEVFjbJeb" role="iGT6I">
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="75YEVFjbJew" role="2Ry0An">
+            <property role="2Ry0Am" value=".." />
+            <node concept="2Ry0Ak" id="75YEVFjbJeS" role="2Ry0An">
+              <property role="2Ry0Am" value=".." />
+              <node concept="2Ry0Ak" id="75YEVFjbJf4" role="2Ry0An">
+                <property role="2Ry0Am" value=".." />
+                <node concept="2Ry0Ak" id="75YEVFjbJfg" role="2Ry0An">
+                  <property role="2Ry0Am" value=".." />
+                  <node concept="2Ry0Ak" id="75YEVFjbJfT" role="2Ry0An">
+                    <property role="2Ry0Am" value="Applications" />
+                    <node concept="2Ry0Ak" id="75YEVFjbJgp" role="2Ry0An">
+                      <property role="2Ry0Am" value="MPS 2017.1.app" />
+                      <node concept="2Ry0Ak" id="75YEVFjbJgT" role="2Ry0An">
+                        <property role="2Ry0Am" value="Contents" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="398rNT" id="2mFg1uCEf5r" role="1l3spd">
       <property role="TrG5h" value="org.campagnelab.xchart.home" />
@@ -193,7 +219,7 @@
       <node concept="aVJcg" id="2mFg1uCGkyp" role="aVJcv">
         <node concept="NbPM2" id="2mFg1uCGkyo" role="aVJcq">
           <node concept="3Mxwew" id="2mFg1uCGkyn" role="3MwsjC">
-            <property role="3MwjfP" value="3.0.0" />
+            <property role="3MwjfP" value="3.1.2" />
           </node>
         </node>
       </node>
@@ -201,7 +227,7 @@
     <node concept="2sgV4H" id="2mFg1uCEf5p" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="2mFg1uCEf5q" role="2JcizS">
-        <ref role="398BVh" node="2mFg1uCEf5o" resolve="mps_home" />
+        <ref role="398BVh" node="5KK2jWpWo03" resolve="mps_home" />
       </node>
     </node>
     <node concept="2sgV4H" id="2mFg1uCEfdP" role="1l3spa">
@@ -280,18 +306,18 @@
     </node>
     <node concept="m$_wf" id="2mFg1uCEf5Y" role="3989C9">
       <property role="m$_wk" value="org.campagnelab.GobyWeb" />
-      <node concept="2pNNFK" id="7ZmC9JYEfXQ" role="20twgj">
+      <node concept="2pNNFK" id="5ofm9qDUuFn" role="20twgj">
         <property role="2pNNFO" value="idea-version" />
-        <node concept="2pNUuL" id="7ZmC9JYEfXR" role="2pNNFR">
+        <node concept="2pNUuL" id="5ofm9qDUuFo" role="2pNNFR">
           <property role="2pNUuO" value="until-build" />
-          <node concept="2pMdtt" id="7ZmC9JYEfXS" role="2pMdts">
-            <property role="2pMdty" value="163.1" />
+          <node concept="2pMdtt" id="5ofm9qDUuFp" role="2pMdts">
+            <property role="2pMdty" value="171.1" />
           </node>
         </node>
-        <node concept="2pNUuL" id="7ZmC9JYEfXT" role="2pNNFR">
+        <node concept="2pNUuL" id="5ofm9qDUuFq" role="2pNNFR">
           <property role="2pNUuO" value="since-build" />
-          <node concept="2pMdtt" id="7ZmC9JYEfXU" role="2pMdts">
-            <property role="2pMdty" value="162.1616" />
+          <node concept="2pMdtt" id="5ofm9qDUuFr" role="2pMdts">
+            <property role="2pMdty" value="171.1342" />
           </node>
         </node>
       </node>
