@@ -10,8 +10,8 @@
     <dependency reexport="false">166cc73c-4d0f-4757-a007-8527cb58de2e(org.campagnelab.bio.species)</dependency>
   </dependencies>
   <languageVersions>
-    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" fqName="jetbrains.mps.lang.core" version="1" />
-    <language id="166cc73c-4d0f-4757-a007-8527cb58de2e" fqName="org.campagnelab.bio.species" version="0" />
+    <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
+    <language slang="l:166cc73c-4d0f-4757-a007-8527cb58de2e:org.campagnelab.bio.species" version="0" />
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
