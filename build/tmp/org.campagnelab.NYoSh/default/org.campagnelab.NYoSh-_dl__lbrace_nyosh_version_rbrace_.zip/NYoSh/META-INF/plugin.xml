@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idea-plugin version="2">
+  <id>org.campagnelab.NYoSh</id>
+  <name>org.campagnelab.NYoSh</name>
+  <description>NYoSh languages. This plugin is part of the NYoSh Analysis Workbench. See http://workbench.campagnelab.org for more information. Build number: 0</description>
+  <version>3.1.2</version>
+  <vendor url="http://workbench.campagnelab.org">Campagne Laboratory</vendor>
+  <depends>jetbrains.mps.core</depends>
+  <depends>com.intellij.modules.mps</depends>
+  <depends>org.campagnelab.mps.UI</depends>
+  <depends>org.campagnelab.logger</depends>
+  <depends>XChart</depends>
+  <idea-version since-build="172.1" until-build="172.1127" />
+  <extensions defaultExtensionNs="com.intellij">
+    <mps.LanguageLibrary dir="/languages" />
+  </extensions>
+</idea-plugin>
