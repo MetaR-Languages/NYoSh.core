@@ -202,6 +202,12 @@
         <ref role="398BVh" node="7LMuW1fRwEd" resolve="UI.artifacts" />
       </node>
     </node>
+    <node concept="2sgV4H" id="3wYGdvOSVVn" role="1l3spa">
+      <ref role="1l3spb" to="ffeo:5yMuYWFN8P1" resolve="mpsPlugins" />
+      <node concept="398BVA" id="2MC9FWpQkz3" role="2JcizS">
+        <ref role="398BVh" node="5KK2jWpWo03" resolve="mps_home" />
+      </node>
+    </node>
     <node concept="1l3spV" id="7ZmC9JYEfX$" role="1l3spN">
       <node concept="3981dG" id="7ZmC9JYEfX_" role="39821P">
         <node concept="3_J27D" id="7ZmC9JYEfXA" role="Nbhlr">

@@ -188,32 +188,6 @@
     </node>
     <node concept="398rNT" id="5KK2jWpWo03" role="1l3spd">
       <property role="TrG5h" value="mps_home" />
-      <node concept="55IIr" id="75YEVFjbJdQ" role="398pKh">
-        <node concept="2Ry0Ak" id="75YEVFjbJeb" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="75YEVFjbJew" role="2Ry0An">
-            <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="75YEVFjbJeS" role="2Ry0An">
-              <property role="2Ry0Am" value=".." />
-              <node concept="2Ry0Ak" id="75YEVFjbJf4" role="2Ry0An">
-                <property role="2Ry0Am" value=".." />
-                <node concept="2Ry0Ak" id="75YEVFjbJfg" role="2Ry0An">
-                  <property role="2Ry0Am" value=".." />
-                  <node concept="2Ry0Ak" id="75YEVFjbJfT" role="2Ry0An">
-                    <property role="2Ry0Am" value="Applications" />
-                    <node concept="2Ry0Ak" id="75YEVFjbJgp" role="2Ry0An">
-                      <property role="2Ry0Am" value="MPS 2017.1.app" />
-                      <node concept="2Ry0Ak" id="75YEVFjbJgT" role="2Ry0An">
-                        <property role="2Ry0Am" value="Contents" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="398rNT" id="2mFg1uCEWdZ" role="1l3spd">
       <property role="TrG5h" value="org.campagnelab.xchart.home" />
@@ -242,6 +216,17 @@
     </node>
     <node concept="2sgV4H" id="5$CBfkTUGzB" role="1l3spa">
       <ref role="1l3spb" to="5f6q:2mFg1uCEf5l" resolve="org.campagnelab.GobyWeb" />
+      <node concept="55IIr" id="2MC9FWpQCS8" role="2JcizS">
+        <node concept="2Ry0Ak" id="2MC9FWpQCU1" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="2MC9FWpQCU8" role="2Ry0An">
+            <property role="2Ry0Am" value="artifacts" />
+            <node concept="2Ry0Ak" id="2MC9FWpQCUf" role="2Ry0An">
+              <property role="2Ry0Am" value="org.campagnelab.GobyWeb" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2sgV4H" id="2mFg1uCEls6" role="1l3spa">
       <ref role="1l3spb" to="nr1s:2mFg1uCEgGu" resolve="org.campagnelab.TextOutput" />
@@ -301,6 +286,18 @@
     </node>
     <node concept="2sgV4H" id="75YEVFjbJFb" role="1l3spa">
       <ref role="1l3spb" to="vh2l:7XxitGzkyrh" resolve="XChart" />
+      <node concept="398BVA" id="2MC9FWpQt4J" role="2JcizS">
+        <ref role="398BVh" node="2mFg1uCEWdZ" resolve="org.campagnelab.xchart.home" />
+        <node concept="2Ry0Ak" id="2MC9FWpR0NB" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="2MC9FWpR0Pt" role="2Ry0An">
+            <property role="2Ry0Am" value="artifacts" />
+            <node concept="2Ry0Ak" id="2MC9FWpR0Px" role="2Ry0An">
+              <property role="2Ry0Am" value="XChart" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2sgV4H" id="2mFg1uCF3Hn" role="1l3spa">
       <ref role="1l3spb" to="1uca:2mFg1uCEYwg" resolve="org.campagnelab.ClusterConfig" />
