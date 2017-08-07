@@ -23,9 +23,6 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
-    <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
-      <concept id="1161622753914" name="jetbrains.mps.lang.sharedConcepts.structure.ConceptFunctionParameter_operationContext" flags="nn" index="1Q79dO" />
-    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
@@ -251,6 +248,12 @@
       <concept id="1140725362528" name="jetbrains.mps.lang.smodel.structure.Link_SetTargetOperation" flags="nn" index="2oxUTD">
         <child id="1140725362529" name="linkTarget" index="2oxUTC" />
       </concept>
+      <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
+        <child id="1145404616321" name="leftExpression" index="2JrQYb" />
+      </concept>
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
@@ -266,9 +269,6 @@
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
-      </concept>
-      <concept id="1172424058054" name="jetbrains.mps.lang.smodel.structure.ConceptRefExpression" flags="nn" index="3TUQnm">
-        <reference id="1172424100906" name="conceptDeclaration" index="3TV0OU" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -557,15 +557,23 @@
                   <node concept="3cpWsn" id="2wdLO7KhY3V" role="3cpWs9">
                     <property role="TrG5h" value="actions" />
                     <node concept="2YIFZM" id="6UhBBUSzLua" role="33vP2m">
-                      <ref role="37wK5l" to="zce0:~ModelActions.createChildNodeSubstituteActions(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.smodel.action.IChildNodeSetter,jetbrains.mps.smodel.IOperationContext):java.util.List" resolve="createChildNodeSubstituteActions" />
                       <ref role="1Pybhc" to="zce0:~ModelActions" resolve="ModelActions" />
+                      <ref role="37wK5l" to="zce0:~ModelActions.createChildNodeSubstituteActions(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SContainmentLink,org.jetbrains.mps.openapi.language.SAbstractConcept,jetbrains.mps.smodel.action.IChildNodeSetter,jetbrains.mps.openapi.editor.EditorContext):java.util.List" resolve="createChildNodeSubstituteActions" />
                       <node concept="2OqwBi" id="6UhBBUSzLub" role="37wK5m">
                         <node concept="3GMtW1" id="6UhBBUSzLuc" role="2Oq$k0" />
                         <node concept="1mfA1w" id="6UhBBUSzLud" role="2OqNvi" />
                       </node>
                       <node concept="3GMtW1" id="6UhBBUSzLue" role="37wK5m" />
-                      <node concept="3TUQnm" id="6UhBBUSzLuf" role="37wK5m">
-                        <ref role="3TV0OU" to="tpee:hGd03cG" resolve="BaseAssignmentExpression" />
+                      <node concept="2OqwBi" id="1xVV58hxrvp" role="37wK5m">
+                        <node concept="2JrnkZ" id="1xVV58hxqXk" role="2Oq$k0">
+                          <node concept="3GMtW1" id="1xVV58hxk0E" role="2JrQYb" />
+                        </node>
+                        <node concept="liA8E" id="1xVV58hxs9f" role="2OqNvi">
+                          <ref role="37wK5l" to="mhbf:~SNode.getContainmentLink():org.jetbrains.mps.openapi.language.SContainmentLink" resolve="getContainmentLink" />
+                        </node>
+                      </node>
+                      <node concept="35c_gC" id="1xVV58hxijG" role="37wK5m">
+                        <ref role="35c_gD" to="tpee:hGd03cG" resolve="BaseAssignmentExpression" />
                       </node>
                       <node concept="2ShNRf" id="6UhBBUSzLug" role="37wK5m">
                         <node concept="YeOm9" id="6UhBBUSzLuh" role="2ShVmc">
@@ -710,7 +718,7 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="1Q79dO" id="6UhBBUSzLv9" role="37wK5m" />
+                      <node concept="1Q80Hx" id="1xVV58hxp99" role="37wK5m" />
                     </node>
                     <node concept="3uibUv" id="2wdLO7KhY3W" role="1tU5fm">
                       <ref role="3uigEE" to="33ny:~List" resolve="List" />
