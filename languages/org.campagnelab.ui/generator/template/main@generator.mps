@@ -737,7 +737,7 @@
                                   <ref role="37wK5l" to="w1kc:~ModelAccess.instance():jetbrains.mps.smodel.ModelAccess" resolve="instance" />
                                 </node>
                                 <node concept="liA8E" id="1nhYb0FOxIR" role="2OqNvi">
-                                  <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runWriteActionInCommand(java.lang.Runnable):void" resolve="runWriteActionInCommand" />
+                                  <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runWriteAction(java.lang.Runnable):void" resolve="runWriteAction" />
                                   <node concept="2ShNRf" id="1nhYb0FOxIS" role="37wK5m">
                                     <node concept="YeOm9" id="1nhYb0FOxIT" role="2ShVmc">
                                       <node concept="1Y3b0j" id="1nhYb0FOxIU" role="YeSDq">

@@ -593,7 +593,7 @@
                               <ref role="1Pybhc" to="w1kc:~ModelAccess" resolve="ModelAccess" />
                             </node>
                             <node concept="liA8E" id="4W2aCPr8FRn" role="2OqNvi">
-                              <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runWriteActionInCommand(java.lang.Runnable):void" resolve="runWriteActionInCommand" />
+                              <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runWriteAction(java.lang.Runnable):void" resolve="runWriteAction" />
                               <node concept="37vLTw" id="1Ckq9OROjP8" role="37wK5m">
                                 <ref role="3cqZAo" node="1Ckq9OROaVz" resolve="callback" />
                               </node>
@@ -1024,7 +1024,7 @@
                             <ref role="37wK5l" to="w1kc:~ModelAccess.instance():jetbrains.mps.smodel.ModelAccess" resolve="instance" />
                           </node>
                           <node concept="liA8E" id="1Ckq9OShYYF" role="2OqNvi">
-                            <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runWriteActionInCommand(java.lang.Runnable):void" resolve="runWriteActionInCommand" />
+                            <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runWriteAction(java.lang.Runnable):void" resolve="runWriteAction" />
                             <node concept="37vLTw" id="1Ckq9OShZ7x" role="37wK5m">
                               <ref role="3cqZAo" node="1Ckq9OShOF2" resolve="callback" />
                             </node>
@@ -1237,7 +1237,7 @@
                             <ref role="1Pybhc" to="w1kc:~ModelAccess" resolve="ModelAccess" />
                           </node>
                           <node concept="liA8E" id="6eT7AXbeMKL" role="2OqNvi">
-                            <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runWriteActionInCommand(java.lang.Runnable):void" resolve="runWriteActionInCommand" />
+                            <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runWriteAction(java.lang.Runnable):void" resolve="runWriteAction" />
                             <node concept="37vLTw" id="6eT7AXbeMKM" role="37wK5m">
                               <ref role="3cqZAo" node="6eT7AXbeML2" resolve="callback" />
                             </node>

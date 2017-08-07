@@ -26,6 +26,7 @@
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
     <import index="u65r" ref="r:9e83cf56-72a5-4ab3-ab14-b980b399f4ca(jetbrains.mps.lang.behavior.generator.template.util)" />
     <import index="djk9" ref="r:229ce18d-2bb0-4d5b-a7cd-cec65841e459(jetbrains.mps.lang.behavior.generator.template.main@generator)" />
+    <import index="cttk" ref="r:5ff047e0-2953-4750-806a-bdc16824aa89(jetbrains.mps.smodel)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
@@ -571,7 +572,7 @@
                                 <ref role="37wK5l" to="w1kc:~ModelAccess.instance():jetbrains.mps.smodel.ModelAccess" resolve="instance" />
                               </node>
                               <node concept="liA8E" id="58qBS$fPTUm" role="2OqNvi">
-                                <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runWriteActionInCommand(java.lang.Runnable):void" resolve="runWriteActionInCommand" />
+                                <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runWriteAction(java.lang.Runnable):void" resolve="runWriteAction" />
                                 <node concept="2ShNRf" id="58qBS$fPU5F" role="37wK5m">
                                   <node concept="YeOm9" id="58qBS$fPUSH" role="2ShVmc">
                                     <node concept="1Y3b0j" id="58qBS$fPUSK" role="YeSDq">
@@ -726,7 +727,7 @@
                                 <ref role="37wK5l" to="w1kc:~ModelAccess.instance():jetbrains.mps.smodel.ModelAccess" resolve="instance" />
                               </node>
                               <node concept="liA8E" id="7IHRkpOqpaw" role="2OqNvi">
-                                <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runWriteActionInCommand(java.lang.Runnable):void" resolve="runWriteActionInCommand" />
+                                <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runWriteAction(java.lang.Runnable):void" resolve="runWriteAction" />
                                 <node concept="2ShNRf" id="7IHRkpOqpax" role="37wK5m">
                                   <node concept="YeOm9" id="7IHRkpOqpay" role="2ShVmc">
                                     <node concept="1Y3b0j" id="7IHRkpOqpaz" role="YeSDq">
@@ -1330,7 +1331,7 @@
                                 <ref role="37wK5l" to="w1kc:~ModelAccess.instance():jetbrains.mps.smodel.ModelAccess" resolve="instance" />
                               </node>
                               <node concept="liA8E" id="8AY3wOoBKN" role="2OqNvi">
-                                <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runWriteActionInCommand(java.lang.Runnable):void" resolve="runWriteActionInCommand" />
+                                <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runWriteAction(java.lang.Runnable):void" resolve="runWriteAction" />
                                 <node concept="2ShNRf" id="8AY3wOoBKO" role="37wK5m">
                                   <node concept="YeOm9" id="8AY3wOoBKP" role="2ShVmc">
                                     <node concept="1Y3b0j" id="8AY3wOoBKQ" role="YeSDq">
@@ -1485,7 +1486,7 @@
                                 <ref role="37wK5l" to="w1kc:~ModelAccess.instance():jetbrains.mps.smodel.ModelAccess" resolve="instance" />
                               </node>
                               <node concept="liA8E" id="8AY3wOoBLU" role="2OqNvi">
-                                <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runWriteActionInCommand(java.lang.Runnable):void" resolve="runWriteActionInCommand" />
+                                <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runWriteAction(java.lang.Runnable):void" resolve="runWriteAction" />
                                 <node concept="2ShNRf" id="8AY3wOoBLV" role="37wK5m">
                                   <node concept="YeOm9" id="8AY3wOoBLW" role="2ShVmc">
                                     <node concept="1Y3b0j" id="8AY3wOoBLX" role="YeSDq">
