@@ -10,6 +10,7 @@
   <property name="artifacts.mpsCore" location="${mps_home}" />
   <property name="artifacts.mps" location="${mps_home}" />
   <property name="artifacts.org.campagnelab.mps.UI" location="${UI.artifacts}" />
+  <property name="artifacts.mpsPlugins" location="${mps_home}" />
   <property file="${artifacts.mpsCore}/build.properties" prefix="import.mpsCore" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property file="${artifacts.org.campagnelab.mps.UI}/build.properties" prefix="import.org.campagnelab.mps.UI" />
