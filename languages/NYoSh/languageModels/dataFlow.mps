@@ -2,8 +2,7 @@
 <model ref="r:44ac686c-848f-4e26-a474-0f122990548f(org.campagnelab.NYoSh.dataFlow)">
   <persistence version="9" />
   <languages>
-    <use id="7fa12e9c-b949-4976-b4fa-19accbc320b4" name="jetbrains.mps.lang.dataFlow" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-443879f56b80(jetbrains.mps.devkit.aspect.dataflow)" />
   </languages>
   <imports>
     <import index="4tvk" ref="r:70e37d76-af49-4a32-9523-a01860ff8f1c(org.campagnelab.NYoSh.structure)" />
@@ -75,7 +74,7 @@
           <node concept="2OqwBi" id="3n2EVISYHgh" role="3_H1SZ">
             <node concept="3__QtB" id="3n2EVISYH8j" role="2Oq$k0" />
             <node concept="3TrEf2" id="3n2EVISYIu6" role="2OqNvi">
-              <ref role="3Tt5mk" to="4tvk:3kQl0Gu9bj3" />
+              <ref role="3Tt5mk" to="4tvk:3kQl0Gu9bj3" resolve="variable" />
             </node>
           </node>
         </node>
@@ -93,7 +92,7 @@
           <node concept="2OqwBi" id="LXNW8y0KAz" role="2GsD0m">
             <node concept="3__QtB" id="LXNW8y0KtJ" role="2Oq$k0" />
             <node concept="3Tsc0h" id="LXNW8y0M0I" role="2OqNvi">
-              <ref role="3TtcxE" to="4tvk:JisDMEUBsb" />
+              <ref role="3TtcxE" to="4tvk:JisDMEUBsb" resolve="commands" />
             </node>
           </node>
           <node concept="3clFbS" id="LXNW8y0KqG" role="2LFqv$">
@@ -116,7 +115,7 @@
           <node concept="2OqwBi" id="2pht9ZtMBSL" role="3Ah4Yx">
             <node concept="3__QtB" id="2pht9ZtMBR8" role="2Oq$k0" />
             <node concept="3TrEf2" id="2pht9ZtMC2_" role="2OqNvi">
-              <ref role="3Tt5mk" to="4tvk:74HGF0nFnbs" />
+              <ref role="3Tt5mk" to="4tvk:74HGF0nFnbs" resolve="command" />
             </node>
           </node>
         </node>
@@ -131,7 +130,7 @@
           <node concept="2OqwBi" id="3qLImriUIZz" role="3_H1SZ">
             <node concept="3__QtB" id="3qLImriUIQJ" role="2Oq$k0" />
             <node concept="3TrEf2" id="3qLImriUKqd" role="2OqNvi">
-              <ref role="3Tt5mk" to="4tvk:3qLImriNhVl" />
+              <ref role="3Tt5mk" to="4tvk:3qLImriNhVl" resolve="expression" />
             </node>
           </node>
         </node>

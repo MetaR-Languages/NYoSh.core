@@ -2,11 +2,10 @@
 <model ref="r:272d8028-7088-4c61-9b88-b1a006aec789(org.campagnelab.logger.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="d8f591ec-4d86-4af2-9f92-a9e93c803ffa" name="jetbrains.mps.lang.scopes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
     <import index="whle" ref="r:8e4fd1b7-1955-43a4-ace6-aaf9d13814f8(org.campagnelab.logger.structure)" />
@@ -209,7 +208,7 @@
                 <ref role="1YBMHb" node="5T5HpHOBlYV" resolve="logStatement" />
               </node>
               <node concept="3TrEf2" id="5T5HpHOBz7F" role="2OqNvi">
-                <ref role="3Tt5mk" to="whle:5T5HpHOBfTg" />
+                <ref role="3Tt5mk" to="whle:5T5HpHOBfTg" resolve="exception" />
               </node>
             </node>
           </node>
@@ -231,7 +230,7 @@
                 <ref role="1YBMHb" node="5T5HpHOBlYV" resolve="logStatement" />
               </node>
               <node concept="3TrEf2" id="1EUvP1fHbGS" role="2OqNvi">
-                <ref role="3Tt5mk" to="whle:1EUvP1fGTNL" />
+                <ref role="3Tt5mk" to="whle:1EUvP1fGTNL" resolve="message" />
               </node>
             </node>
           </node>
@@ -345,7 +344,7 @@
                         <ref role="3cqZAo" node="_OOZD5pO0g" resolve="aDeclaration" />
                       </node>
                       <node concept="3TrEf2" id="_OOZD5qbGJ" role="2OqNvi">
-                        <ref role="3Tt5mk" to="tpee:fzclF7Z" />
+                        <ref role="3Tt5mk" to="tpee:fzclF7Z" resolve="body" />
                       </node>
                     </node>
                   </node>
@@ -457,7 +456,7 @@
                           <ref role="3cqZAo" node="_OOZD5pQ4p" resolve="function" />
                         </node>
                         <node concept="3TrEf2" id="_OOZD5qaNc" role="2OqNvi">
-                          <ref role="3Tt5mk" to="tpee:gyVODHa" />
+                          <ref role="3Tt5mk" to="tpee:gyVODHa" resolve="body" />
                         </node>
                       </node>
                     </node>
@@ -504,7 +503,7 @@
                 <ref role="QwW4h" node="_OOZD5pRLy" resolve="body" />
               </node>
               <node concept="3Tsc0h" id="_OOZD5pSAl" role="2OqNvi">
-                <ref role="3TtcxE" to="tpee:fzcqZ_x" />
+                <ref role="3TtcxE" to="tpee:fzcqZ_x" resolve="statement" />
               </node>
             </node>
             <node concept="1sK_Qi" id="_OOZD5pULX" role="2OqNvi">

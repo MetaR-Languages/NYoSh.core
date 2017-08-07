@@ -2,8 +2,7 @@
 <model ref="r:d8f3c181-7016-4884-8899-ecb379f8f4ae(org.campagnelab.background.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
@@ -169,7 +168,7 @@
                                 <ref role="3cqZAo" node="279h23BnZa9" resolve="it" />
                               </node>
                               <node concept="3TrEf2" id="71yY3teXX9Z" role="2OqNvi">
-                                <ref role="3Tt5mk" to="tpee:fzcqZ_w" />
+                                <ref role="3Tt5mk" to="tpee:fzcqZ_w" resolve="variableDeclaration" />
                               </node>
                             </node>
                           </node>
@@ -182,7 +181,7 @@
                               <ref role="3cqZAo" node="279h23BnZa9" resolve="it" />
                             </node>
                             <node concept="3TrEf2" id="279h23Bo2l9" role="2OqNvi">
-                              <ref role="3Tt5mk" to="tpee:fzcqZ_w" />
+                              <ref role="3Tt5mk" to="tpee:fzcqZ_w" resolve="variableDeclaration" />
                             </node>
                           </node>
                           <node concept="3TrcHB" id="279h23Bo2la" role="2OqNvi">
@@ -218,7 +217,7 @@
                             <ref role="3cqZAo" node="279h23Bo38N" resolve="it" />
                           </node>
                           <node concept="3TrEf2" id="279h23Bo88z" role="2OqNvi">
-                            <ref role="3Tt5mk" to="tpee:fzcqZ_w" />
+                            <ref role="3Tt5mk" to="tpee:fzcqZ_w" resolve="variableDeclaration" />
                           </node>
                         </node>
                         <node concept="3TrcHB" id="279h23Bo9cU" role="2OqNvi">
@@ -232,7 +231,7 @@
                       <ref role="3cqZAo" node="279h23Bo38N" resolve="it" />
                     </node>
                     <node concept="3TrEf2" id="279h23BocX7" role="2OqNvi">
-                      <ref role="3Tt5mk" to="tpee:fzcqZ_w" />
+                      <ref role="3Tt5mk" to="tpee:fzcqZ_w" resolve="variableDeclaration" />
                     </node>
                   </node>
                 </node>

@@ -2,8 +2,7 @@
 <model ref="r:18259bbf-af0f-44d6-a29a-ae061fdfb404(org.campagnelab.background.dataFlow)">
   <persistence version="9" />
   <languages>
-    <use id="7fa12e9c-b949-4976-b4fa-19accbc320b4" name="jetbrains.mps.lang.dataFlow" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-443879f56b80(jetbrains.mps.devkit.aspect.dataflow)" />
   </languages>
   <imports>
     <import index="t7r0" ref="r:0183dfe7-c89b-489d-9eb7-d9e9cc58aaef(org.campagnelab.background.structure)" implicit="true" />
@@ -52,7 +51,7 @@
           <node concept="2OqwBi" id="279h23BogeT" role="3Ah4Yx">
             <node concept="3__QtB" id="279h23Bogce" role="2Oq$k0" />
             <node concept="3TrEf2" id="279h23BogHU" role="2OqNvi">
-              <ref role="3Tt5mk" to="t7r0:279h23Bc6Ml" />
+              <ref role="3Tt5mk" to="t7r0:279h23Bc6Ml" resolve="task" />
             </node>
           </node>
         </node>
@@ -62,7 +61,7 @@
               <node concept="2OqwBi" id="279h23BohDv" role="3Ah4Yx">
                 <node concept="3__QtB" id="279h23BohAO" role="2Oq$k0" />
                 <node concept="3TrEf2" id="279h23Boi6z" role="2OqNvi">
-                  <ref role="3Tt5mk" to="t7r0:279h23BceRJ" />
+                  <ref role="3Tt5mk" to="t7r0:279h23BceRJ" resolve="onCancel" />
                 </node>
               </node>
             </node>
@@ -71,7 +70,7 @@
             <node concept="2OqwBi" id="279h23Boi$7" role="2Oq$k0">
               <node concept="3__QtB" id="279h23BoiwT" role="2Oq$k0" />
               <node concept="3TrEf2" id="279h23Boj1b" role="2OqNvi">
-                <ref role="3Tt5mk" to="t7r0:279h23BceRJ" />
+                <ref role="3Tt5mk" to="t7r0:279h23BceRJ" resolve="onCancel" />
               </node>
             </node>
             <node concept="3x8VRR" id="279h23BojZV" role="2OqNvi" />
@@ -83,7 +82,7 @@
               <node concept="2OqwBi" id="279h23Bokb0" role="3Ah4Yx">
                 <node concept="3__QtB" id="279h23Bokb1" role="2Oq$k0" />
                 <node concept="3TrEf2" id="279h23Bol05" role="2OqNvi">
-                  <ref role="3Tt5mk" to="t7r0:279h23Bc6Mn" />
+                  <ref role="3Tt5mk" to="t7r0:279h23Bc6Mn" resolve="onSuccess" />
                 </node>
               </node>
             </node>
@@ -92,7 +91,7 @@
             <node concept="2OqwBi" id="279h23Bokb4" role="2Oq$k0">
               <node concept="3__QtB" id="279h23Bokb5" role="2Oq$k0" />
               <node concept="3TrEf2" id="279h23BokHO" role="2OqNvi">
-                <ref role="3Tt5mk" to="t7r0:279h23Bc6Mn" />
+                <ref role="3Tt5mk" to="t7r0:279h23Bc6Mn" resolve="onSuccess" />
               </node>
             </node>
             <node concept="3x8VRR" id="279h23Bokb7" role="2OqNvi" />

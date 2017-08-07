@@ -2,9 +2,8 @@
 <model ref="r:e618e956-0c84-4039-ab80-cbc1a71a63e1(org.campagnelab.nyosh.gstring.dataFlow)">
   <persistence version="9" />
   <languages>
-    <use id="7fa12e9c-b949-4976-b4fa-19accbc320b4" name="jetbrains.mps.lang.dataFlow" version="0" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-443879f56b80(jetbrains.mps.devkit.aspect.dataflow)" />
   </languages>
   <imports>
     <import index="f2ff" ref="r:48d5f7d2-24be-4d82-ac12-8f4a2d414b11(org.campagnelab.nyosh.gstring.structure)" implicit="true" />
@@ -100,7 +99,7 @@
             <node concept="2OqwBi" id="2pht9ZtLJT9" role="2Oq$k0">
               <node concept="3__QtB" id="2pht9ZtLJRy" role="2Oq$k0" />
               <node concept="3Tsc0h" id="2pht9ZtLK3z" role="2OqNvi">
-                <ref role="3TtcxE" to="f2ff:Scn7avjSyV" />
+                <ref role="3TtcxE" to="f2ff:Scn7avjSyV" resolve="components" />
               </node>
             </node>
             <node concept="2es0OD" id="2pht9ZtLLKT" role="2OqNvi">
@@ -129,7 +128,7 @@
                 <node concept="2OqwBi" id="21hSxQd8Nid" role="2Oq$k0">
                   <node concept="3__QtB" id="21hSxQd8Nb5" role="2Oq$k0" />
                   <node concept="3Tsc0h" id="21hSxQd8XKW" role="2OqNvi">
-                    <ref role="3TtcxE" to="f2ff:Scn7avjSyV" />
+                    <ref role="3TtcxE" to="f2ff:Scn7avjSyV" resolve="components" />
                   </node>
                 </node>
                 <node concept="UnYns" id="21hSxQd9fgY" role="2OqNvi">
@@ -147,7 +146,7 @@
                           <ref role="3cqZAo" node="21hSxQd9pqP" resolve="var" />
                         </node>
                         <node concept="3TrEf2" id="21hSxQd9uFW" role="2OqNvi">
-                          <ref role="3Tt5mk" to="f2ff:3yTLPkAUjD7" />
+                          <ref role="3Tt5mk" to="f2ff:3yTLPkAUjD7" resolve="varRef" />
                         </node>
                       </node>
                     </node>
@@ -172,7 +171,7 @@
           <node concept="2OqwBi" id="2pht9ZtMw_h" role="3_H1SZ">
             <node concept="3__QtB" id="2pht9ZtMwzq" role="2Oq$k0" />
             <node concept="3TrEf2" id="2pht9ZtMwIX" role="2OqNvi">
-              <ref role="3Tt5mk" to="f2ff:3yTLPkAUjD7" />
+              <ref role="3Tt5mk" to="f2ff:3yTLPkAUjD7" resolve="varRef" />
             </node>
           </node>
         </node>
