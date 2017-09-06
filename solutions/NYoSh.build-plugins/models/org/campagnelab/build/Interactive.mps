@@ -347,18 +347,18 @@
     </node>
     <node concept="m$_wf" id="2mFg1uCEWfc" role="3989C9">
       <property role="m$_wk" value="org.campagnelab.Interactive" />
-      <node concept="2pNNFK" id="3A7G9Ay8FUg" role="20twgj">
+      <node concept="2pNNFK" id="47TYt$YgYQW" role="20twgj">
         <property role="2pNNFO" value="idea-version" />
-        <node concept="2pNUuL" id="3A7G9Ay8FUh" role="2pNNFR">
+        <node concept="2pNUuL" id="47TYt$YgYQX" role="2pNNFR">
           <property role="2pNUuO" value="since-build" />
-          <node concept="2pMdtt" id="3A7G9Ay8FUi" role="2pMdts">
-            <property role="2pMdty" value="171.1" />
+          <node concept="2pMdtt" id="47TYt$YgYQY" role="2pMdts">
+            <property role="2pMdty" value="172.1" />
           </node>
         </node>
-        <node concept="2pNUuL" id="3A7G9Ay8FUj" role="2pNNFR">
+        <node concept="2pNUuL" id="47TYt$YgYQZ" role="2pNNFR">
           <property role="2pNUuO" value="until-build" />
-          <node concept="2pMdtt" id="3A7G9Ay8FUk" role="2pMdts">
-            <property role="2pMdty" value="171.1342" />
+          <node concept="2pMdtt" id="47TYt$YgYR0" role="2pMdts">
+            <property role="2pMdty" value="172.1256" />
           </node>
         </node>
       </node>
