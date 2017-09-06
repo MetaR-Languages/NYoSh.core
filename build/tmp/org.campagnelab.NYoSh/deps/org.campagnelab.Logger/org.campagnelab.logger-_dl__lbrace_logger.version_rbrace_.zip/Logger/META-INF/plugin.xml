@@ -8,7 +8,7 @@
   <depends>jetbrains.mps.core</depends>
   <depends>jetbrains.mps.build</depends>
   <depends>org.campagnelab.mps.UI</depends>
-  <idea-version since-build="171.1" until-build="171.1342" />
+  <idea-version since-build="172.1" until-build="172.1127" />
   <extensions defaultExtensionNs="com.intellij">
     <mps.LanguageLibrary dir="/languages" />
   </extensions>
