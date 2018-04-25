@@ -8,7 +8,7 @@
     <use id="a21a7294-c126-4f63-8335-8fecd8c28c7e" name="org.campagnelab.NYoSh" version="0" />
     <use id="289fcc83-6543-41e8-a5ca-768235715ce4" name="jetbrains.mps.lang.generator.generationParameters" version="0" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
     <engage id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" />
     <engage id="0202ed86-955d-4227-9c20-377dd6b1f9ff" name="org.campagnelab.nyosh.lib" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -24,6 +24,7 @@
     <import index="7hgv" ref="0202ed86-955d-4227-9c20-377dd6b1f9ff/java:org.campagnelab.nyosh.exec(org.campagnelab.nyosh.lib/)" />
     <import index="ar8u" ref="0202ed86-955d-4227-9c20-377dd6b1f9ff/java:org.campagnelab.stepslogger(org.campagnelab.nyosh.lib/)" />
     <import index="s3cx" ref="0202ed86-955d-4227-9c20-377dd6b1f9ff/java:org.campagnelab.nyosh.logging(org.campagnelab.nyosh.lib/)" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -374,6 +375,7 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1173122760281" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorsOperation" flags="nn" index="z$bX8" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
@@ -727,11 +729,14 @@
             <node concept="3zFVjK" id="6P11ZzXaf5K" role="3zH0cK">
               <node concept="3clFbS" id="6P11ZzXaf5L" role="2VODD2">
                 <node concept="3clFbF" id="6P11ZzXaf5R" role="3cqZAp">
-                  <node concept="2OqwBi" id="6P11ZzXaf5M" role="3clFbG">
-                    <node concept="3TrcHB" id="6P11ZzXaf5P" role="2OqNvi">
-                      <ref role="3TsBF5" to="tpck:gOOYy9I" resolve="alias" />
+                  <node concept="2OqwBi" id="1UyvKhbj1$4" role="3clFbG">
+                    <node concept="2OqwBi" id="6P11ZzXaf5M" role="2Oq$k0">
+                      <node concept="2yIwOk" id="1UyvKhbj0Yx" role="2OqNvi" />
+                      <node concept="30H73N" id="6P11ZzXaf5Q" role="2Oq$k0" />
                     </node>
-                    <node concept="30H73N" id="6P11ZzXaf5Q" role="2Oq$k0" />
+                    <node concept="liA8E" id="1UyvKhbj2WI" role="2OqNvi">
+                      <ref role="37wK5l" to="c17a:~SAbstractConcept.getConceptAlias():java.lang.String" resolve="getConceptAlias" />
+                    </node>
                   </node>
                 </node>
               </node>

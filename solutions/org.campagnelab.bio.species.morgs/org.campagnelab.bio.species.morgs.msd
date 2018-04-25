@@ -19,8 +19,6 @@
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
-    <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
-    <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
     <module reference="166cc73c-4d0f-4757-a007-8527cb58de2e(org.campagnelab.bio.species)" version="0" />
     <module reference="d0df1055-918a-4cf9-96f9-effded676ae2(org.campagnelab.bio.species.morgs)" version="0" />
   </dependencyVersions>
