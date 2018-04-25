@@ -23,6 +23,7 @@
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
       <concept id="1225194240794" name="jetbrains.mps.lang.behavior.structure.ConceptBehavior" flags="ng" index="13h7C7">
+        <reference id="1225194240799" name="concept" index="13h7C2" />
         <child id="1225194240805" name="method" index="13h7CS" />
         <child id="1225194240801" name="constructor" index="13h7CW" />
       </concept>
@@ -212,6 +213,7 @@
     <property role="TrG5h" value="reduce_LogInit" />
     <ref role="3gUMe" to="whle:5T5HpHOBVGj" resolve="LogInit" />
     <node concept="13h7C7" id="5T5HpHOC2aH" role="13RCb5">
+      <ref role="13h7C2" to="whle:5T5HpHOBVGj" resolve="LogInit" />
       <node concept="13i0hz" id="5T5HpHOC2aN" role="13h7CS">
         <property role="TrG5h" value="method" />
         <node concept="3cqZAl" id="5T5HpHOC2aT" role="3clF45" />
@@ -264,6 +266,7 @@
     <property role="TrG5h" value="reduce_LogStatement_noException" />
     <ref role="3gUMe" to="whle:5T5HpHOBbua" resolve="LogStatement" />
     <node concept="13h7C7" id="5T5HpHOC346" role="13RCb5">
+      <ref role="13h7C2" to="whle:5T5HpHOBbua" resolve="LogStatement" />
       <node concept="13i0hz" id="5T5HpHOC34f" role="13h7CS">
         <property role="TrG5h" value="method" />
         <node concept="3cqZAl" id="5T5HpHOC34l" role="3clF45" />
@@ -417,6 +420,7 @@
     <property role="TrG5h" value="reduceLogStatement_withException" />
     <ref role="3gUMe" to="whle:5T5HpHOBbua" resolve="LogStatement" />
     <node concept="13h7C7" id="5T5HpHODicp" role="13RCb5">
+      <ref role="13h7C2" to="whle:5T5HpHOBbua" resolve="LogStatement" />
       <node concept="13i0hz" id="5T5HpHODicq" role="13h7CS">
         <property role="TrG5h" value="method" />
         <node concept="3cqZAl" id="5T5HpHODicr" role="3clF45" />
