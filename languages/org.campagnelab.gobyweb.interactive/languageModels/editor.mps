@@ -1418,9 +1418,6 @@
         <property role="2czwfO" value="," />
         <ref role="1NtTu8" to="bs99:1msVhua4SB9" resolve="versions" />
         <node concept="2iRfu4" id="1msVhua4Tkh" role="2czzBx" />
-        <node concept="pj6Ft" id="1msVhua4Tki" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
       </node>
       <node concept="2iRfu4" id="1msVhua4Tkj" role="2iSdaV" />
       <node concept="3F0ifn" id="1msVhua4Tkk" role="3EZMnx">
