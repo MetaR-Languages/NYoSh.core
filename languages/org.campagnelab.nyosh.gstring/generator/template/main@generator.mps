@@ -3,9 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
     <use id="c6567f13-87ab-4686-8f6f-42e8228c0e27" name="org.campagnelab.nyosh.gstring" version="0" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -221,7 +219,7 @@
                       <node concept="3clFbF" id="2pa0lGsX1Mo" role="3cqZAp">
                         <node concept="2OqwBi" id="2pa0lGsX1Mj" role="3clFbG">
                           <node concept="3TrEf2" id="2pa0lGsX1Mm" role="2OqNvi">
-                            <ref role="3Tt5mk" to="f2ff:3yTLPkAUjD7" />
+                            <ref role="3Tt5mk" to="f2ff:3yTLPkAUjD7" resolve="varRef" />
                           </node>
                           <node concept="30H73N" id="2pa0lGsX1Mn" role="2Oq$k0" />
                         </node>
@@ -249,7 +247,7 @@
               <node concept="3clFbF" id="2pa0lGsYAQ$" role="3cqZAp">
                 <node concept="2OqwBi" id="2pa0lGsYAQv" role="3clFbG">
                   <node concept="3Tsc0h" id="2pa0lGsYAQy" role="2OqNvi">
-                    <ref role="3TtcxE" to="f2ff:Scn7avjSyV" />
+                    <ref role="3TtcxE" to="f2ff:Scn7avjSyV" resolve="components" />
                   </node>
                   <node concept="30H73N" id="2pa0lGsYAQz" role="2Oq$k0" />
                 </node>
