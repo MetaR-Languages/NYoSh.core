@@ -3,5 +3,8 @@
   <plan id="AspectCPS">
     <checkpoint id="DescriptorClasses" file="aspectcps-descriptorclasses.mps" />
   </plan>
+  <plan id="AspectCPS">
+    <checkpoint id="BeforeBaseLang" file="aspectcps-beforebaselang.mps" />
+  </plan>
 </checkpoints>
 

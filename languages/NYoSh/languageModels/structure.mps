@@ -12,6 +12,11 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
+      <concept id="5177162104569058199" name="jetbrains.mps.lang.resources.structure.HelpURL" flags="ng" index="1sEMCm">
+        <property id="5177162104569058200" name="url" index="1sEMCp" />
+      </concept>
+    </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
         <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
@@ -23,12 +28,12 @@
         <property id="1083923523171" name="internalValue" index="1uS6qv" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
-        <property id="2465654535473034588" name="helpURL" index="2Bxbrw" />
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <child id="1780177113170204155" name="helpURL" index="bvy1s" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -154,11 +159,13 @@
   <node concept="1TIwiD" id="4gbLFFZBbZl">
     <property role="TrG5h" value="PipeOutCommandOperator" />
     <property role="34LRSv" value="|" />
-    <property role="2Bxbrw" value="http://goby.campagnelab.org" />
     <property role="3GE5qa" value="commandOperators" />
     <property role="R4oN_" value="connect two commands in a pipe" />
     <property role="EcuMT" value="4903231125777596373" />
     <ref role="1TJDcQ" node="4gbLFFZBwqO" resolve="BinaryCommandOperator" />
+    <node concept="1sEMCm" id="5kcpuH7ZntW" role="bvy1s">
+      <property role="1sEMCp" value="http://goby.campagnelab.org" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4gbLFFZBwqO">
     <property role="TrG5h" value="BinaryCommandOperator" />
@@ -210,11 +217,13 @@
   <node concept="1TIwiD" id="1WNO2MfNNv8">
     <property role="TrG5h" value="PipeOutErrCommandOperator" />
     <property role="34LRSv" value="|&amp;" />
-    <property role="2Bxbrw" value="http://goby.campagnelab.org" />
     <property role="3GE5qa" value="commandOperators" />
     <property role="R4oN_" value="redirect errors to next command" />
     <property role="EcuMT" value="2248369528797870024" />
     <ref role="1TJDcQ" node="4gbLFFZBwqO" resolve="BinaryCommandOperator" />
+    <node concept="1sEMCm" id="5kcpuH7ZntV" role="bvy1s">
+      <property role="1sEMCp" value="http://goby.campagnelab.org" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5VDr8PeyJqW">
     <property role="TrG5h" value="ChangeDirectory" />

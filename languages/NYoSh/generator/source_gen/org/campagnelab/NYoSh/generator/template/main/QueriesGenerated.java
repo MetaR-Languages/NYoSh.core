@@ -112,7 +112,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return ListSequence.fromList(SModelOperations.roots(_context.getOriginalInputModel(), MetaAdapterFactory.getConcept(0xa21a7294c1264f63L, 0x83358fecd8c28c7eL, 0x7744411300250a44L, "org.campagnelab.NYoSh.structure.ErrorManagement"))).isEmpty();
   }
   public static Object propertyMacro_GetPropertyValue_7872582389600940400(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL, 0x10d34fa226eL, "alias"));
+    return SNodeOperations.getConcept(_context.getNode()).getConceptAlias();
   }
   public static Object propertyMacro_GetPropertyValue_435930706556389111(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0xa21a7294c1264f63L, 0x83358fecd8c28c7eL, 0x60cbcaafef4d644L, 0x60cbcaafef4d645L, "description"));
