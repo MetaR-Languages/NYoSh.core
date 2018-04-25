@@ -1387,9 +1387,6 @@
             <property role="VOm3f" value="true" />
           </node>
           <node concept="2iRkQZ" id="1msVhua4Tk5" role="2czzBx" />
-          <node concept="pj6Ft" id="1msVhua4Tk6" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
           <node concept="ljvvj" id="1msVhua4Tk7" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
