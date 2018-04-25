@@ -7,7 +7,6 @@
   </languages>
   <imports>
     <import index="62u6" ref="0202ed86-955d-4227-9c20-377dd6b1f9ff/java:org.campagnelab.gobyweb.plugins(org.campagnelab.nyosh.lib/)" />
-    <import index="488l" ref="0202ed86-955d-4227-9c20-377dd6b1f9ff/java:org.campagnelab.nyosh.environment(org.campagnelab.nyosh.lib/)" />
     <import index="9qtj" ref="0202ed86-955d-4227-9c20-377dd6b1f9ff/java:org.campagnelab.gobyweb.plugins.xml(org.campagnelab.nyosh.lib/)" />
     <import index="js3m" ref="0202ed86-955d-4227-9c20-377dd6b1f9ff/java:org.campagnelab.gobyweb.plugins.xml.executables(org.campagnelab.nyosh.lib/)" />
     <import index="935h" ref="r:c68a8ced-fbf7-48e1-b1e0-40266e57501f(org.campagnelab.gobyweb.structure)" />

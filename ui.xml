@@ -294,7 +294,6 @@
         <module file="${basedir}/languages/org.campagnelab.ui/org.campagnelab.ui.mpl" />
         <module file="${basedir}/solutions/org.campagnelab.ui.code/org.campagnelab.ui.code.msd" />
       </chunk>
-      <chunk />
       <jvmargs>
         <arg value="-Xmx512m" />
       </jvmargs>
@@ -453,7 +452,7 @@
   
   <target name="cleanSources">
     <delete dir="${basedir}/languages/org.campagnelab.ui/source_gen" />
-    <delete dir="${basedir}/solutions/org.campagnelab.ui.code/source_gen" />
     <delete dir="${basedir}/languages/org.campagnelab.ui/generator/source_gen" />
+    <delete dir="${basedir}/solutions/org.campagnelab.ui.code/source_gen" />
   </target>
 </project>
