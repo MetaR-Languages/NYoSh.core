@@ -180,7 +180,7 @@
       <node concept="aVJcg" id="4clqoMCXMIc" role="aVJcv">
         <node concept="NbPM2" id="4clqoMCXMIb" role="aVJcq">
           <node concept="3Mxwew" id="4clqoMCXMIa" role="3MwsjC">
-            <property role="3MwjfP" value="3.1.3" />
+            <property role="3MwjfP" value="3.2" />
           </node>
         </node>
       </node>
@@ -278,18 +278,18 @@
           <ref role="3Mxwex" node="4clqoMCZ5sm" resolve="build_number" />
         </node>
       </node>
-      <node concept="2pNNFK" id="3A7G9Ay8FUF" role="20twgj">
+      <node concept="2pNNFK" id="3A7G9Ay8FTb" role="20twgj">
         <property role="2pNNFO" value="idea-version" />
-        <node concept="2pNUuL" id="3A7G9Ay8FUG" role="2pNNFR">
+        <node concept="2pNUuL" id="3A7G9Ay8FTc" role="2pNNFR">
           <property role="2pNUuO" value="since-build" />
-          <node concept="2pMdtt" id="3A7G9Ay8FUH" role="2pMdts">
-            <property role="2pMdty" value="172.1" />
+          <node concept="2pMdtt" id="3A7G9Ay8FTd" role="2pMdts">
+            <property role="2pMdty" value="181.1254" />
           </node>
         </node>
-        <node concept="2pNUuL" id="3A7G9Ay8FUI" role="2pNNFR">
+        <node concept="2pNUuL" id="3A7G9Ay8FTe" role="2pNNFR">
           <property role="2pNUuO" value="until-build" />
-          <node concept="2pMdtt" id="3A7G9Ay8FUJ" role="2pMdts">
-            <property role="2pMdty" value="172.1256" />
+          <node concept="2pMdtt" id="3A7G9Ay8FTf" role="2pMdts">
+            <property role="2pMdty" value="182.0000" />
           </node>
         </node>
       </node>

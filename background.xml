@@ -4,7 +4,7 @@
   <property name="build.tmp" location="${build.dir}/tmp/org.campagnelab.Background" />
   <property name="build.layout" location="${build.dir}/artifacts/org.campagnelab.Background" />
   <property name="mps_home" location="" />
-  <property name="background_version" value="3.1.3" />
+  <property name="background_version" value="3.2" />
   <property name="build_number" value="0" />
   <property name="artifacts.mpsCore" location="${mps_home}" />
   <property name="artifacts.mps" location="${mps_home}" />
@@ -41,7 +41,7 @@
         <vendor url="http://books.campagnelab.org">Campagne Laboratory</vendor>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.build</depends>
-        <idea-version since-build="172.1" until-build="172.1256" />
+        <idea-version since-build="181.1254" until-build="182.0000" />
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
