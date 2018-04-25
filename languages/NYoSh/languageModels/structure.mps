@@ -221,9 +221,6 @@
     <property role="R4oN_" value="redirect errors to next command" />
     <property role="EcuMT" value="2248369528797870024" />
     <ref role="1TJDcQ" node="4gbLFFZBwqO" resolve="BinaryCommandOperator" />
-    <node concept="1sEMCm" id="5kcpuH7ZntV" role="bvy1s">
-      <property role="1sEMCp" value="http://goby.campagnelab.org" />
-    </node>
   </node>
   <node concept="1TIwiD" id="5VDr8PeyJqW">
     <property role="TrG5h" value="ChangeDirectory" />
