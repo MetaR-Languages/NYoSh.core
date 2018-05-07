@@ -444,21 +444,6 @@
             <ref role="1Busuk" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
           </node>
         </node>
-        <node concept="1SiIV0" id="2mFg1uCEg24" role="3bR37C">
-          <node concept="1Busua" id="2mFg1uCEg25" role="1SiIV1">
-            <ref role="1Busuk" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="2mFg1uCEnRL" role="3bR37C">
-          <node concept="1Busua" id="2mFg1uCEnRM" role="1SiIV1">
-            <ref role="1Busuk" to="nr1s:2mFg1uCEgGH" resolve="org.campagnelab.textoutput" />
-          </node>
-        </node>
-        <node concept="1yeLz9" id="2mFg1uCEnRP" role="1TViLv">
-          <property role="TrG5h" value="org.campagnelab.gobyweb#1090105717920801462" />
-          <property role="3LESm3" value="ae984eb0-b5d6-4751-be51-025e23c91f0a" />
-          <property role="2GAjPV" value="false" />
-        </node>
         <node concept="3rtmxn" id="5kcpuH7Znvh" role="3bR31x">
           <node concept="3LXTmp" id="5kcpuH7Znvi" role="3rtmxm">
             <node concept="3qWCbU" id="5kcpuH7Znvj" role="3LXTna">
@@ -472,6 +457,18 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="bnUduCpcq2" role="3bR37C">
+          <node concept="3bR9La" id="bnUduCpcq3" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="bnUduCpcq4" role="3bR37C">
+          <node concept="3bR9La" id="bnUduCpcq5" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="nr1s:2mFg1uCEgGH" resolve="org.campagnelab.textoutput" />
           </node>
         </node>
       </node>

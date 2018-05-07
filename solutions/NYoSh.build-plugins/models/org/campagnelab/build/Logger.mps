@@ -333,39 +333,10 @@
               <ref role="3bR37D" to="ffeo:7Kfy9QB6L4p" resolve="jetbrains.mps.lang.behavior" />
             </node>
           </node>
-          <node concept="1SiIV0" id="7ZmC9JYEhZ4" role="3bR37C">
-            <node concept="3bR9La" id="7ZmC9JYEhZ5" role="1SiIV1">
-              <property role="3bR36h" value="false" />
-              <ref role="3bR37D" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
-            </node>
-          </node>
           <node concept="1SiIV0" id="75YEVFjcMuC" role="3bR37C">
             <node concept="3bR9La" id="75YEVFjcMuB" role="1SiIV1">
               <ref role="3bR37D" to="ffeo:7YI57w6K0hX" resolve="jetbrains.mps.lang.behavior#1225195312923" />
             </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="7ZmC9JYEg0W" role="3bR37C">
-          <node concept="3bR9La" id="7ZmC9JYEg0X" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="7ZmC9JYEg0Y" role="3bR37C">
-          <node concept="3bR9La" id="7ZmC9JYEg0Z" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="7ZmC9JYEhYY" role="3bR37C">
-          <node concept="3bR9La" id="7ZmC9JYEhYZ" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ael0:5KK2jWpWo0e" resolve="org.campagnelab.ui" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="7ZmC9JYEhZ0" role="3bR37C">
-          <node concept="1Busua" id="7ZmC9JYEhZ1" role="1SiIV1">
-            <ref role="1Busuk" to="ffeo:7Kfy9QB6L4p" resolve="jetbrains.mps.lang.behavior" />
           </node>
         </node>
         <node concept="1SiIV0" id="7ZmC9JYEhZ2" role="3bR37C">
@@ -386,6 +357,18 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="bnUduCpcjs" role="3bR37C">
+          <node concept="3bR9La" id="bnUduCpcjt" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ael0:5KK2jWpWo0e" resolve="org.campagnelab.ui" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="bnUduCpcju" role="3bR37C">
+          <node concept="3bR9La" id="bnUduCpcjv" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L4p" resolve="jetbrains.mps.lang.behavior" />
           </node>
         </node>
       </node>
