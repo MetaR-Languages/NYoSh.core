@@ -714,7 +714,7 @@
         </node>
       </node>
       <node concept="1E1JtD" id="2mFg1uCD9q3" role="2G$12L">
-        <property role="BnDLt" value="false" />
+        <property role="BnDLt" value="true" />
         <property role="TrG5h" value="org.campagnelab.nyosh.lib" />
         <property role="3LESm3" value="0202ed86-955d-4227-9c20-377dd6b1f9ff" />
         <property role="2GAjPV" value="false" />
