@@ -25,6 +25,7 @@
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
     <import index="ddhc" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ide(MPS.IDEA/)" />
     <import index="z1c4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
+    <import index="ujkv" ref="r:c4ccd0c8-ae0a-4ce1-b1b2-29dd8a943a6b(org.campagnelab.util.persistence)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
@@ -314,33 +315,6 @@
                 </node>
               </node>
             </node>
-            <node concept="3cpWs8" id="3OwSMscie5W" role="3cqZAp">
-              <node concept="3cpWsn" id="3OwSMscie5U" role="3cpWs9">
-                <property role="3TUv4t" value="true" />
-                <property role="TrG5h" value="project" />
-                <node concept="2OqwBi" id="3OwSMscit9l" role="33vP2m">
-                  <node concept="10M0yZ" id="3OwSMscit9m" role="2Oq$k0">
-                    <ref role="1PxDUh" to="3s15:~MPSDataKeys" resolve="MPSDataKeys" />
-                    <ref role="3cqZAo" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
-                  </node>
-                  <node concept="liA8E" id="3OwSMscit9n" role="2OqNvi">
-                    <ref role="37wK5l" to="qkt:~DataKey.getData(com.intellij.openapi.actionSystem.DataContext):java.lang.Object" resolve="getData" />
-                    <node concept="2OqwBi" id="3OwSMscit9o" role="37wK5m">
-                      <node concept="2YIFZM" id="3OwSMscit9p" role="2Oq$k0">
-                        <ref role="37wK5l" to="ddhc:~DataManager.getInstance():com.intellij.ide.DataManager" resolve="getInstance" />
-                        <ref role="1Pybhc" to="ddhc:~DataManager" resolve="DataManager" />
-                      </node>
-                      <node concept="liA8E" id="3OwSMscit9q" role="2OqNvi">
-                        <ref role="37wK5l" to="ddhc:~DataManager.getDataContext():com.intellij.openapi.actionSystem.DataContext" resolve="getDataContext" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3uibUv" id="3OwSMscivPY" role="1tU5fm">
-                  <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
-                </node>
-              </node>
-            </node>
             <node concept="3cpWs8" id="5AuUFuz_KcB" role="3cqZAp">
               <node concept="3cpWsn" id="5AuUFuz_KcC" role="3cpWs9">
                 <property role="TrG5h" value="mpsProject" />
@@ -348,12 +322,9 @@
                 <node concept="3uibUv" id="5AuUFuz_KcD" role="1tU5fm">
                   <ref role="3uigEE" to="z1c4:~Project" resolve="Project" />
                 </node>
-                <node concept="2YIFZM" id="4IIZM6SPw3X" role="33vP2m">
-                  <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project):jetbrains.mps.project.MPSProject" resolve="fromIdeaProject" />
-                  <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
-                  <node concept="37vLTw" id="3OwSMsciGCP" role="37wK5m">
-                    <ref role="3cqZAo" node="3OwSMscie5U" resolve="project" />
-                  </node>
+                <node concept="2YIFZM" id="3OwSMscpjrA" role="33vP2m">
+                  <ref role="37wK5l" to="ujkv:3OwSMscphnG" resolve="getCurrentProject" />
+                  <ref role="1Pybhc" to="ujkv:3OwSMscp5aQ" resolve="MPSProjectAPI" />
                 </node>
               </node>
             </node>
@@ -370,8 +341,9 @@
                       <property role="2bfB8j" value="true" />
                       <ref role="1Y3XeK" to="xygl:~Task$Backgroundable" resolve="Task.Backgroundable" />
                       <ref role="37wK5l" to="xygl:~Task$Backgroundable.&lt;init&gt;(com.intellij.openapi.project.Project,java.lang.String,boolean)" resolve="Task.Backgroundable" />
-                      <node concept="37vLTw" id="3OwSMsciydr" role="37wK5m">
-                        <ref role="3cqZAo" node="3OwSMscie5U" resolve="project" />
+                      <node concept="2YIFZM" id="3OwSMscpuhC" role="37wK5m">
+                        <ref role="37wK5l" to="ujkv:3OwSMscpsZu" resolve="getCurrentOpenAPIProject" />
+                        <ref role="1Pybhc" to="ujkv:3OwSMscp5aQ" resolve="MPSProjectAPI" />
                       </node>
                       <node concept="Xl_RD" id="279h23Bd8qj" role="37wK5m">
                         <property role="Xl_RC" value="title" />
