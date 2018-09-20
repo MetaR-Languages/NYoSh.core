@@ -4,10 +4,11 @@
   <property name="build.tmp" location="${build.dir}/tmp/org.campagnelab.Background" />
   <property name="build.layout" location="${build.dir}/artifacts/org.campagnelab.Background" />
   <property name="mps_home" location="" />
-  <property name="background_version" value="3.2" />
+  <property name="background_version" value="3.2.1" />
   <property name="build_number" value="0" />
   <property name="artifacts.mpsCore" location="${mps_home}" />
   <property name="artifacts.mps" location="${mps_home}" />
+  <property name="artifacts.mpsWorkbench" location="${mps_home}" />
   <property file="${artifacts.mpsCore}/build.properties" prefix="import.mpsCore" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property name="mpsBootstrapCore.version" value="${import.mpsCore.mpsBootstrapCore.version}" />
@@ -91,6 +92,8 @@
           <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
+          <module ref="36c11d2d-1875-4a95-8bdb-70ea1ac63222(jetbrains.mps.execution.api)" />
+          <module ref="365fb593-3c1a-40a0-a7d7-c98144281283(jetbrains.mps.execution.impl)" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
@@ -129,6 +132,8 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-org.campagnelab.background-languageModels" prefix="module/languageModels" />
     </jar>
     <zip destfile="${build.layout}/org.campagnelab.background-${background_version}.zip">
+      <zipfileset file="${basedir}/solutions/org.campagnelab.util/commons-io-2.4.jar" prefix="Background" />
+      <zipfileset file="${basedir}/solutions/org.campagnelab.util/wildcard-1.03.jar" prefix="Background" />
       <fileset dir="${build.tmp}/default/org.campagnelab.background-_dl__lbrace_background_version_rbrace_.zip" />
     </zip>
     <echo file="${build.layout}/build.properties">org.campagnelab.Background.background_version=${background_version}${line.separator}org.campagnelab.Background.build_number=${build_number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}</echo>
@@ -145,7 +150,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.org.campagnelab.background, java.compile.org.campagnelab.background#5727908157482241423" />
+  <target name="compileJava" depends="java.compile.org.campagnelab.background, java.compile.org.campagnelab.background#5727908157482241423, java.compile.org.campagnelab.util" />
   
   <target name="processResources" />
   
@@ -214,6 +219,8 @@
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.refactoring.participant.jar" />
+      <library file="${artifacts.mps}/languages/make/jetbrains.mps.make.reduced.jar" />
+      <library file="${artifacts.mps}/languages/make/jetbrains.mps.tool.gentest.jar" />
       <library file="${artifacts.mps}/languages/text/jetbrains.mps.lang.text.jar" />
       <library file="${artifacts.mps}/lib/mps-behavior-api.jar" />
       <library file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
@@ -221,11 +228,26 @@
       <library file="${artifacts.mps}/lib/mps-collections.jar" />
       <library file="${artifacts.mps}/lib/mps-core.jar" />
       <library file="${artifacts.mps}/lib/mps-editor.jar" />
+      <library file="${artifacts.mps}/lib/mps-environment.jar" />
       <library file="${artifacts.mps}/lib/mps-openapi.jar" />
       <library file="${artifacts.mps}/lib/mps-platform.jar" />
+      <library file="${artifacts.mps}/lib/mps-stubs.jar" />
+      <library file="${artifacts.mps}/lib/mps-test.jar" />
+      <library file="${artifacts.mps}/lib/mps-tool.jar" />
       <library file="${artifacts.mps}/lib/mps-tuples.jar" />
+      <library file="${artifacts.mps}/lib/mps-workbench.jar" />
+      <library file="${artifacts.mps}/plugins/mps-debugger-api/languages/mps-debugger-api/jetbrains.mps.debugger.api.lang.jar" />
+      <library file="${artifacts.mps}/plugins/mps-debugger-api/lib/debugger-api.jar" />
+      <library file="${artifacts.mps}/plugins/mps-execution-api/languages/mps-execution-api/jetbrains.mps.execution.common.jar" />
+      <library file="${artifacts.mps}/plugins/mps-execution-api/languages/mps-execution-api/jetbrains.mps.execution.settings.jar" />
+      <library file="${artifacts.mps}/plugins/mps-execution-api/lib/execution-api.jar" />
+      <library file="${artifacts.mps}/plugins/mps-execution-languages/languages/mps-execution-languages/jetbrains.mps.execution.commands.jar" />
+      <library file="${artifacts.mps}/plugins/mps-execution-languages/languages/mps-execution-languages/jetbrains.mps.execution.configurations.jar" />
+      <library file="${artifacts.mps}/plugins/mps-execution-languages/languages/mps-execution-languages/jetbrains.mps.execution.library.jar" />
+      <library file="${artifacts.mps}/plugins/mps-execution-languages/lib/execution-languages.jar" />
       <chunk>
         <module file="${basedir}/languages/org.campagnelab.background/org.campagnelab.background.mpl" />
+        <module file="${basedir}/solutions/org.campagnelab.util/org.campagnelab.util.msd" />
       </chunk>
       <jvmargs>
         <arg value="-Xmx512m" />
@@ -240,7 +262,7 @@
   
   <target name="makeDependents" />
   
-  <target name="java.compile.org.campagnelab.background" depends="fetchDependencies">
+  <target name="java.compile.org.campagnelab.background" depends="java.compile.org.campagnelab.util, fetchDependencies">
     <mkdir dir="${basedir}/languages/org.campagnelab.background/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.campagnelab.background" />
     <javac destdir="${build.tmp}/java/out/org.campagnelab.background" fork="true" encoding="utf8" includeantruntime="false">
@@ -265,6 +287,11 @@
         <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
+        <pathelement path="${build.tmp}/java/out/org.campagnelab.util" />
+        <fileset file="${basedir}/solutions/org.campagnelab.util/wildcard-1.03.jar" />
+        <fileset file="${basedir}/solutions/org.campagnelab.util/commons-io-2.4.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
@@ -290,7 +317,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.org.campagnelab.background#5727908157482241423" depends="java.compile.org.campagnelab.background, fetchDependencies">
+  <target name="java.compile.org.campagnelab.background#5727908157482241423" depends="java.compile.org.campagnelab.background, java.compile.org.campagnelab.util, fetchDependencies">
     <mkdir dir="${basedir}/languages/org.campagnelab.background/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.campagnelab.background#5727908157482241423" />
     <javac destdir="${build.tmp}/java/out/org.campagnelab.background#5727908157482241423" fork="true" encoding="utf8" includeantruntime="false">
@@ -315,7 +342,13 @@
         <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <pathelement path="${build.tmp}/java/out/org.campagnelab.background" />
+        <pathelement path="${build.tmp}/java/out/org.campagnelab.util" />
+        <fileset file="${artifacts.mps}/plugins/mps-execution-api/lib/execution-api.jar" />
+        <fileset file="${basedir}/solutions/org.campagnelab.util/wildcard-1.03.jar" />
+        <fileset file="${basedir}/solutions/org.campagnelab.util/commons-io-2.4.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
@@ -337,8 +370,52 @@
     </copy>
   </target>
   
+  <target name="java.compile.org.campagnelab.util" depends="fetchDependencies">
+    <mkdir dir="${basedir}/solutions/org.campagnelab.util/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/org.campagnelab.util" />
+    <javac destdir="${build.tmp}/java/out/org.campagnelab.util" fork="true" encoding="utf8" includeantruntime="false">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/solutions/org.campagnelab.util/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
+        <fileset file="${basedir}/solutions/org.campagnelab.util/wildcard-1.03.jar" />
+        <fileset file="${basedir}/solutions/org.campagnelab.util/commons-io-2.4.jar" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.7.2.jar" />
+        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+      </classpath>
+    </javac>
+    <copy todir="${build.tmp}/java/out/org.campagnelab.util">
+      <fileset dir="${basedir}/solutions/org.campagnelab.util/source_gen" excludes="**/*.java" />
+    </copy>
+  </target>
+  
   <target name="cleanSources">
     <delete dir="${basedir}/languages/org.campagnelab.background/source_gen" />
     <delete dir="${basedir}/languages/org.campagnelab.background/generator/source_gen" />
+    <delete dir="${basedir}/solutions/org.campagnelab.util/source_gen" />
   </target>
 </project>
