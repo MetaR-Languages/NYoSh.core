@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="org.campagnelab.util" uuid="3b3d39a8-ff6e-47f3-9c9e-1888a27699ed" moduleVersion="0" compileInMPS="true">
+<solution name="org.campagnelab.util" uuid="3b3d39a8-ff6e-47f3-9c9e-1888a27699ed" moduleVersion="1" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
+    <modelRoot contentPath="${module}/commons-io-2.4.jar!" type="java_classes" />
+    <modelRoot contentPath="${module}/wildcard-1.03.jar!" type="java_classes" />
   </models>
+  <stubModelEntries>
+    <stubModelEntry path="${module}/wildcard-1.03.jar" />
+    <stubModelEntry path="${module}/commons-io-2.4.jar" />
+  </stubModelEntries>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
     <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
-    <dependency reexport="false">0202ed86-955d-4227-9c20-377dd6b1f9ff(org.campagnelab.nyosh.lib)</dependency>
     <dependency reexport="false">498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)</dependency>
     <dependency reexport="false">86441d7a-e194-42da-81a5-2161ec62a379(MPS.Workbench)</dependency>
     <dependency reexport="false">742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)</dependency>
+    <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="6" />
@@ -35,7 +41,6 @@
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
     <module reference="86441d7a-e194-42da-81a5-2161ec62a379(MPS.Workbench)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
-    <module reference="0202ed86-955d-4227-9c20-377dd6b1f9ff(org.campagnelab.nyosh.lib)" version="0" />
     <module reference="3b3d39a8-ff6e-47f3-9c9e-1888a27699ed(org.campagnelab.util)" version="0" />
   </dependencyVersions>
 </solution>
