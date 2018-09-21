@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="org.campagnelab.util" uuid="3b3d39a8-ff6e-47f3-9c9e-1888a27699ed" moduleVersion="1" compileInMPS="true">
+<solution name="org.campagnelab.util" uuid="3b3d39a8-ff6e-47f3-9c9e-1888a27699ed" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
