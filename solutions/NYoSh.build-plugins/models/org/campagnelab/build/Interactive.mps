@@ -16,6 +16,7 @@
     <import index="1uca" ref="r:1990a995-1ef9-44ba-bdba-f60301d5e5f6(org.campagnelab.build.ClusterConfig)" />
     <import index="x4gu" ref="r:1a177308-0ac9-425d-9159-4ab0b3746b3b(org.campagnelab.build.Background)" />
     <import index="vh2l" ref="r:64aeeca7-3a4b-4dcc-b81a-48f20fa34cb4(org.campangelab.xchart)" />
+    <import index="65bo" ref="r:982c8b08-3909-459c-a08a-e2eacb21a60a(org.campagnelab.build.Util)" />
   </imports>
   <registry>
     <language id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml">
@@ -182,7 +183,7 @@
       <node concept="aVJcg" id="2mFg1uCGkyp" role="aVJcv">
         <node concept="NbPM2" id="2mFg1uCGkyo" role="aVJcq">
           <node concept="3Mxwew" id="2mFg1uCGkyn" role="3MwsjC">
-            <property role="3MwjfP" value="3.2" />
+            <property role="3MwjfP" value="3.2.1" />
           </node>
         </node>
       </node>
@@ -262,6 +263,20 @@
             <property role="2Ry0Am" value="artifacts" />
             <node concept="2Ry0Ak" id="2mFg1uCEfhA" role="2Ry0An">
               <property role="2Ry0Am" value="org.campagnelab.mps.UI" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2sgV4H" id="3ksAv_R3jKT" role="1l3spa">
+      <ref role="1l3spb" to="65bo:7ZmC9JYDkzw" resolve="org.campagnelab.Util" />
+      <node concept="55IIr" id="3ksAv_R3jKU" role="2JcizS">
+        <node concept="2Ry0Ak" id="3ksAv_R3jKV" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="3ksAv_R3jKW" role="2Ry0An">
+            <property role="2Ry0Am" value="artifacts" />
+            <node concept="2Ry0Ak" id="5SFbgoIzzpm" role="2Ry0An">
+              <property role="2Ry0Am" value="org.campagnelab.Util" />
             </node>
           </node>
         </node>
@@ -410,6 +425,9 @@
       <node concept="m$_yC" id="2mFg1uCF4os" role="m$_yJ">
         <ref role="m$_y1" to="x4gu:5KK2jWpWo0m" resolve="org.campagnelab.background" />
       </node>
+      <node concept="m$_yC" id="3ksAv_R3jUt" role="m$_yJ">
+        <ref role="m$_y1" to="65bo:5KK2jWpWo0m" resolve="org.campagnelab.util" />
+      </node>
       <node concept="m$_yC" id="47TYt$YcdzK" role="m$_yJ">
         <ref role="m$_y1" to="vh2l:7XxitGzkyrN" resolve="XChart" />
       </node>
@@ -506,7 +524,7 @@
         </node>
         <node concept="1SiIV0" id="2mFg1uCF4sI" role="3bR37C">
           <node concept="3bR9La" id="2mFg1uCF4sJ" role="1SiIV1">
-            <property role="3bR36h" value="false" />
+            <property role="3bR36h" value="true" />
             <ref role="3bR37D" to="h9g5:7ZmC9JYEfXW" resolve="org.campagnelab.logger" />
           </node>
         </node>
@@ -584,6 +602,12 @@
           <node concept="3bR9La" id="3_z0vikbJcq" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ael0:5KK2jWpWo0k" resolve="org.campagnelab.ui.code" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3OwSMscpYoo" role="3bR37C">
+          <node concept="3bR9La" id="3OwSMscpYop" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" to="ffeo:2eDSGe9d1q1" resolve="MPS.Workbench" />
           </node>
         </node>
       </node>
