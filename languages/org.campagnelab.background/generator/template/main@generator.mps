@@ -317,7 +317,7 @@
             </node>
             <node concept="3cpWs8" id="5AuUFuz_KcB" role="3cqZAp">
               <node concept="3cpWsn" id="5AuUFuz_KcC" role="3cpWs9">
-                <property role="TrG5h" value="mpsProject" />
+                <property role="TrG5h" value="_mpsProject" />
                 <property role="3TUv4t" value="true" />
                 <node concept="3uibUv" id="5AuUFuz_KcD" role="1tU5fm">
                   <ref role="3uigEE" to="z1c4:~Project" resolve="Project" />
@@ -556,7 +556,7 @@
                             <node concept="2OqwBi" id="3OwSMsc6LWx" role="3clFbG">
                               <node concept="2OqwBi" id="3OwSMsc6LWy" role="2Oq$k0">
                                 <node concept="37vLTw" id="3OwSMsciGKX" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="5AuUFuz_KcC" resolve="mpsProject" />
+                                  <ref role="3cqZAo" node="5AuUFuz_KcC" resolve="_mpsProject" />
                                 </node>
                                 <node concept="liA8E" id="3OwSMsc6LW$" role="2OqNvi">
                                   <ref role="37wK5l" to="z1c4:~Project.getModelAccess():org.jetbrains.mps.openapi.module.ModelAccess" resolve="getModelAccess" />
@@ -612,7 +612,7 @@
                             <node concept="2OqwBi" id="3OwSMsc6QFn" role="3clFbG">
                               <node concept="2OqwBi" id="3OwSMsc6QFo" role="2Oq$k0">
                                 <node concept="37vLTw" id="3OwSMsciI0W" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="5AuUFuz_KcC" resolve="mpsProject" />
+                                  <ref role="3cqZAo" node="5AuUFuz_KcC" resolve="_mpsProject" />
                                 </node>
                                 <node concept="liA8E" id="3OwSMsc6QFq" role="2OqNvi">
                                   <ref role="37wK5l" to="z1c4:~Project.getModelAccess():org.jetbrains.mps.openapi.module.ModelAccess" resolve="getModelAccess" />
@@ -682,7 +682,7 @@
                             <node concept="2OqwBi" id="3OwSMsc6UFx" role="3clFbG">
                               <node concept="2OqwBi" id="3OwSMsc6UFy" role="2Oq$k0">
                                 <node concept="37vLTw" id="3OwSMsciJow" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="5AuUFuz_KcC" resolve="mpsProject" />
+                                  <ref role="3cqZAo" node="5AuUFuz_KcC" resolve="_mpsProject" />
                                 </node>
                                 <node concept="liA8E" id="3OwSMsc6UF$" role="2OqNvi">
                                   <ref role="37wK5l" to="z1c4:~Project.getModelAccess():org.jetbrains.mps.openapi.module.ModelAccess" resolve="getModelAccess" />
@@ -738,7 +738,7 @@
                             <node concept="2OqwBi" id="3OwSMsc6VRC" role="3clFbG">
                               <node concept="2OqwBi" id="3OwSMsc6VRD" role="2Oq$k0">
                                 <node concept="37vLTw" id="3OwSMsciKC0" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="5AuUFuz_KcC" resolve="mpsProject" />
+                                  <ref role="3cqZAo" node="5AuUFuz_KcC" resolve="_mpsProject" />
                                 </node>
                                 <node concept="liA8E" id="3OwSMsc6VRF" role="2OqNvi">
                                   <ref role="37wK5l" to="z1c4:~Project.getModelAccess():org.jetbrains.mps.openapi.module.ModelAccess" resolve="getModelAccess" />
