@@ -226,6 +226,20 @@
         <ref role="398BVh" node="5KK2jWpWo03" resolve="mps_home" />
       </node>
     </node>
+    <node concept="2sgV4H" id="3ksAv_R3jKT" role="1l3spa">
+      <ref role="1l3spb" to="65bo:7ZmC9JYDkzw" resolve="org.campagnelab.Util" />
+      <node concept="55IIr" id="3ksAv_R3jKU" role="2JcizS">
+        <node concept="2Ry0Ak" id="3ksAv_R3jKV" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="3ksAv_R3jKW" role="2Ry0An">
+            <property role="2Ry0Am" value="artifacts" />
+            <node concept="2Ry0Ak" id="5SFbgoIzzpm" role="2Ry0An">
+              <property role="2Ry0Am" value="org.campagnelab.Util" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2sgV4H" id="5$CBfkTUGzB" role="1l3spa">
       <ref role="1l3spb" to="5f6q:2mFg1uCEf5l" resolve="org.campagnelab.GobyWeb" />
       <node concept="55IIr" id="2MC9FWpQCS8" role="2JcizS">
@@ -263,20 +277,6 @@
             <property role="2Ry0Am" value="artifacts" />
             <node concept="2Ry0Ak" id="2mFg1uCEfhA" role="2Ry0An">
               <property role="2Ry0Am" value="org.campagnelab.mps.UI" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2sgV4H" id="3ksAv_R3jKT" role="1l3spa">
-      <ref role="1l3spb" to="65bo:7ZmC9JYDkzw" resolve="org.campagnelab.Util" />
-      <node concept="55IIr" id="3ksAv_R3jKU" role="2JcizS">
-        <node concept="2Ry0Ak" id="3ksAv_R3jKV" role="iGT6I">
-          <property role="2Ry0Am" value="build" />
-          <node concept="2Ry0Ak" id="3ksAv_R3jKW" role="2Ry0An">
-            <property role="2Ry0Am" value="artifacts" />
-            <node concept="2Ry0Ak" id="5SFbgoIzzpm" role="2Ry0An">
-              <property role="2Ry0Am" value="org.campagnelab.Util" />
             </node>
           </node>
         </node>
@@ -608,6 +608,12 @@
           <node concept="3bR9La" id="3OwSMscpYop" role="1SiIV1">
             <property role="3bR36h" value="true" />
             <ref role="3bR37D" to="ffeo:2eDSGe9d1q1" resolve="MPS.Workbench" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2EhCxNvNpDU" role="3bR37C">
+          <node concept="3bR9La" id="2EhCxNvNpDV" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="65bo:3OwSMscq8aw" resolve="org.campagnelab.util" />
           </node>
         </node>
       </node>
