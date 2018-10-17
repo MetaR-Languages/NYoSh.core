@@ -9,7 +9,7 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="74u2" ref="0202ed86-955d-4227-9c20-377dd6b1f9ff/java:com.esotericsoftware.wildcard(org.campagnelab.nyosh.lib/)" implicit="true" />
+    <import index="74u2" ref="0202ed86-955d-4227-9c20-377dd6b1f9ff/java:com.esotericsoftware.wildcard(org.campagnelab.nyosh.lib/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -265,16 +265,16 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="dVl0XjCZDZ" role="3cqZAp">
-          <node concept="3cpWsn" id="dVl0XjCZE0" role="3cpWs9">
+        <node concept="3cpWs8" id="7lPZWPxkINz" role="3cqZAp">
+          <node concept="3cpWsn" id="7lPZWPxkIN$" role="3cpWs9">
             <property role="TrG5h" value="paths" />
-            <node concept="2ShNRf" id="dVl0XjCZEv" role="33vP2m">
-              <node concept="1pGfFk" id="dVl0XjD7Sk" role="2ShVmc">
+            <node concept="3uibUv" id="7lPZWPxkIN_" role="1tU5fm">
+              <ref role="3uigEE" to="74u2:~Paths" resolve="Paths" />
+            </node>
+            <node concept="2ShNRf" id="7lPZWPxkJDT" role="33vP2m">
+              <node concept="1pGfFk" id="7lPZWPxkJUa" role="2ShVmc">
                 <ref role="37wK5l" to="74u2:~Paths.&lt;init&gt;()" resolve="Paths" />
               </node>
-            </node>
-            <node concept="3uibUv" id="dVl0XjCZE1" role="1tU5fm">
-              <ref role="3uigEE" to="74u2:~Paths" resolve="Paths" />
             </node>
           </node>
         </node>
@@ -316,7 +316,7 @@
           <node concept="2OqwBi" id="3FOZ2RYzwRj" role="1DdaDG">
             <node concept="2OqwBi" id="3FOZ2RYzogD" role="2Oq$k0">
               <node concept="37vLTw" id="3FOZ2RYzj_k" role="2Oq$k0">
-                <ref role="3cqZAo" node="dVl0XjCZE0" resolve="paths" />
+                <ref role="3cqZAo" node="7lPZWPxkIN$" resolve="paths" />
               </node>
               <node concept="liA8E" id="3FOZ2RYzwof" role="2OqNvi">
                 <ref role="37wK5l" to="74u2:~Paths.glob(java.lang.String,java.lang.String...):com.esotericsoftware.wildcard.Paths" resolve="glob" />
