@@ -8,8 +8,8 @@
     <modelRoot contentPath="${module}/wildcard-1.03.jar!" type="java_classes" />
   </models>
   <stubModelEntries>
-    <stubModelEntry path="${module}/wildcard-1.03.jar" />
     <stubModelEntry path="${module}/commons-io-2.4.jar" />
+    <stubModelEntry path="${module}/wildcard-1.03.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
