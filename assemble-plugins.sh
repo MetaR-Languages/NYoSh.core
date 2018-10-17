@@ -36,6 +36,7 @@ function assemble_plugin {
 mkdir -p target/plugins
 
 assemble_plugin ui.xml UI && \
+assemble_plugin util.xml Util && \
 assemble_plugin TextOutput.xml TextOutput && \
 assemble_plugin logger.xml Logger && \
 assemble_plugin background.xml Background && \
