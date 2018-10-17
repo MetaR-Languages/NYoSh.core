@@ -312,7 +312,7 @@
         </node>
         <node concept="1SiIV0" id="3OwSMscq8d2" role="3bR37C">
           <node concept="3bR9La" id="3OwSMscq8d3" role="1SiIV1">
-            <property role="3bR36h" value="false" />
+            <property role="3bR36h" value="true" />
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>

@@ -19,6 +19,7 @@
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
   </languageVersions>
   <dependencyVersions>
+    <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="db7b3503-2b94-491e-9afb-40ef2d987a04(NYoSh.build-plugins)" version="0" />
     <module reference="458e7a44-300a-4712-95cd-255c2e0c289d(XChart.newBuild)" version="0" />
     <module reference="422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)" version="0" />
