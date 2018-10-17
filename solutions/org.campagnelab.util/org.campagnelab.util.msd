@@ -4,8 +4,8 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot contentPath="${module}/commons-io-2.4.jar!" type="java_classes" />
     <modelRoot contentPath="${module}/wildcard-1.03.jar!" type="java_classes" />
+    <modelRoot contentPath="${module}/commons-io-2.4.jar!" type="java_classes" />
   </models>
   <stubModelEntries>
     <stubModelEntry path="${module}/wildcard-1.03.jar" />
