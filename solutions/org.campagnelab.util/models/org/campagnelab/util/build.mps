@@ -10,7 +10,6 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="74u2" ref="3b3d39a8-ff6e-47f3-9c9e-1888a27699ed/java:com.esotericsoftware.wildcard(org.campagnelab.util/)" />
-    <import index="74u3" ref="0202ed86-955d-4227-9c20-377dd6b1f9ff/java:com.esotericsoftware.wildcard(org.campagnelab.nyosh.lib/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -335,7 +334,7 @@
               </node>
             </node>
             <node concept="liA8E" id="3FOZ2RYzD6B" role="2OqNvi">
-              <ref role="37wK5l" to="74u3:~Paths.getRelativePaths():java.util.List" resolve="getRelativePaths" />
+              <ref role="37wK5l" to="74u2:~Paths.getRelativePaths():java.util.List" resolve="getRelativePaths" />
             </node>
           </node>
         </node>
