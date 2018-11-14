@@ -12,8 +12,9 @@ function deploy_artifact {
   filename="${filename%.*}"
   version=$(echo ${filename} | cut -d"-" -f2)
   echo "detected version for ${artifact_id}: ${version}"
+  NOW=$(date +"%m-%d-%Y %T")
 
-  $maven_bin deploy:deploy-file -DgroupId=org.campagnelab.mps \
+  ($maven_bin deploy:deploy-file -DgroupId=org.campagnelab.mps \
   -DartifactId=${artifact_id} \
   -Dversion="$version"${VERSION_SUFFIX} \
   -Dpackaging=zip \
@@ -22,10 +23,8 @@ function deploy_artifact {
   -DgeneratePom.description="Git commit: ${GIT_COMMIT}" \
   -Dfile=${original_filename} \
   -DrepositoryId=${REPO_ID} \
-  -Durl=${REPO_URL}
+  -Durl=${REPO_URL} && echo "${BUILD_NUMBER} ${artifact_id} ${GIT_COMMIT} ${GIT_BRANCH} ${NOW}" >> ../builds-to-commits.tsv ) || true
 
-  NOW=$(date +"%m-%d-%Y %T")
-  echo "${BUILD_NUMBER} ${artifact_id} ${GIT_COMMIT} ${GIT_BRANCH} ${NOW}" >> ../builds-to-commits.tsv
 }
 
 
