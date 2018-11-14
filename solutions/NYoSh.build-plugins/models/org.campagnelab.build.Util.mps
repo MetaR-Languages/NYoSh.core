@@ -189,7 +189,7 @@
       <node concept="3981dG" id="7ZmC9JYDkzZ" role="39821P">
         <node concept="3_J27D" id="7ZmC9JYDk$0" role="Nbhlr">
           <node concept="3Mxwew" id="7ZmC9JYDk$1" role="3MwsjC">
-            <property role="3MwjfP" value="org.campagnelab.util-" />
+            <property role="3MwjfP" value="org.campagnelab.Util-" />
           </node>
           <node concept="3Mxwey" id="7ZmC9JYEj6h" role="3MwsjC">
             <ref role="3Mxwex" node="7ZmC9JYDytu" resolve="util_version" />
@@ -199,7 +199,7 @@
           </node>
         </node>
         <node concept="m$_wl" id="7ZmC9JYDk$2" role="39821P">
-          <ref role="m_rDy" node="5KK2jWpWo0m" resolve="org.campagnelab.util" />
+          <ref role="m_rDy" node="5KK2jWpWo0m" resolve="org.campagnelab.Util" />
           <node concept="28jJK3" id="3ksAv_R2NR6" role="39821P">
             <node concept="55IIr" id="3ksAv_R2NR7" role="28jJRO">
               <node concept="2Ry0Ak" id="3ksAv_R2NSg" role="iGT6I">
@@ -230,7 +230,7 @@
       </node>
     </node>
     <node concept="m$_wf" id="5KK2jWpWo0m" role="3989C9">
-      <property role="m$_wk" value="org.campagnelab.util" />
+      <property role="m$_wk" value="org.campagnelab.Util" />
       <node concept="3_J27D" id="5KK2jWpWo0n" role="m$_yQ">
         <node concept="3Mxwew" id="5KK2jWpWo0o" role="3MwsjC">
           <property role="3MwjfP" value="org.campagnelab.util" />
@@ -241,7 +241,7 @@
           <ref role="3Mxwex" node="7ZmC9JYDytu" resolve="util_version" />
         </node>
       </node>
-      <node concept="m$_yB" id="3ksAv_R3hFO" role="m$_yh">
+      <node concept="m$_yB" id="uOcLswOYKB" role="m$_yh">
         <ref role="m$_yA" node="3OwSMscq8aw" resolve="org.campagnelab.util" />
       </node>
       <node concept="m$_yC" id="5KK2jWpWo0s" role="m$_yJ">

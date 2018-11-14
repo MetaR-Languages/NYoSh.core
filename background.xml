@@ -47,7 +47,7 @@
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.build</depends>
         <depends>com.intellij.modules.mps</depends>
-        <depends>org.campagnelab.util</depends>
+        <depends>org.campagnelab.Util</depends>
         <idea-version since-build="181.1254" until-build="182.0000" />
         
         <extensions defaultExtensionNs="com.intellij">
@@ -146,8 +146,8 @@
   <target name="buildDependents" />
   
   <target name="fetchDependencies">
-    <mkdir dir="${build.tmp}/deps/org.campagnelab.Util/org.campagnelab.util-_dl__lbrace_util_version_rbrace_.zip" />
-    <unzip src="${artifacts.org.campagnelab.Util}/org.campagnelab.util-${org.campagnelab.Util.util_version}.zip" dest="${build.tmp}/deps/org.campagnelab.Util/org.campagnelab.util-_dl__lbrace_util_version_rbrace_.zip" />
+    <mkdir dir="${build.tmp}/deps/org.campagnelab.Util/org.campagnelab.Util-_dl__lbrace_util_version_rbrace_.zip" />
+    <unzip src="${artifacts.org.campagnelab.Util}/org.campagnelab.Util-${org.campagnelab.Util.util_version}.zip" dest="${build.tmp}/deps/org.campagnelab.Util/org.campagnelab.Util-_dl__lbrace_util_version_rbrace_.zip" />
   </target>
   
   <target name="build" depends="assemble" />
@@ -173,7 +173,7 @@
       <plugin path="${artifacts.mpsCore}/mps-core/META-INF/plugin.xml/../.." />
       <plugin path="${artifacts.mps}/plugins/mps-build" />
       <plugin path="${artifacts.mps}/plugins/mps-testing" />
-      <plugin path="${build.tmp}/deps/org.campagnelab.Util/org.campagnelab.util-_dl__lbrace_util_version_rbrace_.zip/Util" />
+      <plugin path="${build.tmp}/deps/org.campagnelab.Util/org.campagnelab.Util-_dl__lbrace_util_version_rbrace_.zip/Util" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
@@ -254,7 +254,7 @@
       <library file="${artifacts.mps}/plugins/mps-execution-languages/languages/mps-execution-languages/jetbrains.mps.execution.configurations.jar" />
       <library file="${artifacts.mps}/plugins/mps-execution-languages/languages/mps-execution-languages/jetbrains.mps.execution.library.jar" />
       <library file="${artifacts.mps}/plugins/mps-execution-languages/lib/execution-languages.jar" />
-      <library file="${build.tmp}/deps/org.campagnelab.Util/org.campagnelab.util-_dl__lbrace_util_version_rbrace_.zip/Util/languages/org.campagnelab.util.jar" />
+      <library file="${build.tmp}/deps/org.campagnelab.Util/org.campagnelab.Util-_dl__lbrace_util_version_rbrace_.zip/Util/languages/org.campagnelab.util.jar" />
       <chunk>
         <module file="${basedir}/languages/org.campagnelab.background/org.campagnelab.background.mpl" />
       </chunk>
@@ -316,9 +316,9 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
-        <fileset file="${build.tmp}/deps/org.campagnelab.Util/org.campagnelab.util-_dl__lbrace_util_version_rbrace_.zip/Util/languages/org.campagnelab.util.jar" />
-        <fileset file="${build.tmp}/deps/org.campagnelab.Util/org.campagnelab.util-_dl__lbrace_util_version_rbrace_.zip/Util/wildcard-1.03.jar" />
-        <fileset file="${build.tmp}/deps/org.campagnelab.Util/org.campagnelab.util-_dl__lbrace_util_version_rbrace_.zip/Util/commons-io-2.4.jar" />
+        <fileset file="${build.tmp}/deps/org.campagnelab.Util/org.campagnelab.Util-_dl__lbrace_util_version_rbrace_.zip/Util/languages/org.campagnelab.util.jar" />
+        <fileset file="${build.tmp}/deps/org.campagnelab.Util/org.campagnelab.Util-_dl__lbrace_util_version_rbrace_.zip/Util/wildcard-1.03.jar" />
+        <fileset file="${build.tmp}/deps/org.campagnelab.Util/org.campagnelab.Util-_dl__lbrace_util_version_rbrace_.zip/Util/commons-io-2.4.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/org.campagnelab.background">
@@ -369,9 +369,9 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
-        <fileset file="${build.tmp}/deps/org.campagnelab.Util/org.campagnelab.util-_dl__lbrace_util_version_rbrace_.zip/Util/languages/org.campagnelab.util.jar" />
-        <fileset file="${build.tmp}/deps/org.campagnelab.Util/org.campagnelab.util-_dl__lbrace_util_version_rbrace_.zip/Util/wildcard-1.03.jar" />
-        <fileset file="${build.tmp}/deps/org.campagnelab.Util/org.campagnelab.util-_dl__lbrace_util_version_rbrace_.zip/Util/commons-io-2.4.jar" />
+        <fileset file="${build.tmp}/deps/org.campagnelab.Util/org.campagnelab.Util-_dl__lbrace_util_version_rbrace_.zip/Util/languages/org.campagnelab.util.jar" />
+        <fileset file="${build.tmp}/deps/org.campagnelab.Util/org.campagnelab.Util-_dl__lbrace_util_version_rbrace_.zip/Util/wildcard-1.03.jar" />
+        <fileset file="${build.tmp}/deps/org.campagnelab.Util/org.campagnelab.Util-_dl__lbrace_util_version_rbrace_.zip/Util/commons-io-2.4.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/org.campagnelab.background#5727908157482241423">

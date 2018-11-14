@@ -30,12 +30,12 @@
   
   <target name="assemble" depends="classes, declare-mps-tasks">
     <mkdir dir="${build.layout}" />
-    <mkdir dir="${build.tmp}/default/org.campagnelab.util-_dl__lbrace_util_version_rbrace_.zip" />
-    <mkdir dir="${build.tmp}/default/org.campagnelab.util-_dl__lbrace_util_version_rbrace_.zip/Util" />
-    <mkdir dir="${build.tmp}/default/org.campagnelab.util-_dl__lbrace_util_version_rbrace_.zip/Util/META-INF" />
-    <echoxml file="${build.tmp}/default/org.campagnelab.util-_dl__lbrace_util_version_rbrace_.zip/Util/META-INF/plugin.xml">
+    <mkdir dir="${build.tmp}/default/org.campagnelab.Util-_dl__lbrace_util_version_rbrace_.zip" />
+    <mkdir dir="${build.tmp}/default/org.campagnelab.Util-_dl__lbrace_util_version_rbrace_.zip/Util" />
+    <mkdir dir="${build.tmp}/default/org.campagnelab.Util-_dl__lbrace_util_version_rbrace_.zip/Util/META-INF" />
+    <echoxml file="${build.tmp}/default/org.campagnelab.Util-_dl__lbrace_util_version_rbrace_.zip/Util/META-INF/plugin.xml">
       <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
-        <id>org.campagnelab.util</id>
+        <id>org.campagnelab.Util</id>
         <name>org.campagnelab.util</name>
         <description>Collection of utilies used across plugins by Campagne Lab. Build number: ${build_number}</description>
         <version>${util_version}</version>
@@ -50,7 +50,7 @@
         </extensions>
       </idea-plugin>
     </echoxml>
-    <mkdir dir="${build.tmp}/default/org.campagnelab.util-_dl__lbrace_util_version_rbrace_.zip/Util/languages" />
+    <mkdir dir="${build.tmp}/default/org.campagnelab.Util-_dl__lbrace_util_version_rbrace_.zip/Util/languages" />
     <mkdir dir="${build.tmp}/default/org.campagnelab.util.jar" />
     <mkdir dir="${build.tmp}/default/org.campagnelab.util.jar/META-INF" />
     <echoxml file="${build.tmp}/default/org.campagnelab.util.jar/META-INF/module.xml">
@@ -73,7 +73,7 @@
         <sources jar="org.campagnelab.util-src.jar" descriptor="org.campagnelab.util.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/org.campagnelab.util-_dl__lbrace_util_version_rbrace_.zip/Util/languages/org.campagnelab.util.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/org.campagnelab.Util-_dl__lbrace_util_version_rbrace_.zip/Util/languages/org.campagnelab.util.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.campagnelab.util" />
       <fileset dir="${basedir}/solutions/org.campagnelab.util/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/org.campagnelab.util.jar" />
@@ -81,7 +81,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-org.campagnelab.util-models">
       <fileset dir="${basedir}/solutions/org.campagnelab.util/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/org.campagnelab.util-_dl__lbrace_util_version_rbrace_.zip/Util/languages/org.campagnelab.util-src.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/org.campagnelab.Util-_dl__lbrace_util_version_rbrace_.zip/Util/languages/org.campagnelab.util-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/solutions/org.campagnelab.util/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
@@ -91,10 +91,10 @@
       <zipfileset file="${basedir}/solutions/org.campagnelab.util/org.campagnelab.util.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-org.campagnelab.util-models" prefix="module/models" />
     </jar>
-    <zip destfile="${build.layout}/org.campagnelab.util-${util_version}.zip">
+    <zip destfile="${build.layout}/org.campagnelab.Util-${util_version}.zip">
       <zipfileset file="${basedir}/solutions/org.campagnelab.util/commons-io-2.4.jar" prefix="Util" />
       <zipfileset file="${basedir}/solutions/org.campagnelab.util/wildcard-1.03.jar" prefix="Util" />
-      <fileset dir="${build.tmp}/default/org.campagnelab.util-_dl__lbrace_util_version_rbrace_.zip" />
+      <fileset dir="${build.tmp}/default/org.campagnelab.Util-_dl__lbrace_util_version_rbrace_.zip" />
     </zip>
     <echo file="${build.layout}/build.properties">org.campagnelab.Util.util_version=${util_version}${line.separator}org.campagnelab.Util.build_number=${build_number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}</echo>
   </target>
