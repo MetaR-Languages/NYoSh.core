@@ -6,7 +6,7 @@
   <property name="mps_home" location="" />
   <property name="org.campagnelab.goby.workbench.home" location="" />
   <property name="build_number" value="0" />
-  <property name="textoutput_version" value="3.2" />
+  <property name="textoutput_version" value="3.2.1" />
   <property name="artifacts.mps" location="${mps_home}" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
@@ -35,11 +35,11 @@
       <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>org.campagnelab.TextOutput</id>
         <name>org.campagnelab.TextOutput</name>
-        <description>A language to model text filea and generate such files with the MPS generator aspect. Build number: ${build_number}</description>
+        <description>A language to model text files and generate such files with the MPS generator aspect. Build number: ${build_number}</description>
         <version>${textoutput_version}</version>
         <vendor url="http://books.campagnelab.org">Campagne Laboratory</vendor>
         <depends>jetbrains.mps.core</depends>
-        <idea-version since-build="181.1254" until-build="182.0000" />
+        <idea-version until-build="182.0000" since-build="181.1254" />
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
