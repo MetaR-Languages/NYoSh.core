@@ -2,7 +2,7 @@
 <model ref="r:8c26ce69-b010-4d8e-a455-2dd88a9d7f81(org.campagnelab.ssh.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
   </languages>
   <imports />
   <registry>

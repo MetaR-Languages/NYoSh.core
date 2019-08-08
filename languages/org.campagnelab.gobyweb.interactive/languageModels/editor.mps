@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="c1ba4037-e4db-47d8-8b61-b3c805b648f2" name="org.campagnelab.ui" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -1083,7 +1083,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="5DSEw1QxYAh" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                        <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
                         <node concept="2OqwBi" id="5DSEw1QxZPx" role="37wK5m">
                           <node concept="2OqwBi" id="5DSEw1QxZ6A" role="2Oq$k0">
                             <node concept="37vLTw" id="5DSEw1QxYSc" role="2Oq$k0">
@@ -1094,7 +1094,7 @@
                             </node>
                           </node>
                           <node concept="liA8E" id="5DSEw1Qy15A" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~String.toUpperCase():java.lang.String" resolve="toUpperCase" />
+                            <ref role="37wK5l" to="wyt6:~String.toUpperCase()" resolve="toUpperCase" />
                           </node>
                         </node>
                       </node>

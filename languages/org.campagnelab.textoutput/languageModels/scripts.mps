@@ -2,7 +2,7 @@
 <model ref="r:df396efc-0c08-43bc-9ab3-19ff6f80c482(org.campagnelab.textoutput.scripts)">
   <persistence version="9" />
   <languages>
-    <use id="0eddeefa-c2d6-4437-bc2c-de50fd4ce470" name="jetbrains.mps.lang.script" version="0" />
+    <use id="0eddeefa-c2d6-4437-bc2c-de50fd4ce470" name="jetbrains.mps.lang.script" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -119,14 +119,14 @@
                   <ref role="3cqZAo" node="4nKo47E0TmN" resolve="lines" />
                 </node>
                 <node concept="3Tsc0h" id="4nKo47E14nU" role="2OqNvi">
-                  <ref role="3TtcxE" to="p6sl:4nKo47DZVJm" />
+                  <ref role="3TtcxE" to="p6sl:4nKo47DZVJm" resolve="lines" />
                 </node>
               </node>
               <node concept="X8dFx" id="4nKo47E1c1d" role="2OqNvi">
                 <node concept="2OqwBi" id="4nKo47E1dGt" role="25WWJ7">
                   <node concept="_YI3z" id="4nKo47E1d08" role="2Oq$k0" />
                   <node concept="3Tsc0h" id="4nKo47E3pix" role="2OqNvi">
-                    <ref role="3TtcxE" to="p6sl:4KXrU8sKnuj" />
+                    <ref role="3TtcxE" to="p6sl:4KXrU8sKnuj" resolve="lines" />
                   </node>
                 </node>
               </node>
@@ -137,7 +137,7 @@
               <node concept="2OqwBi" id="4nKo47E1jTY" role="2Oq$k0">
                 <node concept="_YI3z" id="4nKo47E1jfF" role="2Oq$k0" />
                 <node concept="3Tsc0h" id="4nKo47E3s3U" role="2OqNvi">
-                  <ref role="3TtcxE" to="p6sl:4KXrU8sKnuj" />
+                  <ref role="3TtcxE" to="p6sl:4KXrU8sKnuj" resolve="lines" />
                 </node>
               </node>
               <node concept="2Kehj3" id="4nKo47E1tyD" role="2OqNvi" />
@@ -148,7 +148,7 @@
               <node concept="2OqwBi" id="4nKo47E0TwK" role="2Oq$k0">
                 <node concept="_YI3z" id="4nKo47E0TtT" role="2Oq$k0" />
                 <node concept="3Tsc0h" id="4nKo47E3wNu" role="2OqNvi">
-                  <ref role="3TtcxE" to="p6sl:4nKo47E2FFq" />
+                  <ref role="3TtcxE" to="p6sl:4nKo47E2FFq" resolve="lineContainer" />
                 </node>
               </node>
               <node concept="TSZUe" id="4nKo47E12a$" role="2OqNvi">
@@ -168,7 +168,7 @@
                 <node concept="2OqwBi" id="4nKo47E2aLt" role="2Oq$k0">
                   <node concept="_YI3z" id="4nKo47E2aFh" role="2Oq$k0" />
                   <node concept="3Tsc0h" id="4nKo47E3nOz" role="2OqNvi">
-                    <ref role="3TtcxE" to="p6sl:4nKo47E2FFq" />
+                    <ref role="3TtcxE" to="p6sl:4nKo47E2FFq" resolve="lineContainer" />
                   </node>
                 </node>
                 <node concept="1v1jN8" id="4nKo47E2lcY" role="2OqNvi" />
@@ -177,7 +177,7 @@
                 <node concept="2OqwBi" id="4nKo47E0K9_" role="2Oq$k0">
                   <node concept="_YI3z" id="4nKo47E0K3h" role="2Oq$k0" />
                   <node concept="3Tsc0h" id="4nKo47E3mcp" role="2OqNvi">
-                    <ref role="3TtcxE" to="p6sl:4KXrU8sKnuj" />
+                    <ref role="3TtcxE" to="p6sl:4KXrU8sKnuj" resolve="lines" />
                   </node>
                 </node>
                 <node concept="3GX2aA" id="4nKo47E0Tai" role="2OqNvi" />

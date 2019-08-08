@@ -2,7 +2,7 @@
 <model ref="r:ecf4b1bd-cf0a-44bf-9fa4-8df447902cbb(org.campagnelab.gobyweb.interactive.organisms.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -184,7 +184,7 @@
               <node concept="13iPFW" id="664r$yjPtpU" role="2JrQYb" />
             </node>
             <node concept="liA8E" id="664r$yjPu0C" role="2OqNvi">
-              <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
+              <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object)" resolve="putUserObject" />
               <node concept="Xl_RD" id="664r$yjPu1w" role="37wK5m">
                 <property role="Xl_RC" value="Model" />
               </node>
@@ -241,7 +241,7 @@
                       <node concept="13iPFW" id="664r$yjPsfv" role="2JrQYb" />
                     </node>
                     <node concept="liA8E" id="664r$yjPtbw" role="2OqNvi">
-                      <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object):java.lang.Object" resolve="getUserObject" />
+                      <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object)" resolve="getUserObject" />
                       <node concept="Xl_RD" id="664r$yjPtfw" role="37wK5m">
                         <property role="Xl_RC" value="Model" />
                       </node>
@@ -328,7 +328,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="664r$yjOOfc" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                       <node concept="37vLTw" id="664r$yjOOhm" role="37wK5m">
                         <ref role="3cqZAo" node="664r$yjOlNa" resolve="value" />
                       </node>

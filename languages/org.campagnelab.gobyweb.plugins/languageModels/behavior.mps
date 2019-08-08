@@ -2,7 +2,7 @@
 <model ref="r:f03be5c7-7ff3-4aa5-9c70-277740663ade(org.campagnelab.gobyweb.plugins.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -254,7 +254,7 @@
                     <ref role="3cqZAo" node="3HroolOvg1O" resolve="registry" />
                   </node>
                   <node concept="liA8E" id="7lMMWVM6oi5" role="2OqNvi">
-                    <ref role="37wK5l" to="62u6:~PluginRegistry.findByTypedId(java.lang.String,java.lang.Class):org.campagnelab.gobyweb.plugins.xml.Config" resolve="findByTypedId" />
+                    <ref role="37wK5l" to="62u6:~PluginRegistry.findByTypedId(java.lang.String,java.lang.Class)" resolve="findByTypedId" />
                     <node concept="37vLTw" id="3HroolOvyu3" role="37wK5m">
                       <ref role="3cqZAo" node="3HroolOvnQd" resolve="pluginId" />
                     </node>
@@ -275,11 +275,11 @@
                     <ref role="3cqZAo" node="7lMMWVM5Ht4" resolve="config" />
                   </node>
                   <node concept="liA8E" id="7lMMWVM6TCC" role="2OqNvi">
-                    <ref role="37wK5l" to="js3m:~ExecutableConfig.getInput():org.campagnelab.gobyweb.plugins.xml.executables.ExecutableInputSchema" resolve="getInput" />
+                    <ref role="37wK5l" to="js3m:~ExecutableConfig.getInput()" resolve="getInput" />
                   </node>
                 </node>
                 <node concept="liA8E" id="7lMMWVM6VGK" role="2OqNvi">
-                  <ref role="37wK5l" to="js3m:~ExecutableInputSchema.getInputSlots():java.util.List" resolve="getInputSlots" />
+                  <ref role="37wK5l" to="js3m:~ExecutableInputSchema.getInputSlots()" resolve="getInputSlots" />
                 </node>
               </node>
               <node concept="3clFbS" id="7lMMWVM6P4p" role="2LFqv$">
@@ -305,7 +305,7 @@
                         <ref role="2Gs0qQ" node="7lMMWVM6P4l" resolve="configuredSlot" />
                       </node>
                       <node concept="liA8E" id="7lMMWVM7$wJ" role="2OqNvi">
-                        <ref role="37wK5l" to="js3m:~Slot.getName():java.lang.String" resolve="getName" />
+                        <ref role="37wK5l" to="js3m:~Slot.getName()" resolve="getName" />
                       </node>
                     </node>
                     <node concept="2OqwBi" id="7lMMWVM7rga" role="37vLTJ">
@@ -345,7 +345,7 @@
                           <ref role="2Gs0qQ" node="7lMMWVM6P4l" resolve="configuredSlot" />
                         </node>
                         <node concept="liA8E" id="7lMMWVM8rv5" role="2OqNvi">
-                          <ref role="37wK5l" to="js3m:~Slot.geType():org.campagnelab.gobyweb.plugins.xml.executables.Slot$IOFileSetRef" resolve="geType" />
+                          <ref role="37wK5l" to="js3m:~Slot.geType()" resolve="geType" />
                         </node>
                       </node>
                       <node concept="2OwXpG" id="7lMMWVM8vpj" role="2OqNvi">
@@ -388,7 +388,7 @@
                           <ref role="3cqZAo" node="3HroolOvg1O" resolve="registry" />
                         </node>
                         <node concept="liA8E" id="7lMMWVM93PX" role="2OqNvi">
-                          <ref role="37wK5l" to="62u6:~PluginRegistry.findByTypedId(java.lang.String,java.lang.Class):org.campagnelab.gobyweb.plugins.xml.Config" resolve="findByTypedId" />
+                          <ref role="37wK5l" to="62u6:~PluginRegistry.findByTypedId(java.lang.String,java.lang.Class)" resolve="findByTypedId" />
                           <node concept="2OqwBi" id="7lMMWVM98Yn" role="37wK5m">
                             <node concept="2OqwBi" id="7lMMWVM95rV" role="2Oq$k0">
                               <node concept="37vLTw" id="7lMMWVM95iO" role="2Oq$k0">
@@ -408,7 +408,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="7lMMWVM9pbj" role="2OqNvi">
-                        <ref role="37wK5l" to="9qtj:~BaseConfig.getHelp():java.lang.String" resolve="getHelp" />
+                        <ref role="37wK5l" to="9qtj:~BaseConfig.getHelp()" resolve="getHelp" />
                       </node>
                     </node>
                   </node>
@@ -424,7 +424,7 @@
                       </node>
                     </node>
                     <node concept="2YIFZM" id="1sIgPK44Pej" role="37vLTx">
-                      <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
+                      <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String)" resolve="parseInt" />
                       <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
                       <node concept="2OqwBi" id="1sIgPK44I_Z" role="37wK5m">
                         <node concept="2OqwBi" id="1sIgPK44IA0" role="2Oq$k0">
@@ -432,7 +432,7 @@
                             <ref role="2Gs0qQ" node="7lMMWVM6P4l" resolve="configuredSlot" />
                           </node>
                           <node concept="liA8E" id="1sIgPK44IA2" role="2OqNvi">
-                            <ref role="37wK5l" to="js3m:~Slot.geType():org.campagnelab.gobyweb.plugins.xml.executables.Slot$IOFileSetRef" resolve="geType" />
+                            <ref role="37wK5l" to="js3m:~Slot.geType()" resolve="geType" />
                           </node>
                         </node>
                         <node concept="2OwXpG" id="1sIgPK44SDE" role="2OqNvi">
@@ -458,7 +458,7 @@
                           <ref role="2Gs0qQ" node="7lMMWVM6P4l" resolve="configuredSlot" />
                         </node>
                         <node concept="liA8E" id="6Otts3aQg2M" role="2OqNvi">
-                          <ref role="37wK5l" to="js3m:~Slot.geType():org.campagnelab.gobyweb.plugins.xml.executables.Slot$IOFileSetRef" resolve="geType" />
+                          <ref role="37wK5l" to="js3m:~Slot.geType()" resolve="geType" />
                         </node>
                       </node>
                       <node concept="2OwXpG" id="6Otts3aQg2N" role="2OqNvi">
@@ -486,7 +486,7 @@
                       <property role="Xl_RC" value="unbounded" />
                     </node>
                     <node concept="liA8E" id="6Otts3aQkKo" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.equalsIgnoreCase(java.lang.String):boolean" resolve="equalsIgnoreCase" />
+                      <ref role="37wK5l" to="wyt6:~String.equalsIgnoreCase(java.lang.String)" resolve="equalsIgnoreCase" />
                       <node concept="37vLTw" id="6Otts3aQkSi" role="37wK5m">
                         <ref role="3cqZAo" node="6Otts3aQeSl" resolve="maxCardinalityAsString" />
                       </node>
@@ -497,7 +497,7 @@
                       <node concept="3clFbF" id="6Otts3aQo1o" role="3cqZAp">
                         <node concept="37vLTI" id="6Otts3aQoC5" role="3clFbG">
                           <node concept="2YIFZM" id="6Otts3aQpRt" role="37vLTx">
-                            <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
+                            <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String)" resolve="parseInt" />
                             <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
                             <node concept="37vLTw" id="6Otts3aQqan" role="37wK5m">
                               <ref role="3cqZAo" node="6Otts3aQeSl" resolve="maxCardinalityAsString" />
@@ -630,7 +630,7 @@
                     <ref role="3cqZAo" node="3HroolOvEmB" resolve="registry" />
                   </node>
                   <node concept="liA8E" id="7lMMWVMb4n9" role="2OqNvi">
-                    <ref role="37wK5l" to="62u6:~PluginRegistry.findByTypedId(java.lang.String,java.lang.Class):org.campagnelab.gobyweb.plugins.xml.Config" resolve="findByTypedId" />
+                    <ref role="37wK5l" to="62u6:~PluginRegistry.findByTypedId(java.lang.String,java.lang.Class)" resolve="findByTypedId" />
                     <node concept="37vLTw" id="3HroolOw4BJ" role="37wK5m">
                       <ref role="3cqZAo" node="3HroolOvN9x" resolve="pluginId" />
                     </node>
@@ -651,11 +651,11 @@
                     <ref role="3cqZAo" node="7lMMWVMb4n5" resolve="config" />
                   </node>
                   <node concept="liA8E" id="7lMMWVMo4xs" role="2OqNvi">
-                    <ref role="37wK5l" to="js3m:~ExecutableConfig.getOutput():org.campagnelab.gobyweb.plugins.xml.executables.ExecutableOutputSchema" resolve="getOutput" />
+                    <ref role="37wK5l" to="js3m:~ExecutableConfig.getOutput()" resolve="getOutput" />
                   </node>
                 </node>
                 <node concept="liA8E" id="7lMMWVMo7wy" role="2OqNvi">
-                  <ref role="37wK5l" to="js3m:~ExecutableOutputSchema.getOutputSlots():java.util.List" resolve="getOutputSlots" />
+                  <ref role="37wK5l" to="js3m:~ExecutableOutputSchema.getOutputSlots()" resolve="getOutputSlots" />
                 </node>
               </node>
               <node concept="3clFbS" id="7lMMWVMb4nl" role="2LFqv$">
@@ -681,7 +681,7 @@
                         <ref role="2Gs0qQ" node="7lMMWVMb4nf" resolve="configuredSlot" />
                       </node>
                       <node concept="liA8E" id="7lMMWVMb4nw" role="2OqNvi">
-                        <ref role="37wK5l" to="js3m:~Slot.getName():java.lang.String" resolve="getName" />
+                        <ref role="37wK5l" to="js3m:~Slot.getName()" resolve="getName" />
                       </node>
                     </node>
                     <node concept="2OqwBi" id="7lMMWVMb4nx" role="37vLTJ">
@@ -721,7 +721,7 @@
                           <ref role="2Gs0qQ" node="7lMMWVMb4nf" resolve="configuredSlot" />
                         </node>
                         <node concept="liA8E" id="7lMMWVMb4nL" role="2OqNvi">
-                          <ref role="37wK5l" to="js3m:~Slot.geType():org.campagnelab.gobyweb.plugins.xml.executables.Slot$IOFileSetRef" resolve="geType" />
+                          <ref role="37wK5l" to="js3m:~Slot.geType()" resolve="geType" />
                         </node>
                       </node>
                       <node concept="2OwXpG" id="7lMMWVMb4nM" role="2OqNvi">
@@ -764,7 +764,7 @@
                           <ref role="3cqZAo" node="3HroolOvEmB" resolve="registry" />
                         </node>
                         <node concept="liA8E" id="7lMMWVMb4o2" role="2OqNvi">
-                          <ref role="37wK5l" to="62u6:~PluginRegistry.findByTypedId(java.lang.String,java.lang.Class):org.campagnelab.gobyweb.plugins.xml.Config" resolve="findByTypedId" />
+                          <ref role="37wK5l" to="62u6:~PluginRegistry.findByTypedId(java.lang.String,java.lang.Class)" resolve="findByTypedId" />
                           <node concept="2OqwBi" id="7lMMWVMb4o3" role="37wK5m">
                             <node concept="2OqwBi" id="7lMMWVMb4o4" role="2Oq$k0">
                               <node concept="37vLTw" id="7lMMWVMb4o5" role="2Oq$k0">
@@ -784,7 +784,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="7lMMWVMb4o9" role="2OqNvi">
-                        <ref role="37wK5l" to="9qtj:~BaseConfig.getHelp():java.lang.String" resolve="getHelp" />
+                        <ref role="37wK5l" to="9qtj:~BaseConfig.getHelp()" resolve="getHelp" />
                       </node>
                     </node>
                   </node>

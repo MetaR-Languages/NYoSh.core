@@ -2,8 +2,8 @@
 <model ref="r:83c9874d-045e-4332-aee5-439da3360d12(org.campagnelab.background.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
     <use id="22e72e4c-0f69-46ce-8403-6750153aa615" name="jetbrains.mps.execution.configurations" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -50,9 +50,6 @@
       <concept id="1153952380246" name="jetbrains.mps.baseLanguage.structure.TryStatement" flags="nn" index="2GUZhq">
         <child id="1153952416686" name="body" index="2GV8ay" />
         <child id="1153952429843" name="finallyBody" index="2GVbov" />
-      </concept>
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
       </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -227,11 +224,11 @@
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="3364660638048049750" name="jetbrains.mps.lang.core.structure.PropertyAttribute" flags="ng" index="A9Btg">
-        <property id="1757699476691236117" name="propertyName" index="2qtEX9" />
+        <property id="1757699476691236117" name="name_DebugInfo" index="2qtEX9" />
         <property id="1341860900487648621" name="propertyId" index="P4ACc" />
       </concept>
       <concept id="3364660638048049745" name="jetbrains.mps.lang.core.structure.LinkAttribute" flags="ng" index="A9Btn">
-        <property id="1757699476691236116" name="linkRole" index="2qtEX8" />
+        <property id="1757699476691236116" name="role_DebugInfo" index="2qtEX8" />
         <property id="1341860900488019036" name="linkId" index="P3scX" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -390,7 +387,6 @@
                         <property role="1EzhhJ" value="false" />
                         <property role="TrG5h" value="run" />
                         <property role="DiZV1" value="false" />
-                        <property role="IEkAT" value="false" />
                         <node concept="3Tm1VV" id="58qBS$fJuKM" role="1B3o_S" />
                         <node concept="3cqZAl" id="58qBS$fJuKO" role="3clF45" />
                         <node concept="37vLTG" id="58qBS$fJuKP" role="3clF46">
@@ -412,11 +408,11 @@
                               </node>
                               <node concept="2OqwBi" id="1M93_hUlmbk" role="33vP2m">
                                 <node concept="2YIFZM" id="1M93_hUlmbq" role="2Oq$k0">
-                                  <ref role="37wK5l" to="xygl:~ProgressManager.getInstance():com.intellij.openapi.progress.ProgressManager" resolve="getInstance" />
+                                  <ref role="37wK5l" to="xygl:~ProgressManager.getInstance()" resolve="getInstance" />
                                   <ref role="1Pybhc" to="xygl:~ProgressManager" resolve="ProgressManager" />
                                 </node>
                                 <node concept="liA8E" id="1M93_hUlmbm" role="2OqNvi">
-                                  <ref role="37wK5l" to="xygl:~ProgressManager.getProgressIndicator():com.intellij.openapi.progress.ProgressIndicator" resolve="getProgressIndicator" />
+                                  <ref role="37wK5l" to="xygl:~ProgressManager.getProgressIndicator()" resolve="getProgressIndicator" />
                                 </node>
                               </node>
                             </node>
@@ -427,7 +423,7 @@
                                 <ref role="3cqZAo" node="1M93_hUllhp" resolve="indicator" />
                               </node>
                               <node concept="liA8E" id="1GRNWD54yNt" role="2OqNvi">
-                                <ref role="37wK5l" to="xygl:~ProgressIndicator.setText(java.lang.String):void" resolve="setText" />
+                                <ref role="37wK5l" to="xygl:~ProgressIndicator.setText(java.lang.String)" resolve="setText" />
                                 <node concept="Xl_RD" id="1GRNWD54yUM" role="37wK5m">
                                   <property role="Xl_RC" value="Downloading..." />
                                   <node concept="17Uvod" id="7IHRkpNM6Pj" role="lGtFl">
@@ -456,7 +452,7 @@
                                 <ref role="3cqZAo" node="1M93_hUllhp" resolve="indicator" />
                               </node>
                               <node concept="liA8E" id="1M93_hUlpjA" role="2OqNvi">
-                                <ref role="37wK5l" to="xygl:~ProgressIndicator.pushState():void" resolve="pushState" />
+                                <ref role="37wK5l" to="xygl:~ProgressIndicator.pushState()" resolve="pushState" />
                               </node>
                             </node>
                           </node>
@@ -471,7 +467,7 @@
                                         <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                                       </node>
                                       <node concept="liA8E" id="279h23BnSGz" role="2OqNvi">
-                                        <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                                        <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                                         <node concept="Xl_RD" id="279h23BnSG$" role="37wK5m">
                                           <property role="Xl_RC" value="" />
                                         </node>
@@ -502,7 +498,7 @@
                                     <ref role="3cqZAo" node="1M93_hUllhp" resolve="indicator" />
                                   </node>
                                   <node concept="liA8E" id="1M93_hUlreg" role="2OqNvi">
-                                    <ref role="37wK5l" to="xygl:~ProgressIndicator.setText(java.lang.String):void" resolve="setText" />
+                                    <ref role="37wK5l" to="xygl:~ProgressIndicator.setText(java.lang.String)" resolve="setText" />
                                     <node concept="3cpWs3" id="7IHRkpOdWMs" role="37wK5m">
                                       <node concept="Xl_RD" id="7IHRkpOdWNz" role="3uHU7B">
                                         <property role="Xl_RC" value="title" />
@@ -536,7 +532,7 @@
                                     <ref role="3cqZAo" node="1M93_hUllhp" resolve="indicator" />
                                   </node>
                                   <node concept="liA8E" id="7IHRkpOkjav" role="2OqNvi">
-                                    <ref role="37wK5l" to="xygl:~ProgressIndicator.stop():void" resolve="stop" />
+                                    <ref role="37wK5l" to="xygl:~ProgressIndicator.stop()" resolve="stop" />
                                   </node>
                                 </node>
                               </node>
@@ -548,7 +544,6 @@
                         <property role="1EzhhJ" value="false" />
                         <property role="TrG5h" value="onSuccess" />
                         <property role="DiZV1" value="false" />
-                        <property role="IEkAT" value="false" />
                         <node concept="3Tm1VV" id="58qBS$fJv9U" role="1B3o_S" />
                         <node concept="3cqZAl" id="58qBS$fJv9W" role="3clF45" />
                         <node concept="3clFbS" id="58qBS$fJva0" role="3clF47">
@@ -559,11 +554,11 @@
                                   <ref role="3cqZAo" node="5AuUFuz_KcC" resolve="_mpsProject" />
                                 </node>
                                 <node concept="liA8E" id="3OwSMsc6LW$" role="2OqNvi">
-                                  <ref role="37wK5l" to="z1c4:~Project.getModelAccess():org.jetbrains.mps.openapi.module.ModelAccess" resolve="getModelAccess" />
+                                  <ref role="37wK5l" to="z1c4:~Project.getModelAccess()" resolve="getModelAccess" />
                                 </node>
                               </node>
                               <node concept="liA8E" id="3OwSMsc6LW_" role="2OqNvi">
-                                <ref role="37wK5l" to="lui2:~ModelAccess.executeCommand(java.lang.Runnable):void" resolve="executeCommand" />
+                                <ref role="37wK5l" to="lui2:~ModelAccess.executeCommand(java.lang.Runnable)" resolve="executeCommand" />
                                 <node concept="1bVj0M" id="3OwSMsc6LWA" role="37wK5m">
                                   <node concept="3clFbS" id="3OwSMsc6LWB" role="1bW5cS">
                                     <node concept="3clFbH" id="3OwSMsc6LWC" role="3cqZAp">
@@ -615,11 +610,11 @@
                                   <ref role="3cqZAo" node="5AuUFuz_KcC" resolve="_mpsProject" />
                                 </node>
                                 <node concept="liA8E" id="3OwSMsc6QFq" role="2OqNvi">
-                                  <ref role="37wK5l" to="z1c4:~Project.getModelAccess():org.jetbrains.mps.openapi.module.ModelAccess" resolve="getModelAccess" />
+                                  <ref role="37wK5l" to="z1c4:~Project.getModelAccess()" resolve="getModelAccess" />
                                 </node>
                               </node>
                               <node concept="liA8E" id="3OwSMsc6QFr" role="2OqNvi">
-                                <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable):void" resolve="runReadAction" />
+                                <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
                                 <node concept="1bVj0M" id="3OwSMsc6QFs" role="37wK5m">
                                   <node concept="3clFbS" id="3OwSMsc6QFt" role="1bW5cS">
                                     <node concept="3clFbH" id="3OwSMsc6QFu" role="3cqZAp">
@@ -674,7 +669,6 @@
                         <property role="1EzhhJ" value="false" />
                         <property role="TrG5h" value="onCancel" />
                         <property role="DiZV1" value="false" />
-                        <property role="IEkAT" value="false" />
                         <node concept="3Tm1VV" id="7IHRkpOqreJ" role="1B3o_S" />
                         <node concept="3cqZAl" id="7IHRkpOqreL" role="3clF45" />
                         <node concept="3clFbS" id="7IHRkpOqreP" role="3clF47">
@@ -685,11 +679,11 @@
                                   <ref role="3cqZAo" node="5AuUFuz_KcC" resolve="_mpsProject" />
                                 </node>
                                 <node concept="liA8E" id="3OwSMsc6UF$" role="2OqNvi">
-                                  <ref role="37wK5l" to="z1c4:~Project.getModelAccess():org.jetbrains.mps.openapi.module.ModelAccess" resolve="getModelAccess" />
+                                  <ref role="37wK5l" to="z1c4:~Project.getModelAccess()" resolve="getModelAccess" />
                                 </node>
                               </node>
                               <node concept="liA8E" id="3OwSMsc6UF_" role="2OqNvi">
-                                <ref role="37wK5l" to="lui2:~ModelAccess.executeCommand(java.lang.Runnable):void" resolve="executeCommand" />
+                                <ref role="37wK5l" to="lui2:~ModelAccess.executeCommand(java.lang.Runnable)" resolve="executeCommand" />
                                 <node concept="1bVj0M" id="3OwSMsc6UFA" role="37wK5m">
                                   <node concept="3clFbS" id="3OwSMsc6UFB" role="1bW5cS">
                                     <node concept="3clFbH" id="3OwSMsc6UFC" role="3cqZAp">
@@ -741,11 +735,11 @@
                                   <ref role="3cqZAo" node="5AuUFuz_KcC" resolve="_mpsProject" />
                                 </node>
                                 <node concept="liA8E" id="3OwSMsc6VRF" role="2OqNvi">
-                                  <ref role="37wK5l" to="z1c4:~Project.getModelAccess():org.jetbrains.mps.openapi.module.ModelAccess" resolve="getModelAccess" />
+                                  <ref role="37wK5l" to="z1c4:~Project.getModelAccess()" resolve="getModelAccess" />
                                 </node>
                               </node>
                               <node concept="liA8E" id="3OwSMsc6VRG" role="2OqNvi">
-                                <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable):void" resolve="runReadAction" />
+                                <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
                                 <node concept="1bVj0M" id="3OwSMsc6VRH" role="37wK5m">
                                   <node concept="3clFbS" id="3OwSMsc6VRI" role="1bW5cS">
                                     <node concept="3clFbH" id="3OwSMsc6VRJ" role="3cqZAp">
@@ -805,10 +799,10 @@
               <node concept="2OqwBi" id="5so3epuIVaN" role="3clFbG">
                 <node concept="2YIFZM" id="5so3epuIVaO" role="2Oq$k0">
                   <ref role="1Pybhc" to="xygl:~ProgressManager" resolve="ProgressManager" />
-                  <ref role="37wK5l" to="xygl:~ProgressManager.getInstance():com.intellij.openapi.progress.ProgressManager" resolve="getInstance" />
+                  <ref role="37wK5l" to="xygl:~ProgressManager.getInstance()" resolve="getInstance" />
                 </node>
                 <node concept="liA8E" id="58qBS$fJSDq" role="2OqNvi">
-                  <ref role="37wK5l" to="xygl:~ProgressManager.run(com.intellij.openapi.progress.Task):void" resolve="run" />
+                  <ref role="37wK5l" to="xygl:~ProgressManager.run(com.intellij.openapi.progress.Task)" resolve="run" />
                   <node concept="37vLTw" id="58qBS$fJSNc" role="37wK5m">
                     <ref role="3cqZAo" node="58qBS$fJas3" resolve="back" />
                   </node>
@@ -855,7 +849,7 @@
               <ref role="3cqZAo" node="vLputCjzgB" resolve="thisConcept" />
             </node>
             <node concept="liA8E" id="6II_l42cr6H" role="2OqNvi">
-              <ref role="37wK5l" to="c17a:~SAbstractConcept.getDeclarationNode():org.jetbrains.mps.openapi.model.SNode" resolve="getDeclarationNode" />
+              <ref role="37wK5l" to="c17a:~SAbstractConcept.getDeclarationNode()" resolve="getDeclarationNode" />
             </node>
           </node>
         </node>
@@ -884,7 +878,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="4XEqvth_gEn" role="2OqNvi">
-                <ref role="37wK5l" to="c17a:~SAbstractConcept.getDeclarationNode():org.jetbrains.mps.openapi.model.SNode" resolve="getDeclarationNode" />
+                <ref role="37wK5l" to="c17a:~SAbstractConcept.getDeclarationNode()" resolve="getDeclarationNode" />
               </node>
               <node concept="raruj" id="4XEqvth_gQ5" role="lGtFl" />
               <node concept="1W57fq" id="4XEqvth_gQQ" role="lGtFl">
@@ -1032,7 +1026,7 @@
                   <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
                 </node>
                 <node concept="2YIFZM" id="8AY3wOoHzZ" role="33vP2m">
-                  <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project):com.intellij.openapi.project.Project" resolve="toIdeaProject" />
+                  <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project)" resolve="toIdeaProject" />
                   <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
                   <node concept="37vLTw" id="8AY3wOt6Fl" role="37wK5m">
                     <ref role="3cqZAo" node="8AY3wOrEpK" resolve="myProject" />
@@ -1057,7 +1051,6 @@
                         <property role="1EzhhJ" value="false" />
                         <property role="TrG5h" value="run" />
                         <property role="DiZV1" value="false" />
-                        <property role="IEkAT" value="false" />
                         <node concept="37vLTG" id="8AY3wOoBJJ" role="3clF46">
                           <property role="TrG5h" value="p0" />
                           <node concept="3uibUv" id="8AY3wOoBJK" role="1tU5fm">
@@ -1079,11 +1072,11 @@
                               </node>
                               <node concept="2OqwBi" id="8AY3wOoBJQ" role="33vP2m">
                                 <node concept="2YIFZM" id="8AY3wOoBJR" role="2Oq$k0">
-                                  <ref role="37wK5l" to="xygl:~ProgressManager.getInstance():com.intellij.openapi.progress.ProgressManager" resolve="getInstance" />
+                                  <ref role="37wK5l" to="xygl:~ProgressManager.getInstance()" resolve="getInstance" />
                                   <ref role="1Pybhc" to="xygl:~ProgressManager" resolve="ProgressManager" />
                                 </node>
                                 <node concept="liA8E" id="8AY3wOoBJS" role="2OqNvi">
-                                  <ref role="37wK5l" to="xygl:~ProgressManager.getProgressIndicator():com.intellij.openapi.progress.ProgressIndicator" resolve="getProgressIndicator" />
+                                  <ref role="37wK5l" to="xygl:~ProgressManager.getProgressIndicator()" resolve="getProgressIndicator" />
                                 </node>
                               </node>
                             </node>
@@ -1094,7 +1087,7 @@
                                 <ref role="3cqZAo" node="8AY3wOoBJO" resolve="indicator" />
                               </node>
                               <node concept="liA8E" id="8AY3wOoBJW" role="2OqNvi">
-                                <ref role="37wK5l" to="xygl:~ProgressIndicator.setText(java.lang.String):void" resolve="setText" />
+                                <ref role="37wK5l" to="xygl:~ProgressIndicator.setText(java.lang.String)" resolve="setText" />
                                 <node concept="Xl_RD" id="8AY3wOoBJX" role="37wK5m">
                                   <property role="Xl_RC" value="Downloading..." />
                                   <node concept="17Uvod" id="8AY3wOoBJY" role="lGtFl">
@@ -1123,7 +1116,7 @@
                                 <ref role="3cqZAo" node="8AY3wOoBJO" resolve="indicator" />
                               </node>
                               <node concept="liA8E" id="8AY3wOoBK8" role="2OqNvi">
-                                <ref role="37wK5l" to="xygl:~ProgressIndicator.pushState():void" resolve="pushState" />
+                                <ref role="37wK5l" to="xygl:~ProgressIndicator.pushState()" resolve="pushState" />
                               </node>
                             </node>
                           </node>
@@ -1132,11 +1125,11 @@
                               <node concept="3clFbF" id="8AY3wOum0d" role="3cqZAp">
                                 <node concept="2OqwBi" id="8AY3wOum9K" role="3clFbG">
                                   <node concept="2YIFZM" id="8AY3wOum6Y" role="2Oq$k0">
-                                    <ref role="37wK5l" to="w1kc:~ModelAccess.instance():jetbrains.mps.smodel.ModelAccess" resolve="instance" />
+                                    <ref role="37wK5l" to="w1kc:~ModelAccess.instance()" resolve="instance" />
                                     <ref role="1Pybhc" to="w1kc:~ModelAccess" resolve="ModelAccess" />
                                   </node>
                                   <node concept="liA8E" id="8AY3wOumk2" role="2OqNvi">
-                                    <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runReadAction(java.lang.Runnable):void" resolve="runReadAction" />
+                                    <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
                                     <node concept="2ShNRf" id="8AY3wOumkX" role="37wK5m">
                                       <node concept="YeOm9" id="8AY3wOumDz" role="2ShVmc">
                                         <node concept="1Y3b0j" id="8AY3wOumDA" role="YeSDq">
@@ -1161,7 +1154,7 @@
                                                         <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                                                       </node>
                                                       <node concept="liA8E" id="8AY3wOumJP" role="2OqNvi">
-                                                        <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                                                        <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                                                         <node concept="Xl_RD" id="8AY3wOumJQ" role="37wK5m">
                                                           <property role="Xl_RC" value="" />
                                                         </node>
@@ -1200,7 +1193,7 @@
                                     <ref role="3cqZAo" node="8AY3wOoBJO" resolve="indicator" />
                                   </node>
                                   <node concept="liA8E" id="8AY3wOoBKt" role="2OqNvi">
-                                    <ref role="37wK5l" to="xygl:~ProgressIndicator.setText(java.lang.String):void" resolve="setText" />
+                                    <ref role="37wK5l" to="xygl:~ProgressIndicator.setText(java.lang.String)" resolve="setText" />
                                     <node concept="3cpWs3" id="8AY3wOoBKu" role="37wK5m">
                                       <node concept="Xl_RD" id="8AY3wOoBKv" role="3uHU7B">
                                         <property role="Xl_RC" value="title" />
@@ -1234,7 +1227,7 @@
                                     <ref role="3cqZAo" node="8AY3wOoBJO" resolve="indicator" />
                                   </node>
                                   <node concept="liA8E" id="8AY3wOoBKF" role="2OqNvi">
-                                    <ref role="37wK5l" to="xygl:~ProgressIndicator.stop():void" resolve="stop" />
+                                    <ref role="37wK5l" to="xygl:~ProgressIndicator.stop()" resolve="stop" />
                                   </node>
                                 </node>
                               </node>
@@ -1250,18 +1243,17 @@
                         <property role="1EzhhJ" value="false" />
                         <property role="TrG5h" value="onSuccess" />
                         <property role="DiZV1" value="false" />
-                        <property role="IEkAT" value="false" />
                         <node concept="3Tm1VV" id="8AY3wOoBKH" role="1B3o_S" />
                         <node concept="3cqZAl" id="8AY3wOoBKI" role="3clF45" />
                         <node concept="3clFbS" id="8AY3wOoBKJ" role="3clF47">
                           <node concept="3clFbF" id="8AY3wOoBKK" role="3cqZAp">
                             <node concept="2OqwBi" id="8AY3wOoBKL" role="3clFbG">
                               <node concept="2YIFZM" id="8AY3wOoBKM" role="2Oq$k0">
-                                <ref role="37wK5l" to="w1kc:~ModelAccess.instance():jetbrains.mps.smodel.ModelAccess" resolve="instance" />
+                                <ref role="37wK5l" to="w1kc:~ModelAccess.instance()" resolve="instance" />
                                 <ref role="1Pybhc" to="w1kc:~ModelAccess" resolve="ModelAccess" />
                               </node>
                               <node concept="liA8E" id="8AY3wOoBKN" role="2OqNvi">
-                                <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runWriteAction(java.lang.Runnable):void" resolve="runWriteAction" />
+                                <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runWriteAction(java.lang.Runnable)" resolve="runWriteAction" />
                                 <node concept="2ShNRf" id="8AY3wOoBKO" role="37wK5m">
                                   <node concept="YeOm9" id="8AY3wOoBKP" role="2ShVmc">
                                     <node concept="1Y3b0j" id="8AY3wOoBKQ" role="YeSDq">
@@ -1273,7 +1265,6 @@
                                         <property role="1EzhhJ" value="false" />
                                         <property role="TrG5h" value="run" />
                                         <property role="DiZV1" value="false" />
-                                        <property role="IEkAT" value="false" />
                                         <node concept="3Tm1VV" id="8AY3wOoBKT" role="1B3o_S" />
                                         <node concept="3cqZAl" id="8AY3wOoBKU" role="3clF45" />
                                         <node concept="3clFbS" id="8AY3wOoBKV" role="3clF47">
@@ -1327,11 +1318,11 @@
                           <node concept="3clFbF" id="8AY3wOoBLg" role="3cqZAp">
                             <node concept="2OqwBi" id="8AY3wOoBLh" role="3clFbG">
                               <node concept="2YIFZM" id="8AY3wOoBLi" role="2Oq$k0">
-                                <ref role="37wK5l" to="w1kc:~ModelAccess.instance():jetbrains.mps.smodel.ModelAccess" resolve="instance" />
+                                <ref role="37wK5l" to="w1kc:~ModelAccess.instance()" resolve="instance" />
                                 <ref role="1Pybhc" to="w1kc:~ModelAccess" resolve="ModelAccess" />
                               </node>
                               <node concept="liA8E" id="8AY3wOoBLj" role="2OqNvi">
-                                <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runReadAction(java.lang.Runnable):void" resolve="runReadAction" />
+                                <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
                                 <node concept="2ShNRf" id="8AY3wOoBLk" role="37wK5m">
                                   <node concept="YeOm9" id="8AY3wOoBLl" role="2ShVmc">
                                     <node concept="1Y3b0j" id="8AY3wOoBLm" role="YeSDq">
@@ -1343,7 +1334,6 @@
                                         <property role="1EzhhJ" value="false" />
                                         <property role="TrG5h" value="run" />
                                         <property role="DiZV1" value="false" />
-                                        <property role="IEkAT" value="false" />
                                         <node concept="3Tm1VV" id="8AY3wOoBLp" role="1B3o_S" />
                                         <node concept="3cqZAl" id="8AY3wOoBLq" role="3clF45" />
                                         <node concept="3clFbS" id="8AY3wOoBLr" role="3clF47">
@@ -1405,18 +1395,17 @@
                         <property role="1EzhhJ" value="false" />
                         <property role="TrG5h" value="onCancel" />
                         <property role="DiZV1" value="false" />
-                        <property role="IEkAT" value="false" />
                         <node concept="3Tm1VV" id="8AY3wOoBLO" role="1B3o_S" />
                         <node concept="3cqZAl" id="8AY3wOoBLP" role="3clF45" />
                         <node concept="3clFbS" id="8AY3wOoBLQ" role="3clF47">
                           <node concept="3clFbF" id="8AY3wOoBLR" role="3cqZAp">
                             <node concept="2OqwBi" id="8AY3wOoBLS" role="3clFbG">
                               <node concept="2YIFZM" id="8AY3wOoBLT" role="2Oq$k0">
-                                <ref role="37wK5l" to="w1kc:~ModelAccess.instance():jetbrains.mps.smodel.ModelAccess" resolve="instance" />
+                                <ref role="37wK5l" to="w1kc:~ModelAccess.instance()" resolve="instance" />
                                 <ref role="1Pybhc" to="w1kc:~ModelAccess" resolve="ModelAccess" />
                               </node>
                               <node concept="liA8E" id="8AY3wOoBLU" role="2OqNvi">
-                                <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runWriteAction(java.lang.Runnable):void" resolve="runWriteAction" />
+                                <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runWriteAction(java.lang.Runnable)" resolve="runWriteAction" />
                                 <node concept="2ShNRf" id="8AY3wOoBLV" role="37wK5m">
                                   <node concept="YeOm9" id="8AY3wOoBLW" role="2ShVmc">
                                     <node concept="1Y3b0j" id="8AY3wOoBLX" role="YeSDq">
@@ -1428,7 +1417,6 @@
                                         <property role="1EzhhJ" value="false" />
                                         <property role="TrG5h" value="run" />
                                         <property role="DiZV1" value="false" />
-                                        <property role="IEkAT" value="false" />
                                         <node concept="3Tm1VV" id="8AY3wOoBM0" role="1B3o_S" />
                                         <node concept="3cqZAl" id="8AY3wOoBM1" role="3clF45" />
                                         <node concept="3clFbS" id="8AY3wOoBM2" role="3clF47">
@@ -1482,11 +1470,11 @@
                           <node concept="3clFbF" id="8AY3wOoBMn" role="3cqZAp">
                             <node concept="2OqwBi" id="8AY3wOoBMo" role="3clFbG">
                               <node concept="2YIFZM" id="8AY3wOoBMp" role="2Oq$k0">
-                                <ref role="37wK5l" to="w1kc:~ModelAccess.instance():jetbrains.mps.smodel.ModelAccess" resolve="instance" />
+                                <ref role="37wK5l" to="w1kc:~ModelAccess.instance()" resolve="instance" />
                                 <ref role="1Pybhc" to="w1kc:~ModelAccess" resolve="ModelAccess" />
                               </node>
                               <node concept="liA8E" id="8AY3wOoBMq" role="2OqNvi">
-                                <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runReadAction(java.lang.Runnable):void" resolve="runReadAction" />
+                                <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
                                 <node concept="2ShNRf" id="8AY3wOoBMr" role="37wK5m">
                                   <node concept="YeOm9" id="8AY3wOoBMs" role="2ShVmc">
                                     <node concept="1Y3b0j" id="8AY3wOoBMt" role="YeSDq">
@@ -1498,7 +1486,6 @@
                                         <property role="1EzhhJ" value="false" />
                                         <property role="TrG5h" value="run" />
                                         <property role="DiZV1" value="false" />
-                                        <property role="IEkAT" value="false" />
                                         <node concept="3Tm1VV" id="8AY3wOoBMw" role="1B3o_S" />
                                         <node concept="3cqZAl" id="8AY3wOoBMx" role="3clF45" />
                                         <node concept="3clFbS" id="8AY3wOoBMy" role="3clF47">
@@ -1606,11 +1593,11 @@
             <node concept="3clFbF" id="8AY3wOoBMT" role="3cqZAp">
               <node concept="2OqwBi" id="8AY3wOoBMU" role="3clFbG">
                 <node concept="2YIFZM" id="8AY3wOoBMV" role="2Oq$k0">
-                  <ref role="37wK5l" to="xygl:~ProgressManager.getInstance():com.intellij.openapi.progress.ProgressManager" resolve="getInstance" />
+                  <ref role="37wK5l" to="xygl:~ProgressManager.getInstance()" resolve="getInstance" />
                   <ref role="1Pybhc" to="xygl:~ProgressManager" resolve="ProgressManager" />
                 </node>
                 <node concept="liA8E" id="8AY3wOoBMW" role="2OqNvi">
-                  <ref role="37wK5l" to="xygl:~ProgressManager.run(com.intellij.openapi.progress.Task):void" resolve="run" />
+                  <ref role="37wK5l" to="xygl:~ProgressManager.run(com.intellij.openapi.progress.Task)" resolve="run" />
                   <node concept="37vLTw" id="8AY3wOoBMX" role="37wK5m">
                     <ref role="3cqZAo" node="8AY3wOoBJj" resolve="back" />
                   </node>

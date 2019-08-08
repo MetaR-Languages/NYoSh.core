@@ -2,7 +2,7 @@
 <model ref="r:72745bf9-459c-4b98-8342-8e5385473026(org.campagnelab.gobyweb.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -135,11 +135,11 @@
             <node concept="17QB3L" id="7bcCoOu1AsH" role="1tU5fm" />
             <node concept="2OqwBi" id="7g0LqmMNDj3" role="33vP2m">
               <node concept="2YIFZM" id="7g0LqmMNCUB" role="2Oq$k0">
-                <ref role="37wK5l" to="18ew:~MacrosFactory.getGlobal():jetbrains.mps.util.MacroHelper" resolve="getGlobal" />
+                <ref role="37wK5l" to="18ew:~MacrosFactory.getGlobal()" resolve="getGlobal" />
                 <ref role="1Pybhc" to="18ew:~MacrosFactory" resolve="MacrosFactory" />
               </node>
               <node concept="liA8E" id="7g0LqmMNDRY" role="2OqNvi">
-                <ref role="37wK5l" to="18ew:~MacroHelper.expandPath(java.lang.String):java.lang.String" resolve="expandPath" />
+                <ref role="37wK5l" to="18ew:~MacroHelper.expandPath(java.lang.String)" resolve="expandPath" />
                 <node concept="2OqwBi" id="7bcCoOtZZCm" role="37wK5m">
                   <node concept="13iPFW" id="7bcCoOtZZ_r" role="2Oq$k0" />
                   <node concept="3TrcHB" id="7bcCoOtZZTs" role="2OqNvi">

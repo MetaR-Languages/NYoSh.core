@@ -143,7 +143,7 @@
               <node concept="2OqwBi" id="5uN7hWa06qa" role="33vP2m">
                 <node concept="1Wqviy" id="5uN7hWa06j2" role="2Oq$k0" />
                 <node concept="liA8E" id="5uN7hWa07iw" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+                  <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />
                   <node concept="Xl_RD" id="5uN7hWa07pJ" role="37wK5m">
                     <property role="Xl_RC" value="/" />
                   </node>
@@ -185,7 +185,7 @@
                   <node concept="2OqwBi" id="Pjm9VB3Q82" role="3uHU7w">
                     <node concept="1Wqviy" id="Pjm9VB3Q83" role="2Oq$k0" />
                     <node concept="liA8E" id="Pjm9VB3Q84" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+                      <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
                       <node concept="Xl_RD" id="Pjm9VB3Q85" role="37wK5m">
                         <property role="Xl_RC" value="/" />
                       </node>
@@ -220,7 +220,7 @@
             <node concept="2OqwBi" id="G5bxgNE5eG" role="3clFbw">
               <node concept="1Wqviy" id="G5bxgNE53n" role="2Oq$k0" />
               <node concept="liA8E" id="G5bxgNE6wQ" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
+                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
                 <node concept="Xl_RD" id="G5bxgNNTIn" role="37wK5m">
                   <property role="Xl_RC" value="(.+[\\\\n\\\\r\\\\t ,]+).+" />
                 </node>
@@ -235,7 +235,7 @@
             <node concept="2OqwBi" id="G5bxgNIh3H" role="3clFbG">
               <node concept="1Wqviy" id="G5bxgNIh3I" role="2Oq$k0" />
               <node concept="liA8E" id="G5bxgNIh3J" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
+                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
                 <node concept="Xl_RD" id="G5bxgNMOdy" role="37wK5m">
                   <property role="Xl_RC" value="(.+[\\\\n\\\\r\\\\t ,]+).+" />
                 </node>

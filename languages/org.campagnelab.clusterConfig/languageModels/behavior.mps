@@ -2,7 +2,7 @@
 <model ref="r:bf68e0f8-5137-4e77-a465-6eead8ac55fe(org.campagnelab.clusterConfig.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -528,7 +528,7 @@
               <property role="Xl_RC" value="localhost" />
             </node>
             <node concept="liA8E" id="7ZmC9JYr5Tn" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.equalsIgnoreCase(java.lang.String):boolean" resolve="equalsIgnoreCase" />
+              <ref role="37wK5l" to="wyt6:~String.equalsIgnoreCase(java.lang.String)" resolve="equalsIgnoreCase" />
               <node concept="2OqwBi" id="7ZmC9JYr5WX" role="37wK5m">
                 <node concept="13iPFW" id="7ZmC9JYr5U8" role="2Oq$k0" />
                 <node concept="3TrcHB" id="7ZmC9JYr6fx" role="2OqNvi">
@@ -581,7 +581,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="1h4o16KXtoD" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                           <node concept="Xl_RD" id="1h4o16KXtUt" role="37wK5m">
                             <property role="Xl_RC" value="localhost" />
                           </node>
@@ -648,7 +648,7 @@
             <node concept="3clFbF" id="5KK2jWovUFx" role="3cqZAp">
               <node concept="37vLTI" id="5KK2jWovV7A" role="3clFbG">
                 <node concept="2YIFZM" id="5KK2jWovVAV" role="37vLTx">
-                  <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+                  <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String)" resolve="getProperty" />
                   <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
                   <node concept="Xl_RD" id="5KK2jWovVBG" role="37wK5m">
                     <property role="Xl_RC" value="user.name" />
@@ -691,11 +691,11 @@
                 </node>
                 <node concept="2OqwBi" id="5KK2jWovYkS" role="37vLTx">
                   <node concept="2YIFZM" id="5KK2jWovYkV" role="2Oq$k0">
-                    <ref role="37wK5l" to="wyt6:~Runtime.getRuntime():java.lang.Runtime" resolve="getRuntime" />
+                    <ref role="37wK5l" to="wyt6:~Runtime.getRuntime()" resolve="getRuntime" />
                     <ref role="1Pybhc" to="wyt6:~Runtime" resolve="Runtime" />
                   </node>
                   <node concept="liA8E" id="5KK2jWovYkU" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Runtime.availableProcessors():int" resolve="availableProcessors" />
+                    <ref role="37wK5l" to="wyt6:~Runtime.availableProcessors()" resolve="availableProcessors" />
                   </node>
                 </node>
               </node>
@@ -779,7 +779,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="5KK2jWoAKbM" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                           <node concept="37vLTw" id="5KK2jWoAKhn" role="37wK5m">
                             <ref role="3cqZAo" node="5KK2jWoAFm1" resolve="serviceName" />
                           </node>

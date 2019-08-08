@@ -2,7 +2,7 @@
 <model ref="r:3312c41c-d5da-4fe6-8843-9b1df1474798(org.campagnelab.nyosh.functions.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
   </languages>
   <imports />
   <registry>

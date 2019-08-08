@@ -2,13 +2,13 @@
 <model ref="r:ab86e397-1503-48ca-8931-8dc598446fee(org.campagnelab.NYoSh.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="a21a7294-c126-4f63-8335-8fecd8c28c7e" name="org.campagnelab.NYoSh" version="0" />
     <use id="289fcc83-6543-41e8-a5ca-768235715ce4" name="jetbrains.mps.lang.generator.generationParameters" version="0" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
     <engage id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" />
     <engage id="0202ed86-955d-4227-9c20-377dd6b1f9ff" name="org.campagnelab.nyosh.lib" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -48,9 +48,6 @@
       </concept>
       <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
         <reference id="2820489544401957798" name="classifier" index="HV5vE" />
-      </concept>
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
       </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -419,11 +416,11 @@
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="3364660638048049750" name="jetbrains.mps.lang.core.structure.PropertyAttribute" flags="ng" index="A9Btg">
-        <property id="1757699476691236117" name="propertyName" index="2qtEX9" />
+        <property id="1757699476691236117" name="name_DebugInfo" index="2qtEX9" />
         <property id="1341860900487648621" name="propertyId" index="P4ACc" />
       </concept>
       <concept id="3364660638048049745" name="jetbrains.mps.lang.core.structure.LinkAttribute" flags="ng" index="A9Btn">
-        <property id="1757699476691236116" name="linkRole" index="2qtEX8" />
+        <property id="1757699476691236116" name="role_DebugInfo" index="2qtEX8" />
         <property id="1341860900488019036" name="linkId" index="P3scX" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -432,7 +429,7 @@
       <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7" />
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
@@ -734,7 +731,7 @@
                       <node concept="30H73N" id="6P11ZzXaf5Q" role="2Oq$k0" />
                     </node>
                     <node concept="liA8E" id="1UyvKhbj2WI" role="2OqNvi">
-                      <ref role="37wK5l" to="c17a:~SAbstractConcept.getConceptAlias():java.lang.String" resolve="getConceptAlias" />
+                      <ref role="37wK5l" to="c17a:~SAbstractConcept.getConceptAlias()" resolve="getConceptAlias" />
                     </node>
                   </node>
                 </node>
@@ -895,7 +892,7 @@
               <node concept="3clFbF" id="4hyaPfkMQZT" role="3cqZAp">
                 <node concept="2OqwBi" id="4hyaPfkMQZU" role="3clFbG">
                   <node concept="liA8E" id="4hyaPfkMQZV" role="2OqNvi">
-                    <ref role="37wK5l" to="7hgv:~CommandAssembler.appendCommand(java.lang.String):void" resolve="appendCommand" />
+                    <ref role="37wK5l" to="7hgv:~CommandAssembler.appendCommand(java.lang.String)" resolve="appendCommand" />
                     <node concept="1ZhdrF" id="4hyaPfkMQZW" role="lGtFl">
                       <property role="2qtEX8" value="baseMethodDeclaration" />
                       <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1204053956946/1068499141037" />
@@ -1046,7 +1043,7 @@
               <node concept="3clFbF" id="3kQl0GsJP6f" role="3cqZAp">
                 <node concept="2OqwBi" id="3kQl0GsJP6g" role="3clFbG">
                   <node concept="liA8E" id="3kQl0GsJP6h" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
+                    <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String)" resolve="append" />
                     <node concept="Xl_RD" id="3Qp3OgcRA9X" role="37wK5m">
                       <property role="Xl_RC" value="command|operator|bash fragment" />
                       <node concept="1sPUBX" id="3Qp3OgcRAlK" role="lGtFl">
@@ -1252,7 +1249,7 @@
                                           </node>
                                         </node>
                                         <node concept="liA8E" id="7k65M_rFiyJ" role="2OqNvi">
-                                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                           <node concept="Xl_RD" id="7k65M_rFiZv" role="37wK5m">
                                             <property role="Xl_RC" value="exportedVariables" />
                                           </node>
@@ -1276,7 +1273,7 @@
                         <ref role="3cqZAo" node="4hyaPfkMQZP" resolve="assembler" />
                       </node>
                       <node concept="liA8E" id="4hyaPfkMR50" role="2OqNvi">
-                        <ref role="37wK5l" to="7hgv:~CommandAssembler.setLocalEnvironment(java.util.Set):void" resolve="setLocalEnvironment" />
+                        <ref role="37wK5l" to="7hgv:~CommandAssembler.setLocalEnvironment(java.util.Set)" resolve="setLocalEnvironment" />
                         <node concept="37vLTw" id="7VhJRqKntRz" role="37wK5m">
                           <ref role="3cqZAo" node="4hyaPfkMG86" resolve="exportedVariables" />
                         </node>
@@ -1286,7 +1283,7 @@
                   <node concept="3clFbF" id="4hyaPfkMR51" role="3cqZAp">
                     <node concept="2OqwBi" id="4hyaPfkMR52" role="3clFbG">
                       <node concept="liA8E" id="4hyaPfkMR53" role="2OqNvi">
-                        <ref role="37wK5l" to="7hgv:~CommandAssembler.finishAssembly():void" resolve="finishAssembly" />
+                        <ref role="37wK5l" to="7hgv:~CommandAssembler.finishAssembly()" resolve="finishAssembly" />
                       </node>
                       <node concept="37vLTw" id="4hyaPfkMR54" role="2Oq$k0">
                         <ref role="3cqZAo" node="4hyaPfkMQZP" resolve="assembler" />
@@ -1303,7 +1300,7 @@
                           <ref role="3cqZAo" node="4hyaPfkMQZP" resolve="assembler" />
                         </node>
                         <node concept="liA8E" id="3kQl0GsIQb2" role="2OqNvi">
-                          <ref role="37wK5l" to="7hgv:~CommandAssembler.getCommandExecutionPlan():org.campagnelab.nyosh.exec.CommandExecutionPlan" resolve="getCommandExecutionPlan" />
+                          <ref role="37wK5l" to="7hgv:~CommandAssembler.getCommandExecutionPlan()" resolve="getCommandExecutionPlan" />
                         </node>
                       </node>
                     </node>
@@ -1315,7 +1312,7 @@
                           <ref role="3cqZAo" node="7VhJRqKnJvp" resolve="plan" />
                         </node>
                         <node concept="liA8E" id="6r$x3wsXUAJ" role="2OqNvi">
-                          <ref role="37wK5l" to="7hgv:~CommandExecutionPlan.run():int" resolve="run" />
+                          <ref role="37wK5l" to="7hgv:~CommandExecutionPlan.run()" resolve="run" />
                         </node>
                       </node>
                       <node concept="37vLTw" id="54MWBCqyQ" role="37vLTJ">
@@ -1351,7 +1348,7 @@
                               <ref role="3cqZAo" node="3kQl0GsJJMW" resolve="commandBuffer" />
                             </node>
                             <node concept="liA8E" id="2UmaC9YUGlc" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~StringBuffer.toString():java.lang.String" resolve="toString" />
+                              <ref role="37wK5l" to="wyt6:~StringBuffer.toString()" resolve="toString" />
                             </node>
                           </node>
                           <node concept="Xl_RD" id="2UmaC9YUDim" role="3uHU7B">
@@ -1373,7 +1370,7 @@
                             <ref role="3cqZAo" node="7VhJRqKnJvp" resolve="plan" />
                           </node>
                           <node concept="liA8E" id="3kQl0GsJiwP" role="2OqNvi">
-                            <ref role="37wK5l" to="7hgv:~CommandExecutionPlan.executedCompletely():boolean" resolve="executedCompletely" />
+                            <ref role="37wK5l" to="7hgv:~CommandExecutionPlan.executedCompletely()" resolve="executedCompletely" />
                           </node>
                         </node>
                       </node>
@@ -1387,7 +1384,7 @@
                                 <ref role="3cqZAo" node="3kQl0GsJJMW" resolve="commandBuffer" />
                               </node>
                               <node concept="liA8E" id="6xoq4TQg73E" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~StringBuffer.toString():java.lang.String" resolve="toString" />
+                                <ref role="37wK5l" to="wyt6:~StringBuffer.toString()" resolve="toString" />
                               </node>
                             </node>
                             <node concept="Xl_RD" id="6xoq4TQg73F" role="3uHU7B">
@@ -1405,14 +1402,14 @@
                         <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                       </node>
                       <node concept="liA8E" id="6O62nKSNF7y" role="2OqNvi">
-                        <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                        <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                         <node concept="3cpWs3" id="6O62nKSNGwU" role="37wK5m">
                           <node concept="2OqwBi" id="6O62nKSNHhj" role="3uHU7w">
                             <node concept="37vLTw" id="6O62nKSNGz0" role="2Oq$k0">
                               <ref role="3cqZAo" node="3kQl0GsJJMW" resolve="commandBuffer" />
                             </node>
                             <node concept="liA8E" id="6O62nKSNIwt" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~StringBuffer.toString():java.lang.String" resolve="toString" />
+                              <ref role="37wK5l" to="wyt6:~StringBuffer.toString()" resolve="toString" />
                             </node>
                           </node>
                           <node concept="Xl_RD" id="6O62nKSNF7z" role="3uHU7B">
@@ -1445,7 +1442,7 @@
                               <ref role="3cqZAo" node="7VhJRqKlSU$" resolve="consumeProcessOutputToVar" />
                             </node>
                             <node concept="liA8E" id="6r$x3wt1pVE" role="2OqNvi">
-                              <ref role="37wK5l" to="7hgv:~OutputConsumerToString.getValue():java.lang.String" resolve="getValue" />
+                              <ref role="37wK5l" to="7hgv:~OutputConsumerToString.getValue()" resolve="getValue" />
                             </node>
                           </node>
                           <node concept="37vLTw" id="6r$x3wsWJPG" role="37vLTJ">
@@ -1857,7 +1854,7 @@
                 <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
               </node>
               <node concept="liA8E" id="ocJaFYYCpe" role="2OqNvi">
-                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                 <node concept="Xl_RD" id="ocJaFYYCpf" role="37wK5m">
                   <property role="Xl_RC" value="" />
                 </node>
@@ -1961,7 +1958,7 @@
               <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
             </node>
             <node concept="liA8E" id="ocJaFYYCpH" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="Xl_RD" id="ocJaFYYCpI" role="37wK5m">
                 <property role="Xl_RC" value="" />
               </node>
@@ -1975,7 +1972,7 @@
               <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
             </node>
             <node concept="liA8E" id="ocJaFYYCpM" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="Xl_RD" id="ocJaFYYCpN" role="37wK5m">
                 <property role="Xl_RC" value="" />
               </node>
@@ -2026,7 +2023,7 @@
                     <ref role="3cqZAo" node="ocJaFYYCqm" resolve="_steps" />
                   </node>
                   <node concept="liA8E" id="ocJaFYYCqc" role="2OqNvi">
-                    <ref role="37wK5l" to="ar8u:~FileStepsLogger.close():void" resolve="close" />
+                    <ref role="37wK5l" to="ar8u:~FileStepsLogger.close()" resolve="close" />
                   </node>
                 </node>
               </node>
@@ -2188,7 +2185,7 @@
                 <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
               </node>
               <node concept="liA8E" id="ocJaFYYCre" role="2OqNvi">
-                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                 <node concept="Xl_RD" id="ocJaFYYCrf" role="37wK5m">
                   <property role="Xl_RC" value="" />
                 </node>
@@ -2266,7 +2263,7 @@
                         <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                       </node>
                       <node concept="liA8E" id="ocJaFYYCrN" role="2OqNvi">
-                        <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                        <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                         <node concept="3cpWs3" id="ocJaFYYCrO" role="37wK5m">
                           <node concept="Xl_RD" id="ocJaFYYCrP" role="3uHU7w">
                             <property role="Xl_RC" value="description" />
@@ -2568,7 +2565,7 @@
                 <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
               </node>
               <node concept="liA8E" id="3kQl0GsOvkw" role="2OqNvi">
-                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                 <node concept="Xl_RD" id="3kQl0GsOvkx" role="37wK5m">
                   <property role="Xl_RC" value="" />
                 </node>
@@ -2792,7 +2789,7 @@
           <node concept="3clFbF" id="4gsmYrkYtSB" role="3cqZAp">
             <node concept="2OqwBi" id="4gsmYrkYtSX" role="3clFbG">
               <node concept="liA8E" id="4gsmYrkYtSY" role="2OqNvi">
-                <ref role="37wK5l" to="7hgv:~CommandAssembler.consumeStandardOutput(org.campagnelab.nyosh.exec.OutputConsumer):void" resolve="consumeStandardOutput" />
+                <ref role="37wK5l" to="7hgv:~CommandAssembler.consumeStandardOutput(org.campagnelab.nyosh.exec.OutputConsumer)" resolve="consumeStandardOutput" />
                 <node concept="2ShNRf" id="4gsmYrkYtSZ" role="37wK5m">
                   <node concept="YeOm9" id="4gsmYrkYtT0" role="2ShVmc">
                     <node concept="1Y3b0j" id="4gsmYrkYtT1" role="YeSDq">
@@ -2804,7 +2801,6 @@
                         <property role="1EzhhJ" value="false" />
                         <property role="TrG5h" value="consume" />
                         <property role="DiZV1" value="false" />
-                        <property role="IEkAT" value="false" />
                         <node concept="3Tm1VV" id="4gsmYrkYtT4" role="1B3o_S" />
                         <node concept="3cqZAl" id="4gsmYrkYtT5" role="3clF45" />
                         <node concept="37vLTG" id="4gsmYrkYtT6" role="3clF46">
@@ -2847,7 +2843,7 @@
                                     <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                                   </node>
                                   <node concept="liA8E" id="4gsmYrkYtTs" role="2OqNvi">
-                                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                                     <node concept="Xl_RD" id="4gsmYrkYtTt" role="37wK5m">
                                       <property role="Xl_RC" value="Consuming from stream" />
                                     </node>
@@ -2865,7 +2861,7 @@
                               <node concept="3clFbS" id="4gsmYrkYtTx" role="TDEfX">
                                 <node concept="3clFbF" id="4gsmYrkYRQD" role="3cqZAp">
                                   <node concept="1rXfSq" id="4gsmYrkYRQC" role="3clFbG">
-                                    <ref role="37wK5l" to="7hgv:~OutputConsumer.handleException(java.lang.Exception):void" resolve="handleException" />
+                                    <ref role="37wK5l" to="7hgv:~OutputConsumer.handleException(java.lang.Exception)" resolve="handleException" />
                                     <node concept="37vLTw" id="4gsmYrkYS0v" role="37wK5m">
                                       <ref role="3cqZAo" node="4gsmYrkYtTv" resolve="e" />
                                     </node>
@@ -2933,7 +2929,7 @@
           <node concept="3clFbF" id="4gsmYrkYLaO" role="3cqZAp">
             <node concept="2OqwBi" id="4hyaPfkMR32" role="3clFbG">
               <node concept="liA8E" id="4hyaPfkMR33" role="2OqNvi">
-                <ref role="37wK5l" to="7hgv:~CommandAssembler.consumeStandardOutput(org.campagnelab.nyosh.exec.OutputConsumer):void" resolve="consumeStandardOutput" />
+                <ref role="37wK5l" to="7hgv:~CommandAssembler.consumeStandardOutput(org.campagnelab.nyosh.exec.OutputConsumer)" resolve="consumeStandardOutput" />
                 <node concept="2ShNRf" id="4hyaPfkMR34" role="37wK5m">
                   <node concept="YeOm9" id="4hyaPfkMR35" role="2ShVmc">
                     <node concept="1Y3b0j" id="4hyaPfkMR36" role="YeSDq">
@@ -2945,7 +2941,6 @@
                         <property role="1EzhhJ" value="false" />
                         <property role="TrG5h" value="consume" />
                         <property role="DiZV1" value="false" />
-                        <property role="IEkAT" value="false" />
                         <node concept="3Tm1VV" id="4hyaPfkMR39" role="1B3o_S" />
                         <node concept="3cqZAl" id="4hyaPfkMR3a" role="3clF45" />
                         <node concept="37vLTG" id="4hyaPfkMR3b" role="3clF46">
@@ -3004,7 +2999,7 @@
                                     <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                                   </node>
                                   <node concept="liA8E" id="4hyaPfkMR3D" role="2OqNvi">
-                                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                                     <node concept="3cpWs3" id="4hyaPfkMR3E" role="37wK5m">
                                       <node concept="37vLTw" id="4hyaPfkMR3F" role="3uHU7w">
                                         <ref role="3cqZAo" node="4hyaPfkMR3f" resolve="reader" />
@@ -3027,7 +3022,7 @@
                               <node concept="3clFbS" id="4hyaPfkMR3K" role="TDEfX">
                                 <node concept="3clFbF" id="4gsmYrkYR4$" role="3cqZAp">
                                   <node concept="1rXfSq" id="4gsmYrkYR4z" role="3clFbG">
-                                    <ref role="37wK5l" to="7hgv:~OutputConsumer.handleException(java.lang.Exception):void" resolve="handleException" />
+                                    <ref role="37wK5l" to="7hgv:~OutputConsumer.handleException(java.lang.Exception)" resolve="handleException" />
                                     <node concept="37vLTw" id="4gsmYrkYRje" role="37wK5m">
                                       <ref role="3cqZAo" node="4hyaPfkMR3I" resolve="e" />
                                     </node>
@@ -3094,7 +3089,7 @@
           <node concept="3clFbF" id="4gsmYrkZrMy" role="3cqZAp">
             <node concept="2OqwBi" id="4hyaPfkMR24" role="3clFbG">
               <node concept="liA8E" id="4hyaPfkMR25" role="2OqNvi">
-                <ref role="37wK5l" to="7hgv:~CommandAssembler.consumeStandardError(org.campagnelab.nyosh.exec.OutputConsumer):void" resolve="consumeStandardError" />
+                <ref role="37wK5l" to="7hgv:~CommandAssembler.consumeStandardError(org.campagnelab.nyosh.exec.OutputConsumer)" resolve="consumeStandardError" />
                 <node concept="2ShNRf" id="4hyaPfkMR26" role="37wK5m">
                   <node concept="YeOm9" id="4hyaPfkMR27" role="2ShVmc">
                     <node concept="1Y3b0j" id="4hyaPfkMR28" role="YeSDq">
@@ -3106,7 +3101,6 @@
                         <property role="1EzhhJ" value="false" />
                         <property role="TrG5h" value="consume" />
                         <property role="DiZV1" value="false" />
-                        <property role="IEkAT" value="false" />
                         <node concept="3Tm1VV" id="4hyaPfkMR2b" role="1B3o_S" />
                         <node concept="3cqZAl" id="4hyaPfkMR2c" role="3clF45" />
                         <node concept="37vLTG" id="4hyaPfkMR2d" role="3clF46">
@@ -3144,7 +3138,7 @@
                                     <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                                   </node>
                                   <node concept="liA8E" id="4hyaPfkMR2z" role="2OqNvi">
-                                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                                     <node concept="Xl_RD" id="4hyaPfkMR2$" role="37wK5m">
                                       <property role="Xl_RC" value="Consuming from stream" />
                                     </node>
@@ -3162,7 +3156,7 @@
                               <node concept="3clFbS" id="4hyaPfkMR2C" role="TDEfX">
                                 <node concept="3clFbF" id="4gsmYrkZsKa" role="3cqZAp">
                                   <node concept="1rXfSq" id="4gsmYrkZsK9" role="3clFbG">
-                                    <ref role="37wK5l" to="7hgv:~OutputConsumer.handleException(java.lang.Exception):void" resolve="handleException" />
+                                    <ref role="37wK5l" to="7hgv:~OutputConsumer.handleException(java.lang.Exception)" resolve="handleException" />
                                     <node concept="37vLTw" id="4gsmYrkZsTQ" role="37wK5m">
                                       <ref role="3cqZAo" node="4hyaPfkMR2A" resolve="e" />
                                     </node>
@@ -3230,7 +3224,7 @@
           <node concept="3clFbF" id="4gsmYrkZEbu" role="3cqZAp">
             <node concept="2OqwBi" id="4gsmYrkZEbO" role="3clFbG">
               <node concept="liA8E" id="4gsmYrkZEbP" role="2OqNvi">
-                <ref role="37wK5l" to="7hgv:~CommandAssembler.consumeStandardError(org.campagnelab.nyosh.exec.OutputConsumer):void" resolve="consumeStandardError" />
+                <ref role="37wK5l" to="7hgv:~CommandAssembler.consumeStandardError(org.campagnelab.nyosh.exec.OutputConsumer)" resolve="consumeStandardError" />
                 <node concept="2ShNRf" id="4gsmYrkZEbQ" role="37wK5m">
                   <node concept="YeOm9" id="4gsmYrkZEbR" role="2ShVmc">
                     <node concept="1Y3b0j" id="4gsmYrkZEbS" role="YeSDq">
@@ -3242,7 +3236,6 @@
                         <property role="1EzhhJ" value="false" />
                         <property role="TrG5h" value="consume" />
                         <property role="DiZV1" value="false" />
-                        <property role="IEkAT" value="false" />
                         <node concept="3Tm1VV" id="4gsmYrkZEbV" role="1B3o_S" />
                         <node concept="3cqZAl" id="4gsmYrkZEbW" role="3clF45" />
                         <node concept="37vLTG" id="4gsmYrkZEbX" role="3clF46">
@@ -3301,7 +3294,7 @@
                                     <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                                   </node>
                                   <node concept="liA8E" id="4gsmYrkZEcr" role="2OqNvi">
-                                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                                     <node concept="3cpWs3" id="4gsmYrkZEcs" role="37wK5m">
                                       <node concept="37vLTw" id="4gsmYrkZEct" role="3uHU7w">
                                         <ref role="3cqZAo" node="4gsmYrkZEc1" resolve="reader" />
@@ -3406,7 +3399,7 @@
           <node concept="3clFbF" id="4gsmYrl00z3" role="3cqZAp">
             <node concept="2OqwBi" id="4gsmYrl00z4" role="3clFbG">
               <node concept="liA8E" id="4gsmYrl00z5" role="2OqNvi">
-                <ref role="37wK5l" to="7hgv:~CommandAssembler.consumeStandardOutput(org.campagnelab.nyosh.exec.OutputConsumer):void" resolve="consumeStandardOutput" />
+                <ref role="37wK5l" to="7hgv:~CommandAssembler.consumeStandardOutput(org.campagnelab.nyosh.exec.OutputConsumer)" resolve="consumeStandardOutput" />
                 <node concept="37vLTw" id="4gsmYrl00z6" role="37wK5m">
                   <ref role="3cqZAo" node="7VhJRqKlSU$" resolve="consumeProcessOutputToVar" />
                 </node>
@@ -3465,7 +3458,7 @@
           <node concept="3clFbF" id="4gsmYrl0hPo" role="3cqZAp">
             <node concept="2OqwBi" id="4gsmYrl0hPp" role="3clFbG">
               <node concept="liA8E" id="4gsmYrl0hPq" role="2OqNvi">
-                <ref role="37wK5l" to="7hgv:~CommandAssembler.consumeStandardOutput(org.campagnelab.nyosh.exec.OutputConsumer):void" resolve="consumeStandardOutput" />
+                <ref role="37wK5l" to="7hgv:~CommandAssembler.consumeStandardOutput(org.campagnelab.nyosh.exec.OutputConsumer)" resolve="consumeStandardOutput" />
                 <node concept="2ShNRf" id="4gsmYrl0hPr" role="37wK5m">
                   <node concept="1pGfFk" id="4gsmYrl0pdZ" role="2ShVmc">
                     <ref role="37wK5l" to="7hgv:~RedirectToFile.&lt;init&gt;(java.io.File)" resolve="RedirectToFile" />
@@ -3752,7 +3745,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="6wKPy2XMu18" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                               <node concept="Xl_RD" id="6wKPy2XMu19" role="37wK5m">
                                 <property role="Xl_RC" value="errorManagement" />
                               </node>
@@ -3895,7 +3888,6 @@
     <property role="3GE5qa" value="" />
     <node concept="3clFb_" id="2UmaC9YU8Im" role="jymVt">
       <property role="TrG5h" value="recordStepDone" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="7PO3927CaM1" role="3clF47">
@@ -3965,7 +3957,6 @@
     </node>
     <node concept="3clFb_" id="2UmaC9YUeup" role="jymVt">
       <property role="TrG5h" value="exception" />
-      <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="7PO3927CaMM" role="3clF47">
@@ -4061,7 +4052,7 @@
               <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
             </node>
             <node concept="liA8E" id="7PO3927ItG1" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="Xl_RD" id="7PO3927ItG2" role="37wK5m">
                 <property role="Xl_RC" value="" />
               </node>
@@ -4170,7 +4161,7 @@
               <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
             </node>
             <node concept="liA8E" id="6wKPy2ZdU6L" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="Xl_RD" id="6wKPy2ZdU6M" role="37wK5m">
                 <property role="Xl_RC" value="" />
               </node>
@@ -4282,7 +4273,7 @@
                 <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
               </node>
               <node concept="liA8E" id="7PO3927HWQr" role="2OqNvi">
-                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                 <node concept="Xl_RD" id="7PO3927HWQs" role="37wK5m">
                   <property role="Xl_RC" value="" />
                 </node>
@@ -4539,7 +4530,7 @@
                 <ref role="3cqZAo" node="ocJaFYYCu9" resolve="_steps" />
               </node>
               <node concept="liA8E" id="3kQl0GsP2tP" role="2OqNvi">
-                <ref role="37wK5l" to="ar8u:~FileStepsLogger.step(java.lang.String,int):void" resolve="step" />
+                <ref role="37wK5l" to="ar8u:~FileStepsLogger.step(java.lang.String,int)" resolve="step" />
                 <node concept="37vLTw" id="3kQl0GsP2uE" role="37wK5m">
                   <ref role="3cqZAo" node="3kQl0GsP0xY" resolve="stepDescription" />
                 </node>
@@ -4596,7 +4587,7 @@
                     <ref role="1PxDUh" node="ocJaFYYCu8" resolve="dummy" />
                   </node>
                   <node concept="liA8E" id="ocJaFYYCuV" role="2OqNvi">
-                    <ref role="37wK5l" to="ar8u:~FileStepsLogger.error(java.lang.String):void" resolve="error" />
+                    <ref role="37wK5l" to="ar8u:~FileStepsLogger.error(java.lang.String)" resolve="error" />
                     <node concept="37vLTw" id="ocJaFYYCuW" role="37wK5m">
                       <ref role="3cqZAo" node="ocJaFYYCvi" resolve="reason" />
                     </node>
@@ -4613,7 +4604,7 @@
                         <ref role="3cqZAo" node="ocJaFYYCu9" resolve="_steps" />
                       </node>
                       <node concept="liA8E" id="ocJaFYYCv3" role="2OqNvi">
-                        <ref role="37wK5l" to="ar8u:~FileStepsLogger.close():void" resolve="close" />
+                        <ref role="37wK5l" to="ar8u:~FileStepsLogger.close()" resolve="close" />
                       </node>
                     </node>
                     <node concept="15s5l7" id="ocJaFYYCv4" role="lGtFl" />
@@ -4637,7 +4628,7 @@
               </node>
               <node concept="3clFbF" id="ocJaFYYCvb" role="3cqZAp">
                 <node concept="2YIFZM" id="ocJaFYYCvc" role="3clFbG">
-                  <ref role="37wK5l" to="wyt6:~System.exit(int):void" resolve="exit" />
+                  <ref role="37wK5l" to="wyt6:~System.exit(int)" resolve="exit" />
                   <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
                   <node concept="37vLTw" id="ocJaFYYCvd" role="37wK5m">
                     <ref role="3cqZAo" node="ocJaFYYCvk" resolve="statusCode" />
@@ -5085,7 +5076,7 @@
                 <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
               </node>
               <node concept="liA8E" id="6wKPy2Zb2mW" role="2OqNvi">
-                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                 <node concept="Xl_RD" id="6wKPy2Zb2mX" role="37wK5m">
                   <property role="Xl_RC" value="" />
                 </node>
@@ -5161,7 +5152,7 @@
                 <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
               </node>
               <node concept="liA8E" id="3qLImriNkIU" role="2OqNvi">
-                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                 <node concept="Xl_RD" id="3qLImriNxdA" role="37wK5m">
                   <property role="Xl_RC" value="expr" />
                   <node concept="29HgVG" id="3qLImriNxPk" role="lGtFl">
@@ -5257,7 +5248,6 @@
           </node>
           <node concept="gft3U" id="29ze2FqXcJh" role="UU_$l">
             <node concept="312cEg" id="29ze2FqXgF9" role="gfFT$">
-              <property role="IEkAT" value="false" />
               <property role="TrG5h" value="lastExitCode2" />
               <property role="3TUv4t" value="false" />
               <node concept="10Oyi0" id="29ze2FqXgEN" role="1tU5fm" />

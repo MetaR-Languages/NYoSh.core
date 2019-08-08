@@ -287,7 +287,7 @@
                   <ref role="3uigEE" to="zf81:~InetAddress" resolve="InetAddress" />
                 </node>
                 <node concept="2YIFZM" id="1WwS_d$2b0X" role="33vP2m">
-                  <ref role="37wK5l" to="zf81:~InetAddress.getByName(java.lang.String):java.net.InetAddress" resolve="getByName" />
+                  <ref role="37wK5l" to="zf81:~InetAddress.getByName(java.lang.String)" resolve="getByName" />
                   <ref role="1Pybhc" to="zf81:~InetAddress" resolve="InetAddress" />
                   <node concept="2OqwBi" id="1WwS_d$2dsW" role="37wK5m">
                     <node concept="2Sf5sV" id="1WwS_d$2dkc" role="2Oq$k0" />
@@ -305,7 +305,7 @@
                   <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                 </node>
                 <node concept="liA8E" id="1WwS_d$1uFr" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                   <node concept="3cpWs3" id="1WwS_d$1uFf" role="37wK5m">
                     <node concept="Xl_RD" id="1WwS_d$1uFg" role="3uHU7B">
                       <property role="Xl_RC" value="Sending Ping Request to " />
@@ -327,7 +327,7 @@
                     <ref role="3cqZAo" node="1WwS_d$1uF8" resolve="inet" />
                   </node>
                   <node concept="liA8E" id="1WwS_d$2mh9" role="2OqNvi">
-                    <ref role="37wK5l" to="zf81:~InetAddress.isReachable(int):boolean" resolve="isReachable" />
+                    <ref role="37wK5l" to="zf81:~InetAddress.isReachable(int)" resolve="isReachable" />
                     <node concept="3cmrfG" id="1WwS_d$2mzk" role="37wK5m">
                       <property role="3cmrfH" value="5000" />
                     </node>
@@ -571,7 +571,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="WZP9kZpckG" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                           <node concept="Xl_RD" id="WZP9kZpckH" role="37wK5m">
                             <property role="Xl_RC" value="monitorService" />
                           </node>
@@ -859,7 +859,7 @@
                       <ref role="3cqZAo" node="7$CvuSwM92B" resolve="socket" />
                     </node>
                     <node concept="liA8E" id="7$CvuSwM96E" role="2OqNvi">
-                      <ref role="37wK5l" to="zf81:~Socket.close():void" resolve="close" />
+                      <ref role="37wK5l" to="zf81:~Socket.close()" resolve="close" />
                     </node>
                   </node>
                 </node>
@@ -873,7 +873,7 @@
                   <ref role="3cqZAo" node="7$CvuSwM92B" resolve="socket" />
                 </node>
                 <node concept="liA8E" id="7$CvuSwM96H" role="2OqNvi">
-                  <ref role="37wK5l" to="zf81:~Socket.connect(java.net.SocketAddress,int):void" resolve="connect" />
+                  <ref role="37wK5l" to="zf81:~Socket.connect(java.net.SocketAddress,int)" resolve="connect" />
                   <node concept="37vLTw" id="7$CvuSwM96I" role="37wK5m">
                     <ref role="3cqZAo" node="7$CvuSwM92x" resolve="sockaddr" />
                   </node>

@@ -111,7 +111,7 @@
         <node concept="3clFbS" id="2GvbEExVbqo" role="2VODD2">
           <node concept="3cpWs6" id="2GvbEExVjdC" role="3cqZAp">
             <node concept="2YIFZM" id="2GvbEExVaf2" role="3cqZAk">
-              <ref role="37wK5l" to="35tq:~ListScope.forNamedElements(java.lang.Iterable):jetbrains.mps.scope.ListScope" resolve="forNamedElements" />
+              <ref role="37wK5l" to="35tq:~ListScope.forNamedElements(java.lang.Iterable)" resolve="forNamedElements" />
               <ref role="1Pybhc" to="35tq:~ListScope" resolve="ListScope" />
               <node concept="2OqwBi" id="2GvbEExVaf3" role="37wK5m">
                 <node concept="2OqwBi" id="2GvbEExVaf4" role="2Oq$k0">

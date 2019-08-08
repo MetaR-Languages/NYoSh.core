@@ -6,7 +6,6 @@
   </languages>
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -16,13 +15,9 @@
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
-      <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
-        <reference id="1169127628841" name="intfc" index="PrY4T" />
-      </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
-        <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
@@ -65,9 +60,6 @@
     <property role="R4oN_" value="The step reason the exception may have occured" />
     <property role="EcuMT" value="7596805840595271404" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
-    <node concept="PrWs8" id="6_HhEAkiNVH" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
   </node>
   <node concept="1TIwiD" id="6_HhEAkiNVI">
     <property role="3GE5qa" value="errors" />
@@ -76,9 +68,6 @@
     <property role="R4oN_" value="The process return status code that triggered the exception" />
     <property role="EcuMT" value="7596805840595271406" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
-    <node concept="PrWs8" id="6_HhEAkiNVJ" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
   </node>
   <node concept="1TIwiD" id="6_HhEAkiNVK">
     <property role="3GE5qa" value="errors" />
@@ -86,9 +75,6 @@
     <property role="34LRSv" value="exception" />
     <property role="EcuMT" value="7596805840595271408" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
-    <node concept="PrWs8" id="6_HhEAkiNVL" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
   </node>
   <node concept="1TIwiD" id="6_HhEAkiSD5">
     <property role="TrG5h" value="ConceptFunctionParameter_Success_Reason" />
@@ -96,9 +82,6 @@
     <property role="R4oN_" value="the step description or reason the exception may have occured" />
     <property role="EcuMT" value="7596805840595290693" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
-    <node concept="PrWs8" id="6_HhEAkiSD6" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
   </node>
   <node concept="1TIwiD" id="6_HhEAkiXz4">
     <property role="TrG5h" value="ConceptFunctionParameter_ParsedArguments" />
@@ -114,9 +97,6 @@
       <property role="IQ2ns" value="7596805840595310789" />
       <ref role="20lvS9" to="tpee:fz3vP1H" resolve="Type" />
     </node>
-    <node concept="PrWs8" id="6_HhEAkiXz6" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
   </node>
   <node concept="1TIwiD" id="6_HhEAkiXz7">
     <property role="TrG5h" value="ConceptFunctionParameter_outputReader" />
@@ -125,9 +105,6 @@
     <property role="3GE5qa" value="consumeOutput" />
     <property role="EcuMT" value="7596805840595310791" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
-    <node concept="PrWs8" id="6_HhEAkiXz8" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
   </node>
   <node concept="1TIwiD" id="6_HhEAkiXz9">
     <property role="TrG5h" value="ConceptFunctionParameter_outputStream" />
@@ -136,9 +113,6 @@
     <property role="3GE5qa" value="consumeOutput" />
     <property role="EcuMT" value="7596805840595310793" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
-    <node concept="PrWs8" id="6_HhEAkiXza" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
   </node>
   <node concept="1TIwiD" id="6_HhEAkiXzb">
     <property role="TrG5h" value="ConceptFunction_ConsumeOutputReaderBlock" />

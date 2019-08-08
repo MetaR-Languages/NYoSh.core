@@ -2,7 +2,7 @@
 <model ref="r:952a34a4-f957-48dc-8ff0-e1a176937269(org.campagnelab.clusterConfig.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -252,7 +252,7 @@
                   <node concept="3clFbS" id="$Ux0Gyhij9" role="2VODD2">
                     <node concept="3clFbF" id="$Ux0Gyhija" role="3cqZAp">
                       <node concept="2YIFZM" id="$Ux0Gyhijb" role="3clFbG">
-                        <ref role="37wK5l" to="wyt6:~Integer.toString(int):java.lang.String" resolve="toString" />
+                        <ref role="37wK5l" to="wyt6:~Integer.toString(int)" resolve="toString" />
                         <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
                         <node concept="2OqwBi" id="$Ux0Gyhijc" role="37wK5m">
                           <node concept="2OqwBi" id="$Ux0Gyhijd" role="2Oq$k0">
@@ -372,7 +372,7 @@
             <node concept="3clFbS" id="2DkpMLT2qa9" role="2VODD2">
               <node concept="3clFbF" id="2DkpMLT2$xT" role="3cqZAp">
                 <node concept="2YIFZM" id="2DkpMLT2_4X" role="3clFbG">
-                  <ref role="37wK5l" to="wyt6:~Integer.toString(int):java.lang.String" resolve="toString" />
+                  <ref role="37wK5l" to="wyt6:~Integer.toString(int)" resolve="toString" />
                   <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
                   <node concept="2OqwBi" id="2DkpMLT2qsC" role="37wK5m">
                     <node concept="pncrf" id="2DkpMLT2qll" role="2Oq$k0" />

@@ -2,7 +2,7 @@
 <model ref="r:2f60864f-994c-4413-b324-244fab1c0017(org.campagnelab.nyosh.functions.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -20,7 +20,6 @@
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
         <property id="5864038008284099149" name="isStatic" index="2Ki8OM" />
-        <property id="1225194472833" name="isPrivate" index="13i0is" />
         <property id="1225194472832" name="isVirtual" index="13i0it" />
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
@@ -133,7 +132,6 @@
     </node>
     <node concept="13i0hz" id="1xVV58hCjXc" role="13h7CS">
       <property role="2Ki8OM" value="false" />
-      <property role="13i0is" value="false" />
       <property role="TrG5h" value="getParameterConcepts" />
       <property role="13i0it" value="false" />
       <ref role="13i0hy" to="tpek:2xELmDxyi2v" resolve="getParameterConcepts" />
@@ -229,7 +227,6 @@
     </node>
     <node concept="13i0hz" id="1xVV58hClXV" role="13h7CS">
       <property role="2Ki8OM" value="false" />
-      <property role="13i0is" value="false" />
       <property role="TrG5h" value="getParameterConcepts" />
       <property role="13i0it" value="false" />
       <ref role="13i0hy" to="tpek:2xELmDxyi2v" resolve="getParameterConcepts" />
@@ -292,7 +289,6 @@
     <property role="3GE5qa" value="consumeOutput" />
     <ref role="13h7C2" to="w2mu:6_HhEAkiXzc" resolve="ConceptFunction_ConsumeOutputStreamBlock" />
     <node concept="13i0hz" id="6_HhEAkiX$8" role="13h7CS">
-      <property role="13i0is" value="false" />
       <property role="TrG5h" value="usesParameterObjectFor" />
       <ref role="13i0hy" to="tpek:hEwIGRw" resolve="usesParameterObjectFor" />
       <node concept="3clFbS" id="6_HhEAkiX$9" role="3clF47">
@@ -313,7 +309,6 @@
     </node>
     <node concept="13i0hz" id="1xVV58hCj0k" role="13h7CS">
       <property role="2Ki8OM" value="false" />
-      <property role="13i0is" value="false" />
       <property role="TrG5h" value="getParameterConcepts" />
       <property role="13i0it" value="false" />
       <ref role="13i0hy" to="tpek:2xELmDxyi2v" resolve="getParameterConcepts" />
@@ -369,7 +364,6 @@
     <property role="3GE5qa" value="consumeOutput" />
     <ref role="13h7C2" to="w2mu:6_HhEAkiXzb" resolve="ConceptFunction_ConsumeOutputReaderBlock" />
     <node concept="13i0hz" id="6_HhEAkiX$A" role="13h7CS">
-      <property role="13i0is" value="false" />
       <property role="TrG5h" value="usesParameterObjectFor" />
       <ref role="13i0hy" to="tpek:hEwIGRw" resolve="usesParameterObjectFor" />
       <node concept="3clFbS" id="6_HhEAkiX$B" role="3clF47">
@@ -405,7 +399,6 @@
     </node>
     <node concept="13i0hz" id="6_HhEAkiX$P" role="13h7CS">
       <property role="2Ki8OM" value="false" />
-      <property role="13i0is" value="false" />
       <property role="TrG5h" value="getParameterConcepts" />
       <property role="13i0it" value="false" />
       <ref role="13i0hy" to="tpek:2xELmDxyi2v" resolve="getParameterConcepts" />
@@ -464,7 +457,6 @@
       <node concept="3clFbS" id="6_HhEAkma8O" role="2VODD2" />
     </node>
     <node concept="13i0hz" id="6_HhEAkma8P" role="13h7CS">
-      <property role="13i0is" value="false" />
       <property role="TrG5h" value="getExpectedReturnType" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
