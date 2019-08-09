@@ -96,6 +96,9 @@
         <property id="7832771629084799702" name="name" index="2iUeEt" />
         <property id="7832771629084799701" name="url" index="2iUeEu" />
       </concept>
+      <concept id="6592112598314586625" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginGroup" flags="ng" index="m$f5U">
+        <reference id="6592112598314586626" name="group" index="m$f5T" />
+      </concept>
       <concept id="6592112598314498932" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPlugin" flags="ng" index="m$_wf">
         <property id="6592112598314498927" name="id" index="m$_wk" />
         <child id="1359186315025500371" name="xml" index="20twgj" />
@@ -110,9 +113,6 @@
       <concept id="6592112598314498926" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_Plugin" flags="ng" index="m$_wl">
         <reference id="6592112598314801433" name="plugin" index="m_rDy" />
         <child id="3570488090019868128" name="packagingType" index="pUk7w" />
-      </concept>
-      <concept id="6592112598314499036" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginModule" flags="ng" index="m$_yB">
-        <reference id="6592112598314499037" name="target" index="m$_yA" />
       </concept>
       <concept id="6592112598314499027" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginDependency" flags="ng" index="m$_yC">
         <reference id="6592112598314499066" name="target" index="m$_y1" />
@@ -166,7 +166,7 @@
       <node concept="aVJcg" id="5_CYZB1uNbU" role="aVJcv">
         <node concept="NbPM2" id="5_CYZB1uNbT" role="aVJcq">
           <node concept="3Mxwew" id="5_CYZB1uNbS" role="3MwsjC">
-            <property role="3MwjfP" value="3.2" />
+            <property role="3MwjfP" value="3.3" />
           </node>
         </node>
       </node>
@@ -214,6 +214,9 @@
     </node>
     <node concept="m$_wf" id="5KK2jWpWo0m" role="3989C9">
       <property role="m$_wk" value="org.campagnelab.mps.UI" />
+      <node concept="m$f5U" id="vJlLIAwQMX" role="m$_yh">
+        <ref role="m$f5T" node="5KK2jWpWo0l" resolve="UI" />
+      </node>
       <node concept="3_J27D" id="5KK2jWpWo0n" role="m$_yQ">
         <node concept="3Mxwew" id="5KK2jWpWo0o" role="3MwsjC">
           <property role="3MwjfP" value="org.campagnelab.mps.UI" />
@@ -223,12 +226,6 @@
         <node concept="3Mxwey" id="5_CYZB1uNll" role="3MwsjC">
           <ref role="3Mxwex" node="5_CYZB1uN9n" resolve="ui_version" />
         </node>
-      </node>
-      <node concept="m$_yB" id="6dEAGhftr$" role="m$_yh">
-        <ref role="m$_yA" node="5KK2jWpWo0e" resolve="org.campagnelab.ui" />
-      </node>
-      <node concept="m$_yB" id="6dEAGhftsH" role="m$_yh">
-        <ref role="m$_yA" node="5KK2jWpWo0k" resolve="org.campagnelab.ui.code" />
       </node>
       <node concept="m$_yC" id="5KK2jWpWo0s" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
@@ -253,18 +250,18 @@
           <ref role="3Mxwex" node="4clqoMCZ5nY" resolve="build_number" />
         </node>
       </node>
-      <node concept="2pNNFK" id="5ayKDoDhh2x" role="20twgj">
+      <node concept="2pNNFK" id="3A7G9Ay8FTb" role="20twgj">
         <property role="2pNNFO" value="idea-version" />
-        <node concept="2pNUuL" id="5ayKDoDhh2y" role="2pNNFR">
+        <node concept="2pNUuL" id="3A7G9Ay8FTc" role="2pNNFR">
           <property role="2pNUuO" value="since-build" />
-          <node concept="2pMdtt" id="5ayKDoDhh2z" role="2pMdts">
-            <property role="2pMdty" value="181.1254" />
+          <node concept="2pMdtt" id="3A7G9Ay8FTd" role="2pMdts">
+            <property role="2pMdty" value="191.1593" />
           </node>
         </node>
-        <node concept="2pNUuL" id="5ayKDoDhh2$" role="2pNNFR">
+        <node concept="2pNUuL" id="3A7G9Ay8FTe" role="2pNNFR">
           <property role="2pNUuO" value="until-build" />
-          <node concept="2pMdtt" id="5ayKDoDhh2_" role="2pMdts">
-            <property role="2pMdty" value="182.0000" />
+          <node concept="2pMdtt" id="3A7G9Ay8FTf" role="2pMdts">
+            <property role="2pMdty" value="192.0000" />
           </node>
         </node>
       </node>
