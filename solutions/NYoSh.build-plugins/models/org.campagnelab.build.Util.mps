@@ -92,6 +92,9 @@
         <property id="7832771629084799702" name="name" index="2iUeEt" />
         <property id="7832771629084799701" name="url" index="2iUeEu" />
       </concept>
+      <concept id="6592112598314586625" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginGroup" flags="ng" index="m$f5U">
+        <reference id="6592112598314586626" name="group" index="m$f5T" />
+      </concept>
       <concept id="6592112598314498932" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPlugin" flags="ng" index="m$_wf">
         <property id="6592112598314498927" name="id" index="m$_wk" />
         <child id="1359186315025500371" name="xml" index="20twgj" />
@@ -106,9 +109,6 @@
       <concept id="6592112598314498926" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_Plugin" flags="ng" index="m$_wl">
         <reference id="6592112598314801433" name="plugin" index="m_rDy" />
         <child id="3570488090019868128" name="packagingType" index="pUk7w" />
-      </concept>
-      <concept id="6592112598314499036" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginModule" flags="ng" index="m$_yB">
-        <reference id="6592112598314499037" name="target" index="m$_yA" />
       </concept>
       <concept id="6592112598314499027" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginDependency" flags="ng" index="m$_yC">
         <reference id="6592112598314499066" name="target" index="m$_y1" />
@@ -244,8 +244,8 @@
           <ref role="3Mxwex" node="7ZmC9JYDytu" resolve="util_version" />
         </node>
       </node>
-      <node concept="m$_yB" id="uOcLswOYKB" role="m$_yh">
-        <ref role="m$_yA" node="3OwSMscq8aw" resolve="org.campagnelab.util" />
+      <node concept="m$f5U" id="vJlLIAvZFu" role="m$_yh">
+        <ref role="m$f5T" node="7ZmC9JYDkzO" resolve="Util" />
       </node>
       <node concept="m$_yC" id="5KK2jWpWo0s" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
@@ -278,13 +278,13 @@
         <node concept="2pNUuL" id="3A7G9Ay8FTc" role="2pNNFR">
           <property role="2pNUuO" value="since-build" />
           <node concept="2pMdtt" id="3A7G9Ay8FTd" role="2pMdts">
-            <property role="2pMdty" value="181.1254" />
+            <property role="2pMdty" value="191.1593" />
           </node>
         </node>
         <node concept="2pNUuL" id="3A7G9Ay8FTe" role="2pNNFR">
           <property role="2pNUuO" value="until-build" />
           <node concept="2pMdtt" id="3A7G9Ay8FTf" role="2pMdts">
-            <property role="2pMdty" value="182.0000" />
+            <property role="2pMdty" value="192.0000" />
           </node>
         </node>
       </node>

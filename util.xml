@@ -44,7 +44,7 @@
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.build</depends>
         <depends>com.intellij.modules.mps</depends>
-        <idea-version since-build="181.1254" until-build="182.0000" />
+        <idea-version since-build="191.1593" until-build="192.0000" />
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -52,6 +52,7 @@
       </idea-plugin>
     </echoxml>
     <mkdir dir="${build.tmp}/default/org.campagnelab.Util-_dl__lbrace_util_version_rbrace_.zip/Util/languages" />
+    <mkdir dir="${build.tmp}/default/org.campagnelab.Util-_dl__lbrace_util_version_rbrace_.zip/Util/languages/Util" />
     <mkdir dir="${build.tmp}/default/org.campagnelab.util.jar" />
     <mkdir dir="${build.tmp}/default/org.campagnelab.util.jar/META-INF" />
     <echoxml file="${build.tmp}/default/org.campagnelab.util.jar/META-INF/module.xml">
@@ -67,15 +68,15 @@
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
         </dependencies>
-        <library jar="../wildcard-1.03.jar" />
-        <library jar="../commons-io-2.4.jar" />
+        <library jar="../../wildcard-1.03.jar" />
+        <library jar="../../commons-io-2.4.jar" />
         <classpath>
           <entry path="." />
         </classpath>
         <sources jar="org.campagnelab.util-src.jar" descriptor="org.campagnelab.util.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/org.campagnelab.Util-_dl__lbrace_util_version_rbrace_.zip/Util/languages/org.campagnelab.util.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/org.campagnelab.Util-_dl__lbrace_util_version_rbrace_.zip/Util/languages/Util/org.campagnelab.util.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.campagnelab.util" />
       <fileset dir="${basedir}/solutions/org.campagnelab.util/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/org.campagnelab.util.jar" />
@@ -83,7 +84,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-org.campagnelab.util-models">
       <fileset dir="${basedir}/solutions/org.campagnelab.util/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/org.campagnelab.Util-_dl__lbrace_util_version_rbrace_.zip/Util/languages/org.campagnelab.util-src.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/org.campagnelab.Util-_dl__lbrace_util_version_rbrace_.zip/Util/languages/Util/org.campagnelab.util-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/solutions/org.campagnelab.util/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
