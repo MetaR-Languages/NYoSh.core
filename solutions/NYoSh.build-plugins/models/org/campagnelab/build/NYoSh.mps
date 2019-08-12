@@ -11,7 +11,6 @@
     <import index="ael0" ref="r:cc7a346d-c5cf-4c03-b1fd-d5006736ae3a(org.campagnelab.build.UI)" />
     <import index="h9g5" ref="r:7aca3565-24aa-4c08-aaaf-0fe7bbf3b79f(org.campagnelab.build.Logger)" />
     <import index="65bo" ref="r:982c8b08-3909-459c-a08a-e2eacb21a60a(org.campagnelab.build.Util)" />
-    <import index="vh2l" ref="r:64aeeca7-3a4b-4dcc-b81a-48f20fa34cb4(org.campangelab.xchart)" />
   </imports>
   <registry>
     <language id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml">
@@ -242,21 +241,6 @@
             <property role="2Ry0Am" value="artifacts" />
             <node concept="2Ry0Ak" id="692IOadT3rL" role="2Ry0An">
               <property role="2Ry0Am" value="org.campagnelab.Logger" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2sgV4H" id="6SgcNNMYbTY" role="1l3spa">
-      <ref role="1l3spb" to="vh2l:7XxitGzkyrh" resolve="XChart" />
-      <node concept="398BVA" id="2MC9FWpQt4J" role="2JcizS">
-        <ref role="398BVh" node="2mFg1uCEWdZ" resolve="org.campagnelab.xchart.home" />
-        <node concept="2Ry0Ak" id="2MC9FWpR0NB" role="iGT6I">
-          <property role="2Ry0Am" value="build" />
-          <node concept="2Ry0Ak" id="2MC9FWpR0Pt" role="2Ry0An">
-            <property role="2Ry0Am" value="artifacts" />
-            <node concept="2Ry0Ak" id="47TYt$Yd6mN" role="2Ry0An">
-              <property role="2Ry0Am" value="XChart" />
             </node>
           </node>
         </node>
@@ -586,9 +570,6 @@
       </node>
       <node concept="m$_yC" id="uOcLswPfgQ" role="m$_yJ">
         <ref role="m$_y1" to="65bo:5KK2jWpWo0m" resolve="org.campagnelab.Util" />
-      </node>
-      <node concept="m$_yC" id="47TYt$YdirS" role="m$_yJ">
-        <ref role="m$_y1" to="vh2l:7XxitGzkyrN" resolve="XChart" />
       </node>
       <node concept="3_J27D" id="2mFg1uCD9qo" role="m_cZH">
         <node concept="3Mxwew" id="2mFg1uCD9qp" role="3MwsjC">

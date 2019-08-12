@@ -249,7 +249,7 @@
       </node>
       <node concept="3_J27D" id="2mFg1uCEj30" role="3s6cr7">
         <node concept="3Mxwew" id="2mFg1uCEj32" role="3MwsjC">
-          <property role="3MwjfP" value="A language to model text filea and generate such files with the MPS generator aspect. Build number: " />
+          <property role="3MwjfP" value="A language to model text files and generate such files with the MPS generator aspect. Build number: " />
         </node>
         <node concept="3Mxwey" id="4clqoMCZ5wq" role="3MwsjC">
           <ref role="3Mxwex" node="4clqoMCZ5sm" resolve="build_number" />

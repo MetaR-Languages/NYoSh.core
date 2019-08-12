@@ -36,11 +36,11 @@
       <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>org.campagnelab.TextOutput</id>
         <name>org.campagnelab.TextOutput</name>
-        <description>A language to model text filea and generate such files with the MPS generator aspect. Build number: ${build_number}</description>
+        <description>A language to model text files and generate such files with the MPS generator aspect. Build number: ${build_number}</description>
         <version>${textoutput_version}</version>
         <vendor url="http://books.campagnelab.org">Campagne Laboratory</vendor>
         <depends>jetbrains.mps.core</depends>
-        <idea-version since-build="181.1254" until-build="182.0000" />
+        <idea-version since-build="191.1593" until-build="192.0000" />
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />

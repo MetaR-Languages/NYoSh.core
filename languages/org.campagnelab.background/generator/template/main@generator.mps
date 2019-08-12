@@ -1129,7 +1129,7 @@
                                     <ref role="1Pybhc" to="w1kc:~ModelAccess" resolve="ModelAccess" />
                                   </node>
                                   <node concept="liA8E" id="8AY3wOumk2" role="2OqNvi">
-                                    <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
+                                    <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
                                     <node concept="2ShNRf" id="8AY3wOumkX" role="37wK5m">
                                       <node concept="YeOm9" id="8AY3wOumDz" role="2ShVmc">
                                         <node concept="1Y3b0j" id="8AY3wOumDA" role="YeSDq">
@@ -1253,7 +1253,7 @@
                                 <ref role="1Pybhc" to="w1kc:~ModelAccess" resolve="ModelAccess" />
                               </node>
                               <node concept="liA8E" id="8AY3wOoBKN" role="2OqNvi">
-                                <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runWriteAction(java.lang.Runnable)" resolve="runWriteAction" />
+                                <ref role="37wK5l" to="lui2:~ModelAccess.runWriteAction(java.lang.Runnable)" resolve="runWriteAction" />
                                 <node concept="2ShNRf" id="8AY3wOoBKO" role="37wK5m">
                                   <node concept="YeOm9" id="8AY3wOoBKP" role="2ShVmc">
                                     <node concept="1Y3b0j" id="8AY3wOoBKQ" role="YeSDq">
@@ -1322,7 +1322,7 @@
                                 <ref role="1Pybhc" to="w1kc:~ModelAccess" resolve="ModelAccess" />
                               </node>
                               <node concept="liA8E" id="8AY3wOoBLj" role="2OqNvi">
-                                <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
+                                <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
                                 <node concept="2ShNRf" id="8AY3wOoBLk" role="37wK5m">
                                   <node concept="YeOm9" id="8AY3wOoBLl" role="2ShVmc">
                                     <node concept="1Y3b0j" id="8AY3wOoBLm" role="YeSDq">
@@ -1405,7 +1405,7 @@
                                 <ref role="1Pybhc" to="w1kc:~ModelAccess" resolve="ModelAccess" />
                               </node>
                               <node concept="liA8E" id="8AY3wOoBLU" role="2OqNvi">
-                                <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runWriteAction(java.lang.Runnable)" resolve="runWriteAction" />
+                                <ref role="37wK5l" to="lui2:~ModelAccess.runWriteAction(java.lang.Runnable)" resolve="runWriteAction" />
                                 <node concept="2ShNRf" id="8AY3wOoBLV" role="37wK5m">
                                   <node concept="YeOm9" id="8AY3wOoBLW" role="2ShVmc">
                                     <node concept="1Y3b0j" id="8AY3wOoBLX" role="YeSDq">
@@ -1474,7 +1474,7 @@
                                 <ref role="1Pybhc" to="w1kc:~ModelAccess" resolve="ModelAccess" />
                               </node>
                               <node concept="liA8E" id="8AY3wOoBMq" role="2OqNvi">
-                                <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
+                                <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
                                 <node concept="2ShNRf" id="8AY3wOoBMr" role="37wK5m">
                                   <node concept="YeOm9" id="8AY3wOoBMs" role="2ShVmc">
                                     <node concept="1Y3b0j" id="8AY3wOoBMt" role="YeSDq">
