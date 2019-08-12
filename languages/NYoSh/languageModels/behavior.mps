@@ -2,9 +2,9 @@
 <model ref="r:2a3903cf-99a2-4e4b-9216-412f36303d74(org.campagnelab.NYoSh.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <use id="c1d262c7-5fba-470b-a7ad-87f5e0ae0a99" name="org.campagnelab.nyosh.functions" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -217,7 +217,7 @@
                   <node concept="3clFbF" id="49nZsvIwHNF" role="3cqZAp">
                     <node concept="2YIFZM" id="49nZsvIwHNG" role="3clFbG">
                       <ref role="1Pybhc" to="s3cx:~StepsLoggerHelper" resolve="StepsLoggerHelper" />
-                      <ref role="37wK5l" to="s3cx:~StepsLoggerHelper.createLogFile():void" resolve="createLogFile" />
+                      <ref role="37wK5l" to="s3cx:~StepsLoggerHelper.createLogFile()" resolve="createLogFile" />
                     </node>
                   </node>
                   <node concept="3clFbJ" id="nHLkLFI2zf" role="3cqZAp">
@@ -255,7 +255,7 @@
                         <node concept="2OqwBi" id="nHLkLFI5ce" role="3clFbG">
                           <node concept="3X9Bxp" id="5IGKppDPL7" role="2Oq$k0" />
                           <node concept="liA8E" id="nHLkLFI5cg" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace(java.io.PrintWriter):void" resolve="printStackTrace" />
+                            <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace(java.io.PrintWriter)" resolve="printStackTrace" />
                             <node concept="37vLTw" id="nHLkLFI5ch" role="37wK5m">
                               <ref role="3cqZAo" node="nHLkLFI5c8" resolve="printW" />
                             </node>
@@ -265,7 +265,7 @@
                       <node concept="3clFbF" id="nHLkLFI5ci" role="3cqZAp">
                         <node concept="2YIFZM" id="nHLkLFI5cj" role="3clFbG">
                           <ref role="1Pybhc" to="s3cx:~StepsLoggerHelper" resolve="StepsLoggerHelper" />
-                          <ref role="37wK5l" to="s3cx:~StepsLoggerHelper.assertTrue(boolean,java.lang.String):void" resolve="assertTrue" />
+                          <ref role="37wK5l" to="s3cx:~StepsLoggerHelper.assertTrue(boolean,java.lang.String)" resolve="assertTrue" />
                           <node concept="3clFbT" id="nHLkLFI5ck" role="37wK5m">
                             <property role="3clFbU" value="false" />
                           </node>
@@ -286,7 +286,7 @@
                                 <ref role="3cqZAo" node="nHLkLFI5c3" resolve="stringW" />
                               </node>
                               <node concept="liA8E" id="nHLkLFI5ct" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                                <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
                               </node>
                             </node>
                           </node>
@@ -302,7 +302,7 @@
                         <node concept="3clFbF" id="nHLkLFI6fw" role="3cqZAp">
                           <node concept="2YIFZM" id="nHLkLFI6fx" role="3clFbG">
                             <ref role="1Pybhc" to="s3cx:~StepsLoggerHelper" resolve="StepsLoggerHelper" />
-                            <ref role="37wK5l" to="s3cx:~StepsLoggerHelper.assertTrue(boolean,java.lang.String):void" resolve="assertTrue" />
+                            <ref role="37wK5l" to="s3cx:~StepsLoggerHelper.assertTrue(boolean,java.lang.String)" resolve="assertTrue" />
                             <node concept="3clFbT" id="nHLkLFI6fy" role="37wK5m">
                               <property role="3clFbU" value="false" />
                             </node>
@@ -405,13 +405,13 @@
                   <node concept="3clFbF" id="49nZsvIpXRN" role="3cqZAp">
                     <node concept="2YIFZM" id="49nZsvIpXRO" role="3clFbG">
                       <ref role="1Pybhc" to="s3cx:~StepsLoggerHelper" resolve="StepsLoggerHelper" />
-                      <ref role="37wK5l" to="s3cx:~StepsLoggerHelper.createLogFile():void" resolve="createLogFile" />
+                      <ref role="37wK5l" to="s3cx:~StepsLoggerHelper.createLogFile()" resolve="createLogFile" />
                     </node>
                   </node>
                   <node concept="3clFbF" id="49nZsvIqbI_" role="3cqZAp">
                     <node concept="2YIFZM" id="49nZsvIqd$d" role="3clFbG">
                       <ref role="1Pybhc" to="s3cx:~StepsLoggerHelper" resolve="StepsLoggerHelper" />
-                      <ref role="37wK5l" to="s3cx:~StepsLoggerHelper.done(java.lang.String,int):void" resolve="done" />
+                      <ref role="37wK5l" to="s3cx:~StepsLoggerHelper.done(java.lang.String,int)" resolve="done" />
                       <node concept="3cpWs3" id="1zHKSeEzUOR" role="37wK5m">
                         <node concept="3X9GNG" id="1zHKSeEzUPG" role="3uHU7w" />
                         <node concept="Xl_RD" id="1zHKSeEzTJm" role="3uHU7B">

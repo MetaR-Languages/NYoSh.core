@@ -2,7 +2,7 @@
 <model ref="r:d992c339-bbff-432a-ae79-9861ab59f3b8(org.campagnelab.gobyweb.interactive.mappings.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
   </languages>
   <imports />
   <registry>

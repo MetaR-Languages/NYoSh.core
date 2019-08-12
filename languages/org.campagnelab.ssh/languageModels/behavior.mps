@@ -2,7 +2,7 @@
 <model ref="r:4d33d067-c01f-41ec-95b2-89ce0161e856(org.campagnelab.ssh.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -253,13 +253,13 @@
                       <ref role="3cqZAo" node="2$H47zJE2PJ" resolve="jsch" />
                     </node>
                     <node concept="liA8E" id="1OmT4JFfQ5z" role="2OqNvi">
-                      <ref role="37wK5l" to="9sah:~JSch.addIdentity(java.lang.String):void" resolve="addIdentity" />
+                      <ref role="37wK5l" to="9sah:~JSch.addIdentity(java.lang.String)" resolve="addIdentity" />
                       <node concept="3cpWs3" id="1OmT4JFfUvH" role="37wK5m">
                         <node concept="Xl_RD" id="1OmT4JFfUvI" role="3uHU7w">
                           <property role="Xl_RC" value="/.ssh/id_rsa" />
                         </node>
                         <node concept="2YIFZM" id="1OmT4JFfUvJ" role="3uHU7B">
-                          <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+                          <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String)" resolve="getProperty" />
                           <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
                           <node concept="Xl_RD" id="1OmT4JFfUvK" role="37wK5m">
                             <property role="Xl_RC" value="user.home" />
@@ -286,7 +286,7 @@
                     <property role="Xl_RC" value="/.ssh/known_hosts" />
                   </node>
                   <node concept="2YIFZM" id="2$H47zJG$2h" role="3uHU7B">
-                    <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+                    <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String)" resolve="getProperty" />
                     <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
                     <node concept="Xl_RD" id="2$H47zJG_iQ" role="37wK5m">
                       <property role="Xl_RC" value="user.home" />
@@ -357,7 +357,7 @@
                   <ref role="3cqZAo" node="2$H47zJE2PJ" resolve="jsch" />
                 </node>
                 <node concept="liA8E" id="2$H47zJGpof" role="2OqNvi">
-                  <ref role="37wK5l" to="9sah:~JSch.setKnownHosts(java.lang.String):void" resolve="setKnownHosts" />
+                  <ref role="37wK5l" to="9sah:~JSch.setKnownHosts(java.lang.String)" resolve="setKnownHosts" />
                   <node concept="37vLTw" id="2$H47zJGNtv" role="37wK5m">
                     <ref role="3cqZAo" node="2$H47zJGrNs" resolve="knownHostsFilename" />
                   </node>
@@ -376,7 +376,7 @@
                     <ref role="3cqZAo" node="2$H47zJE2PJ" resolve="jsch" />
                   </node>
                   <node concept="liA8E" id="2$H47zJE2QM" role="2OqNvi">
-                    <ref role="37wK5l" to="9sah:~JSch.getSession(java.lang.String,java.lang.String,int):com.jcraft.jsch.Session" resolve="getSession" />
+                    <ref role="37wK5l" to="9sah:~JSch.getSession(java.lang.String,java.lang.String,int)" resolve="getSession" />
                     <node concept="2OqwBi" id="64mDo5bw1EE" role="37wK5m">
                       <node concept="13iPFW" id="64mDo5bw1_E" role="2Oq$k0" />
                       <node concept="3TrcHB" id="64mDo5bw27I" role="2OqNvi">
@@ -430,7 +430,7 @@
                       <ref role="3cqZAo" node="2$H47zJE0zx" resolve="session" />
                     </node>
                     <node concept="liA8E" id="2$H47zJEzRI" role="2OqNvi">
-                      <ref role="37wK5l" to="9sah:~Session.setPassword(java.lang.String):void" resolve="setPassword" />
+                      <ref role="37wK5l" to="9sah:~Session.setPassword(java.lang.String)" resolve="setPassword" />
                       <node concept="37vLTw" id="2$H47zJJp$E" role="37wK5m">
                         <ref role="3cqZAo" node="2$H47zJJjHR" resolve="password" />
                       </node>
@@ -453,7 +453,7 @@
                   <ref role="3cqZAo" node="2$H47zJE0zx" resolve="session" />
                 </node>
                 <node concept="liA8E" id="2$H47zJEzRL" role="2OqNvi">
-                  <ref role="37wK5l" to="9sah:~Session.connect():void" resolve="connect" />
+                  <ref role="37wK5l" to="9sah:~Session.connect()" resolve="connect" />
                 </node>
               </node>
             </node>
@@ -463,7 +463,7 @@
                   <ref role="3cqZAo" node="2$H47zJE0zx" resolve="session" />
                 </node>
                 <node concept="liA8E" id="2$H47zJEJOD" role="2OqNvi">
-                  <ref role="37wK5l" to="9sah:~Session.setPortForwardingL(int,java.lang.String,int):int" resolve="setPortForwardingL" />
+                  <ref role="37wK5l" to="9sah:~Session.setPortForwardingL(int,java.lang.String,int)" resolve="setPortForwardingL" />
                   <node concept="2OqwBi" id="2$H47zJEMI7" role="37wK5m">
                     <node concept="13iPFW" id="2$H47zJEMDu" role="2Oq$k0" />
                     <node concept="3TrcHB" id="2$H47zJEOEX" role="2OqNvi">
@@ -504,7 +504,7 @@
                   <node concept="13iPFW" id="2$H47zJFWug" role="2JrQYb" />
                 </node>
                 <node concept="liA8E" id="2$H47zJFZdh" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
+                  <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object)" resolve="putUserObject" />
                   <node concept="Xl_RD" id="2$H47zJG02p" role="37wK5m">
                     <property role="Xl_RC" value="jsch" />
                   </node>
@@ -520,7 +520,7 @@
                   <node concept="13iPFW" id="2$H47zJG4LI" role="2JrQYb" />
                 </node>
                 <node concept="liA8E" id="2$H47zJG4LJ" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
+                  <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object)" resolve="putUserObject" />
                   <node concept="Xl_RD" id="2$H47zJG4LK" role="37wK5m">
                     <property role="Xl_RC" value="session" />
                   </node>
@@ -584,7 +584,7 @@
                     </node>
                     <node concept="2OqwBi" id="3Ry_3_$CQ7Q" role="10QFUP">
                       <node concept="liA8E" id="3Ry_3_$CQ7R" role="2OqNvi">
-                        <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object):java.lang.Object" resolve="getUserObject" />
+                        <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object)" resolve="getUserObject" />
                         <node concept="Xl_RD" id="3Ry_3_$CQ7S" role="37wK5m">
                           <property role="Xl_RC" value="jsch" />
                         </node>
@@ -649,7 +649,7 @@
                     </node>
                     <node concept="2OqwBi" id="3Ry_3_$CRg$" role="10QFUP">
                       <node concept="liA8E" id="3Ry_3_$CRg_" role="2OqNvi">
-                        <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object):java.lang.Object" resolve="getUserObject" />
+                        <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object)" resolve="getUserObject" />
                         <node concept="Xl_RD" id="3Ry_3_$CRgA" role="37wK5m">
                           <property role="Xl_RC" value="session" />
                         </node>
@@ -741,7 +741,7 @@
                   <ref role="3cqZAo" node="2$H47zJJYd_" resolve="session" />
                 </node>
                 <node concept="liA8E" id="2$H47zJKcRN" role="2OqNvi">
-                  <ref role="37wK5l" to="9sah:~Session.delPortForwardingL(int):void" resolve="delPortForwardingL" />
+                  <ref role="37wK5l" to="9sah:~Session.delPortForwardingL(int)" resolve="delPortForwardingL" />
                   <node concept="2OqwBi" id="2$H47zJKe8W" role="37wK5m">
                     <node concept="13iPFW" id="2$H47zJKe67" role="2Oq$k0" />
                     <node concept="3TrcHB" id="2$H47zJKeQh" role="2OqNvi">
@@ -828,7 +828,7 @@
                   <node concept="13iPFW" id="1OmT4JFhqD5" role="2JrQYb" />
                 </node>
                 <node concept="liA8E" id="1OmT4JFhbSt" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
+                  <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object)" resolve="putUserObject" />
                   <node concept="Xl_RD" id="1OmT4JFhc8q" role="37wK5m">
                     <property role="Xl_RC" value="jsch" />
                   </node>
@@ -842,7 +842,7 @@
                   <node concept="13iPFW" id="1OmT4JFhu2F" role="2JrQYb" />
                 </node>
                 <node concept="liA8E" id="1OmT4JFhcU2" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
+                  <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object)" resolve="putUserObject" />
                   <node concept="Xl_RD" id="1OmT4JFhcU3" role="37wK5m">
                     <property role="Xl_RC" value="session" />
                   </node>
@@ -882,7 +882,7 @@
             <node concept="10Oyi0" id="2$H47zJIGhF" role="1tU5fm" />
             <node concept="2YIFZM" id="2$H47zJIGi4" role="33vP2m">
               <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-              <ref role="37wK5l" to="dxuu:~JOptionPane.showConfirmDialog(java.awt.Component,java.lang.Object,java.lang.String,int,int):int" resolve="showConfirmDialog" />
+              <ref role="37wK5l" to="dxuu:~JOptionPane.showConfirmDialog(java.awt.Component,java.lang.Object,java.lang.String,int,int)" resolve="showConfirmDialog" />
               <node concept="10Nm6u" id="2$H47zJIGhH" role="37wK5m" />
               <node concept="37vLTw" id="2$H47zJIGhI" role="37wK5m">
                 <ref role="3cqZAo" node="2$H47zJIGh_" resolve="pf" />
@@ -927,7 +927,7 @@
                         <ref role="3cqZAo" node="2$H47zJIGh_" resolve="pf" />
                       </node>
                       <node concept="liA8E" id="2$H47zJIGic" role="2OqNvi">
-                        <ref role="37wK5l" to="dxuu:~JPasswordField.getPassword():char[]" resolve="getPassword" />
+                        <ref role="37wK5l" to="dxuu:~JPasswordField.getPassword()" resolve="getPassword" />
                       </node>
                     </node>
                   </node>

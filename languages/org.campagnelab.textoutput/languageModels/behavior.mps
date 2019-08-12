@@ -2,7 +2,7 @@
 <model ref="r:ec1af95f-841b-4805-a3bd-a16f13b6257d(org.campagnelab.textoutput.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -176,7 +176,7 @@
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
@@ -248,7 +248,7 @@
                     <ref role="3cqZAo" node="4KXrU8sNI8x" resolve="text" />
                   </node>
                   <node concept="liA8E" id="4KXrU8sNI8M" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.split(java.lang.String):java.lang.String[]" resolve="split" />
+                    <ref role="37wK5l" to="wyt6:~String.split(java.lang.String)" resolve="split" />
                     <node concept="Xl_RD" id="4KXrU8sNI8N" role="37wK5m">
                       <property role="Xl_RC" value="\\\\n" />
                     </node>
@@ -352,7 +352,7 @@
           </node>
           <node concept="2OqwBi" id="4KXrU8sNI9e" role="3clFbw">
             <node concept="liA8E" id="4KXrU8sNI9f" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
               <node concept="Xl_RD" id="4KXrU8sNI9g" role="37wK5m">
                 <property role="Xl_RC" value="\\n" />
               </node>
@@ -629,7 +629,7 @@
                 <ref role="3cqZAo" node="3dPG257P4d4" resolve="editorContext" />
               </node>
               <node concept="liA8E" id="5l1uETBtRQW" role="2OqNvi">
-                <ref role="37wK5l" to="cj4x:~EditorContext.getContextCell():jetbrains.mps.openapi.editor.cells.EditorCell" resolve="getContextCell" />
+                <ref role="37wK5l" to="cj4x:~EditorContext.getContextCell()" resolve="getContextCell" />
               </node>
             </node>
           </node>
@@ -692,7 +692,7 @@
                     <ref role="3cqZAo" node="5l1uETBtRRd" resolve="label" />
                   </node>
                   <node concept="liA8E" id="5l1uETBtRRm" role="2OqNvi">
-                    <ref role="37wK5l" to="g51k:~EditorCell_Label.getCaretPosition():int" resolve="getCaretPosition" />
+                    <ref role="37wK5l" to="g51k:~EditorCell_Label.getCaretPosition()" resolve="getCaretPosition" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="5l1uETBtRRn" role="37vLTJ">
@@ -729,7 +729,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="5l1uETBtRRD" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.substring(int,int):java.lang.String" resolve="substring" />
+                    <ref role="37wK5l" to="wyt6:~String.substring(int,int)" resolve="substring" />
                     <node concept="3cmrfG" id="5l1uETBtRRE" role="37wK5m">
                       <property role="3cmrfH" value="0" />
                     </node>
@@ -750,7 +750,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="5l1uETBtRRL" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.substring(int,int):java.lang.String" resolve="substring" />
+                  <ref role="37wK5l" to="wyt6:~String.substring(int,int)" resolve="substring" />
                   <node concept="37vLTw" id="5l1uETBtRRM" role="37wK5m">
                     <ref role="3cqZAo" node="5l1uETBtRQY" resolve="cursorPosition" />
                   </node>
@@ -762,7 +762,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="5l1uETBtRRR" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
+                      <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
                     </node>
                   </node>
                 </node>
@@ -784,11 +784,11 @@
                 <ref role="3cqZAo" node="3dPG257P4d4" resolve="editorContext" />
               </node>
               <node concept="liA8E" id="3dPG257Q1FE" role="2OqNvi">
-                <ref role="37wK5l" to="cj4x:~EditorContext.getSelectionManager():jetbrains.mps.openapi.editor.selection.SelectionManager" resolve="getSelectionManager" />
+                <ref role="37wK5l" to="cj4x:~EditorContext.getSelectionManager()" resolve="getSelectionManager" />
               </node>
             </node>
             <node concept="liA8E" id="3dPG257Q1Su" role="2OqNvi">
-              <ref role="37wK5l" to="lwvz:~SelectionManager.setSelection(org.jetbrains.mps.openapi.model.SNode,java.lang.String,int):void" resolve="setSelection" />
+              <ref role="37wK5l" to="lwvz:~SelectionManager.setSelection(org.jetbrains.mps.openapi.model.SNode,java.lang.String,int)" resolve="setSelection" />
               <node concept="13iPFW" id="3dPG257QxBK" role="37wK5m" />
               <node concept="2OqwBi" id="3dPG257QI4e" role="37wK5m">
                 <node concept="13iPFW" id="3dPG257QHTQ" role="2Oq$k0" />
@@ -826,7 +826,7 @@
               </node>
             </node>
             <node concept="liA8E" id="3dPG257UeJP" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
+              <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
             </node>
           </node>
         </node>
@@ -879,7 +879,7 @@
                 <ref role="3cqZAo" node="4nKo47E4kCV" resolve="text" />
               </node>
               <node concept="liA8E" id="4nKo47E4kD8" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.split(java.lang.String):java.lang.String[]" resolve="split" />
+                <ref role="37wK5l" to="wyt6:~String.split(java.lang.String)" resolve="split" />
                 <node concept="Xl_RD" id="4nKo47E4kD9" role="37wK5m">
                   <property role="Xl_RC" value="\\\\n" />
                 </node>

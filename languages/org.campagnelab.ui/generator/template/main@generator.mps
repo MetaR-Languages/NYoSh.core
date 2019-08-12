@@ -2,10 +2,10 @@
 <model ref="r:86e8697b-4089-41c5-b4ed-6c0f68180c88(org.campagnelab.ui.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="1" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -230,11 +230,11 @@
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="3364660638048049750" name="jetbrains.mps.lang.core.structure.PropertyAttribute" flags="ng" index="A9Btg">
-        <property id="1757699476691236117" name="propertyName" index="2qtEX9" />
+        <property id="1757699476691236117" name="name_DebugInfo" index="2qtEX9" />
         <property id="1341860900487648621" name="propertyId" index="P4ACc" />
       </concept>
       <concept id="3364660638048049745" name="jetbrains.mps.lang.core.structure.LinkAttribute" flags="ng" index="A9Btn">
-        <property id="1757699476691236116" name="linkRole" index="2qtEX8" />
+        <property id="1757699476691236116" name="role_DebugInfo" index="2qtEX8" />
         <property id="1341860900488019036" name="linkId" index="P3scX" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -354,7 +354,7 @@
                                   <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                                 </node>
                                 <node concept="liA8E" id="1Ckq9ORP4Xp" role="2OqNvi">
-                                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                                   <node concept="Xl_RD" id="1Ckq9ORP4Xq" role="37wK5m">
                                     <property role="Xl_RC" value="some statements go here" />
                                   </node>
@@ -532,7 +532,7 @@
                                   <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                                 </node>
                                 <node concept="liA8E" id="1Ckq9OSh$8E" role="2OqNvi">
-                                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                                   <node concept="Xl_RD" id="1Ckq9OSh$8F" role="37wK5m">
                                     <property role="Xl_RC" value="some statements go here" />
                                   </node>
@@ -762,11 +762,11 @@
                                       <ref role="3cqZAo" node="4WFCGeXrxgT" resolve="editorContext" />
                                     </node>
                                     <node concept="liA8E" id="2wLjEoO_jvu" role="2OqNvi">
-                                      <ref role="37wK5l" to="cj4x:~EditorContext.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                                      <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="3p2QKr7p177" role="2OqNvi">
-                                    <ref role="37wK5l" to="lui2:~SRepository.getModelAccess():org.jetbrains.mps.openapi.module.ModelAccess" resolve="getModelAccess" />
+                                    <ref role="37wK5l" to="lui2:~SRepository.getModelAccess()" resolve="getModelAccess" />
                                   </node>
                                 </node>
                               </node>
@@ -777,7 +777,7 @@
                                   <ref role="3cqZAo" node="3p2QKr7p170" resolve="modelAccess" />
                                 </node>
                                 <node concept="liA8E" id="2wLjEoO_nmf" role="2OqNvi">
-                                  <ref role="37wK5l" to="lui2:~ModelAccess.executeCommand(java.lang.Runnable):void" resolve="executeCommand" />
+                                  <ref role="37wK5l" to="lui2:~ModelAccess.executeCommand(java.lang.Runnable)" resolve="executeCommand" />
                                   <node concept="2ShNRf" id="2wLjEoO_nut" role="37wK5m">
                                     <node concept="YeOm9" id="2wLjEoO_xfS" role="2ShVmc">
                                       <node concept="1Y3b0j" id="2wLjEoO_xfV" role="YeSDq">
@@ -814,11 +814,11 @@
                                                       </node>
                                                     </node>
                                                     <node concept="liA8E" id="2wLjEoOAYSA" role="2OqNvi">
-                                                      <ref role="37wK5l" to="mhbf:~SNode.getConcept():org.jetbrains.mps.openapi.language.SConcept" resolve="getConcept" />
+                                                      <ref role="37wK5l" to="mhbf:~SNode.getConcept()" resolve="getConcept" />
                                                     </node>
                                                   </node>
                                                   <node concept="liA8E" id="2wLjEoOAYSB" role="2OqNvi">
-                                                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getProperties():java.util.Collection" resolve="getProperties" />
+                                                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getProperties()" resolve="getProperties" />
                                                   </node>
                                                 </node>
                                               </node>
@@ -841,7 +841,7 @@
                                                         <ref role="2Gs0qQ" node="6qi2OtU3uuX" resolve="property" />
                                                       </node>
                                                       <node concept="liA8E" id="177LIHsSZKX" role="2OqNvi">
-                                                        <ref role="37wK5l" to="c17a:~SProperty.getName():java.lang.String" resolve="getName" />
+                                                        <ref role="37wK5l" to="c17a:~SProperty.getName()" resolve="getName" />
                                                       </node>
                                                     </node>
                                                   </node>
@@ -854,7 +854,7 @@
                                                           </node>
                                                         </node>
                                                         <node concept="liA8E" id="2wLjEoOCY4a" role="2OqNvi">
-                                                          <ref role="37wK5l" to="mhbf:~SNode.setProperty(org.jetbrains.mps.openapi.language.SProperty,java.lang.String):void" resolve="setProperty" />
+                                                          <ref role="37wK5l" to="mhbf:~SNode.setProperty(org.jetbrains.mps.openapi.language.SProperty,java.lang.String)" resolve="setProperty" />
                                                           <node concept="2GrUjf" id="2wLjEoOCY9I" role="37wK5m">
                                                             <ref role="2Gs0qQ" node="6qi2OtU3uuX" resolve="property" />
                                                           </node>

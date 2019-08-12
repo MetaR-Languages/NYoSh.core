@@ -2,8 +2,8 @@
 <model ref="r:89153c4d-ca4d-49a8-9d3a-0c8ff364404d(org.campagnelab.util.build)">
   <persistence version="9" />
   <languages>
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
   </languages>
   <imports>
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
@@ -168,7 +168,7 @@
                     <ref role="3cqZAo" node="3FOZ2RY2JoE" resolve="classesDir" />
                   </node>
                   <node concept="liA8E" id="3FOZ2RYHDXS" role="2OqNvi">
-                    <ref role="37wK5l" to="guwi:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
+                    <ref role="37wK5l" to="guwi:~File.getAbsolutePath()" resolve="getAbsolutePath" />
                   </node>
                 </node>
                 <node concept="3cpWs3" id="y7MyQVV69_" role="37wK5m">
@@ -197,7 +197,7 @@
                     </node>
                     <node concept="2YIFZM" id="3FOZ2RYk4rN" role="3uHU7B">
                       <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
-                      <ref role="37wK5l" to="wyt6:~System.getenv(java.lang.String):java.lang.String" resolve="getenv" />
+                      <ref role="37wK5l" to="wyt6:~System.getenv(java.lang.String)" resolve="getenv" />
                       <node concept="Xl_RD" id="3FOZ2RYk4Gi" role="37wK5m">
                         <property role="Xl_RC" value="JDK_HOME" />
                       </node>
@@ -209,11 +209,11 @@
           </node>
           <node concept="2OqwBi" id="3FOZ2RY6jOD" role="3clFbw">
             <node concept="2YIFZM" id="3FOZ2RY6fm3" role="2Oq$k0">
-              <ref role="37wK5l" to="wyt6:~System.getenv():java.util.Map" resolve="getenv" />
+              <ref role="37wK5l" to="wyt6:~System.getenv()" resolve="getenv" />
               <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
             </node>
             <node concept="liA8E" id="3FOZ2RY6rTq" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~Map.containsKey(java.lang.Object):boolean" resolve="containsKey" />
+              <ref role="37wK5l" to="33ny:~Map.containsKey(java.lang.Object)" resolve="containsKey" />
               <node concept="Xl_RD" id="3FOZ2RY6rX7" role="37wK5m">
                 <property role="Xl_RC" value="JDK_HOME" />
               </node>
@@ -259,7 +259,7 @@
                   <ref role="3cqZAo" node="3FOZ2RYHu15" resolve="pluginJar" />
                 </node>
                 <node concept="liA8E" id="3FOZ2RYHIAq" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
+                  <ref role="37wK5l" to="guwi:~File.getAbsolutePath()" resolve="getAbsolutePath" />
                 </node>
               </node>
             </node>
@@ -296,7 +296,7 @@
                           <ref role="3cqZAo" node="3FOZ2RY2JoE" resolve="classesDir" />
                         </node>
                         <node concept="liA8E" id="3FOZ2RY$d86" role="2OqNvi">
-                          <ref role="37wK5l" to="guwi:~File.getName():java.lang.String" resolve="getName" />
+                          <ref role="37wK5l" to="guwi:~File.getName()" resolve="getName" />
                         </node>
                       </node>
                       <node concept="10M0yZ" id="3FOZ2RY$dIz" role="3uHU7w">
@@ -319,13 +319,13 @@
                 <ref role="3cqZAo" node="7lPZWPxkIN$" resolve="paths" />
               </node>
               <node concept="liA8E" id="3FOZ2RYzwof" role="2OqNvi">
-                <ref role="37wK5l" to="74u2:~Paths.glob(java.lang.String,java.lang.String...):com.esotericsoftware.wildcard.Paths" resolve="glob" />
+                <ref role="37wK5l" to="74u2:~Paths.glob(java.lang.String,java.lang.String...)" resolve="glob" />
                 <node concept="2OqwBi" id="3FOZ2RYzLB$" role="37wK5m">
                   <node concept="37vLTw" id="3FOZ2RYzDi4" role="2Oq$k0">
                     <ref role="3cqZAo" node="3FOZ2RY2JoE" resolve="classesDir" />
                   </node>
                   <node concept="liA8E" id="3FOZ2RYzPKl" role="2OqNvi">
-                    <ref role="37wK5l" to="guwi:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
+                    <ref role="37wK5l" to="guwi:~File.getAbsolutePath()" resolve="getAbsolutePath" />
                   </node>
                 </node>
                 <node concept="Xl_RD" id="3FOZ2RYzHcd" role="37wK5m">
@@ -334,7 +334,7 @@
               </node>
             </node>
             <node concept="liA8E" id="3FOZ2RYzD6B" role="2OqNvi">
-              <ref role="37wK5l" to="74u2:~Paths.getRelativePaths():java.util.List" resolve="getRelativePaths" />
+              <ref role="37wK5l" to="74u2:~Paths.getRelativePaths()" resolve="getRelativePaths" />
             </node>
           </node>
         </node>
@@ -362,13 +362,13 @@
                   <ref role="3cqZAo" node="3FOZ2RY79TT" resolve="p" />
                 </node>
                 <node concept="liA8E" id="3FOZ2RYxuz0" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~ProcessBuilder.directory(java.io.File):java.lang.ProcessBuilder" resolve="directory" />
+                  <ref role="37wK5l" to="wyt6:~ProcessBuilder.directory(java.io.File)" resolve="directory" />
                   <node concept="2OqwBi" id="7C58QrJO3O0" role="37wK5m">
                     <node concept="37vLTw" id="3FOZ2RYxu$H" role="2Oq$k0">
                       <ref role="3cqZAo" node="3FOZ2RY2JoE" resolve="classesDir" />
                     </node>
                     <node concept="liA8E" id="7C58QrJO4cZ" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~File.getParentFile():java.io.File" resolve="getParentFile" />
+                      <ref role="37wK5l" to="guwi:~File.getParentFile()" resolve="getParentFile" />
                     </node>
                   </node>
                 </node>
@@ -385,7 +385,7 @@
                     <ref role="3cqZAo" node="3FOZ2RY79TT" resolve="p" />
                   </node>
                   <node concept="liA8E" id="2gOXPSN7Tzg" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~ProcessBuilder.start():java.lang.Process" resolve="start" />
+                    <ref role="37wK5l" to="wyt6:~ProcessBuilder.start()" resolve="start" />
                   </node>
                 </node>
               </node>
@@ -396,7 +396,7 @@
                   <ref role="3cqZAo" node="2gOXPSN7PVw" resolve="proc" />
                 </node>
                 <node concept="liA8E" id="2gOXPSN7ZGC" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~Process.waitFor():int" resolve="waitFor" />
+                  <ref role="37wK5l" to="wyt6:~Process.waitFor()" resolve="waitFor" />
                 </node>
               </node>
             </node>

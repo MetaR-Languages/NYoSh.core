@@ -3,8 +3,8 @@
   <persistence version="9" />
   <languages>
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -270,7 +270,7 @@
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
@@ -547,7 +547,7 @@
                     <node concept="2OqwBi" id="3dPG257UU4T" role="3clFbG">
                       <node concept="1Q80Hx" id="3dPG257UU3R" role="2Oq$k0" />
                       <node concept="liA8E" id="3dPG257UUrs" role="2OqNvi">
-                        <ref role="37wK5l" to="cj4x:~EditorContext.select(org.jetbrains.mps.openapi.model.SNode):void" resolve="select" />
+                        <ref role="37wK5l" to="cj4x:~EditorContext.select(org.jetbrains.mps.openapi.model.SNode)" resolve="select" />
                         <node concept="37vLTw" id="3dPG257UUs2" role="37wK5m">
                           <ref role="3cqZAo" node="3dPG257UTKj" resolve="previousLine" />
                         </node>
@@ -619,7 +619,7 @@
                     </node>
                     <node concept="2OqwBi" id="3dPG257UCWh" role="37vLTx">
                       <node concept="liA8E" id="3dPG257UDPQ" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~String.substring(int,int):java.lang.String" resolve="substring" />
+                        <ref role="37wK5l" to="wyt6:~String.substring(int,int)" resolve="substring" />
                         <node concept="3cmrfG" id="3dPG257UDSm" role="37wK5m">
                           <property role="3cmrfH" value="0" />
                         </node>
@@ -629,7 +629,7 @@
                               <ref role="3cqZAo" node="3dPG257ULxM" resolve="originalText" />
                             </node>
                             <node concept="liA8E" id="3dPG257UMNC" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
+                              <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
                             </node>
                           </node>
                           <node concept="3cmrfG" id="3dPG257UNdS" role="3uHU7w">
@@ -758,7 +758,7 @@
                   <node concept="2OqwBi" id="3dPG257VL4b" role="3clFbG">
                     <node concept="1Q80Hx" id="3dPG257VL3i" role="2Oq$k0" />
                     <node concept="liA8E" id="3dPG257VLfs" role="2OqNvi">
-                      <ref role="37wK5l" to="cj4x:~EditorContext.select(org.jetbrains.mps.openapi.model.SNode):void" resolve="select" />
+                      <ref role="37wK5l" to="cj4x:~EditorContext.select(org.jetbrains.mps.openapi.model.SNode)" resolve="select" />
                       <node concept="2OqwBi" id="3dPG257VLhl" role="37wK5m">
                         <node concept="0IXxy" id="3dPG257VLfQ" role="2Oq$k0" />
                         <node concept="YBYNd" id="3dPG257VLxP" role="2OqNvi" />
@@ -854,7 +854,7 @@
                   <node concept="2OqwBi" id="3dPG257Wbih" role="3clFbG">
                     <node concept="1Q80Hx" id="3dPG257Wbii" role="2Oq$k0" />
                     <node concept="liA8E" id="3dPG257Wbij" role="2OqNvi">
-                      <ref role="37wK5l" to="cj4x:~EditorContext.select(org.jetbrains.mps.openapi.model.SNode):void" resolve="select" />
+                      <ref role="37wK5l" to="cj4x:~EditorContext.select(org.jetbrains.mps.openapi.model.SNode)" resolve="select" />
                       <node concept="2OqwBi" id="3dPG257Wbik" role="37wK5m">
                         <node concept="0IXxy" id="3dPG257Wbil" role="2Oq$k0" />
                         <node concept="YBYNd" id="3dPG257Wbim" role="2OqNvi" />
@@ -951,7 +951,7 @@
                   <node concept="2OqwBi" id="3dPG257W6iY" role="3clFbG">
                     <node concept="1Q80Hx" id="3dPG257W6iZ" role="2Oq$k0" />
                     <node concept="liA8E" id="3dPG257W6j0" role="2OqNvi">
-                      <ref role="37wK5l" to="cj4x:~EditorContext.select(org.jetbrains.mps.openapi.model.SNode):void" resolve="select" />
+                      <ref role="37wK5l" to="cj4x:~EditorContext.select(org.jetbrains.mps.openapi.model.SNode)" resolve="select" />
                       <node concept="2OqwBi" id="3dPG257W6j1" role="37wK5m">
                         <node concept="0IXxy" id="3dPG257W6j2" role="2Oq$k0" />
                         <node concept="YBYNd" id="3dPG257W6j3" role="2OqNvi" />
@@ -1218,7 +1218,7 @@
               <node concept="2OqwBi" id="5l1uETBmk_g" role="33vP2m">
                 <node concept="1Q80Hx" id="5l1uETBmkl3" role="2Oq$k0" />
                 <node concept="liA8E" id="5l1uETBml9d" role="2OqNvi">
-                  <ref role="37wK5l" to="cj4x:~EditorContext.getContextCell():jetbrains.mps.openapi.editor.cells.EditorCell" resolve="getContextCell" />
+                  <ref role="37wK5l" to="cj4x:~EditorContext.getContextCell()" resolve="getContextCell" />
                 </node>
               </node>
             </node>
@@ -1281,7 +1281,7 @@
                       <ref role="3cqZAo" node="5l1uETBmhSS" resolve="label" />
                     </node>
                     <node concept="liA8E" id="5l1uETBmnxF" role="2OqNvi">
-                      <ref role="37wK5l" to="g51k:~EditorCell_Label.getCaretPosition():int" resolve="getCaretPosition" />
+                      <ref role="37wK5l" to="g51k:~EditorCell_Label.getCaretPosition()" resolve="getCaretPosition" />
                     </node>
                   </node>
                   <node concept="37vLTw" id="5l1uETBmm1U" role="37vLTJ">
@@ -1318,7 +1318,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="5l1uETBijk4" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.substring(int,int):java.lang.String" resolve="substring" />
+                      <ref role="37wK5l" to="wyt6:~String.substring(int,int)" resolve="substring" />
                       <node concept="3cmrfG" id="5l1uETBijlH" role="37wK5m">
                         <property role="3cmrfH" value="0" />
                       </node>
@@ -1339,7 +1339,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="5l1uETBilWU" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.substring(int,int):java.lang.String" resolve="substring" />
+                    <ref role="37wK5l" to="wyt6:~String.substring(int,int)" resolve="substring" />
                     <node concept="37vLTw" id="5l1uETBmnNk" role="37wK5m">
                       <ref role="3cqZAo" node="5l1uETBmhSI" resolve="cursorPosition" />
                     </node>
@@ -1351,7 +1351,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="5l1uETBn_5O" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
+                        <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
                       </node>
                     </node>
                   </node>

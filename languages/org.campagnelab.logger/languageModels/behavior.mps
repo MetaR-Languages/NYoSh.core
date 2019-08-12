@@ -2,7 +2,7 @@
 <model ref="r:977bf260-4884-422e-9656-9f0bb268fcb0(org.campagnelab.logger.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -190,7 +190,7 @@
                     <ref role="3cqZAo" node="1EUvP1fLbE4" resolve="e" />
                   </node>
                   <node concept="liA8E" id="1EUvP1fLbE1" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                   </node>
                 </node>
               </node>
@@ -320,7 +320,7 @@
                           <ref role="3cqZAo" node="1EUvP1fLbEZ" resolve="e" />
                         </node>
                         <node concept="liA8E" id="1EUvP1fLbEI" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                          <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                         </node>
                       </node>
                       <node concept="2OqwBi" id="1EUvP1fLbEJ" role="3K4GZi">
@@ -328,7 +328,7 @@
                           <ref role="3cqZAo" node="1EUvP1fLbEZ" resolve="e" />
                         </node>
                         <node concept="liA8E" id="1EUvP1fLbEL" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~Throwable.toString():java.lang.String" resolve="toString" />
+                          <ref role="37wK5l" to="wyt6:~Throwable.toString()" resolve="toString" />
                         </node>
                       </node>
                       <node concept="3y3z36" id="1EUvP1fLbEM" role="3K4Cdx">
@@ -338,7 +338,7 @@
                             <ref role="3cqZAo" node="1EUvP1fLbEZ" resolve="e" />
                           </node>
                           <node concept="liA8E" id="1EUvP1fLbEU" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                            <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                           </node>
                         </node>
                       </node>
@@ -436,7 +436,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="5k811eRvLg" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~List.clear():void" resolve="clear" />
+                  <ref role="37wK5l" to="33ny:~List.clear()" resolve="clear" />
                 </node>
               </node>
             </node>
@@ -465,7 +465,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="5k811eQnI1" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
+                <ref role="37wK5l" to="33ny:~List.size()" resolve="size" />
               </node>
             </node>
             <node concept="37vLTw" id="5k811eRg0w" role="3uHU7w">
@@ -489,7 +489,7 @@
               </node>
             </node>
             <node concept="liA8E" id="1EUvP1fLbFa" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~List.clear():void" resolve="clear" />
+              <ref role="37wK5l" to="33ny:~List.clear()" resolve="clear" />
             </node>
           </node>
         </node>

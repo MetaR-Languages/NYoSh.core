@@ -4,7 +4,7 @@
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
     <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="5" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="7" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
@@ -112,10 +112,12 @@
       </concept>
       <concept id="6592112598314498926" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_Plugin" flags="ng" index="m$_wl">
         <reference id="6592112598314801433" name="plugin" index="m_rDy" />
+        <child id="3570488090019868128" name="packagingType" index="pUk7w" />
       </concept>
       <concept id="6592112598314499027" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginDependency" flags="ng" index="m$_yC">
         <reference id="6592112598314499066" name="target" index="m$_y1" />
       </concept>
+      <concept id="3570488090019868065" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_AutoPluginLayoutType" flags="ng" index="pUk6x" />
       <concept id="1500819558095907805" name="jetbrains.mps.build.mps.structure.BuildMps_Group" flags="ng" index="2G$12M">
         <child id="1500819558095907806" name="modules" index="2G$12L" />
       </concept>
@@ -173,7 +175,7 @@
       <node concept="aVJcg" id="2mFg1uCEgNa" role="aVJcv">
         <node concept="NbPM2" id="2mFg1uCEgN9" role="aVJcq">
           <node concept="3Mxwew" id="4clqoMCXLpB" role="3MwsjC">
-            <property role="3MwjfP" value="3.2.1" />
+            <property role="3MwjfP" value="3.3" />
           </node>
         </node>
       </node>
@@ -199,23 +201,24 @@
         </node>
         <node concept="m$_wl" id="2mFg1uCEgGW" role="39821P">
           <ref role="m_rDy" node="2mFg1uCEgGJ" resolve="org.campagnelab.TextOutput" />
+          <node concept="pUk6x" id="vJlLIAqCSR" role="pUk7w" />
         </node>
       </node>
     </node>
     <node concept="m$_wf" id="2mFg1uCEgGJ" role="3989C9">
       <property role="m$_wk" value="org.campagnelab.TextOutput" />
-      <node concept="2pNNFK" id="1tjeH0jkWWb" role="20twgj">
+      <node concept="2pNNFK" id="3A7G9Ay8FTb" role="20twgj">
         <property role="2pNNFO" value="idea-version" />
-        <node concept="2pNUuL" id="1tjeH0jkWWc" role="2pNNFR">
-          <property role="2pNUuO" value="until-build" />
-          <node concept="2pMdtt" id="1tjeH0jkWWd" role="2pMdts">
-            <property role="2pMdty" value="182.0000" />
+        <node concept="2pNUuL" id="3A7G9Ay8FTc" role="2pNNFR">
+          <property role="2pNUuO" value="since-build" />
+          <node concept="2pMdtt" id="3A7G9Ay8FTd" role="2pMdts">
+            <property role="2pMdty" value="191.1593" />
           </node>
         </node>
-        <node concept="2pNUuL" id="1tjeH0jkWWe" role="2pNNFR">
-          <property role="2pNUuO" value="since-build" />
-          <node concept="2pMdtt" id="1tjeH0jkWWf" role="2pMdts">
-            <property role="2pMdty" value="181.1254" />
+        <node concept="2pNUuL" id="3A7G9Ay8FTe" role="2pNNFR">
+          <property role="2pNUuO" value="until-build" />
+          <node concept="2pMdtt" id="3A7G9Ay8FTf" role="2pMdts">
+            <property role="2pMdty" value="192.0000" />
           </node>
         </node>
       </node>

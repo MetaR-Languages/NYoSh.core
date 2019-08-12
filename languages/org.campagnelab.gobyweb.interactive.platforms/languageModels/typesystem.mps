@@ -217,7 +217,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="664r$yjxHx5" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="Xl_RD" id="664r$yjxHy8" role="37wK5m">
                   <property role="Xl_RC" value="READS_PLATFORM" />
                 </node>
@@ -284,7 +284,7 @@
               </node>
             </node>
             <node concept="liA8E" id="664r$yjxKdz" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
               <node concept="Xl_RD" id="664r$yjxKev" role="37wK5m">
                 <property role="Xl_RC" value="READS_PLATFORM" />
               </node>
@@ -354,7 +354,7 @@
               </node>
             </node>
             <node concept="liA8E" id="664r$yjNkDh" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
               <node concept="Xl_RD" id="664r$yjNkDi" role="37wK5m">
                 <property role="Xl_RC" value="PAIRED_END_DIRECTIONS" />
               </node>
@@ -442,7 +442,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="664r$yjNldI" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                 <node concept="Xl_RD" id="664r$yjNldJ" role="37wK5m">
                   <property role="Xl_RC" value="PAIRED_END_DIRECTIONS" />
                 </node>

@@ -2,7 +2,7 @@
 <model ref="r:88895bb3-ffc1-49c0-97ec-2c49d3499b4b(org.campagnelab.gobyweb.tags.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -223,7 +223,7 @@
                           <ref role="3cqZAo" node="7bhX9q5D8Vu" resolve="r" />
                         </node>
                         <node concept="liA8E" id="7bhX9q5D8VY" role="2OqNvi">
-                          <ref role="37wK5l" to="33ny:~Random.nextInt(int):int" resolve="nextInt" />
+                          <ref role="37wK5l" to="33ny:~Random.nextInt(int)" resolve="nextInt" />
                           <node concept="3cpWsd" id="7bhX9q5D8VZ" role="37wK5m">
                             <node concept="37vLTw" id="7bhX9q5D8W0" role="3uHU7w">
                               <ref role="3cqZAo" node="7bhX9q5D8VI" resolve="A" />

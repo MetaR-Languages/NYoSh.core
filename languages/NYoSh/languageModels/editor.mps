@@ -2,7 +2,7 @@
 <model ref="r:31af932a-3b06-429d-8d4c-b0b4ebe2bde6(org.campagnelab.NYoSh.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -556,7 +556,7 @@
                     <property role="TrG5h" value="actions" />
                     <node concept="2YIFZM" id="6UhBBUSzLua" role="33vP2m">
                       <ref role="1Pybhc" to="zce0:~ModelActions" resolve="ModelActions" />
-                      <ref role="37wK5l" to="zce0:~ModelActions.createChildNodeSubstituteActions(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SContainmentLink,org.jetbrains.mps.openapi.language.SAbstractConcept,jetbrains.mps.smodel.action.IChildNodeSetter,jetbrains.mps.openapi.editor.EditorContext):java.util.List" resolve="createChildNodeSubstituteActions" />
+                      <ref role="37wK5l" to="zce0:~ModelActions.createChildNodeSubstituteActions(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SContainmentLink,org.jetbrains.mps.openapi.language.SAbstractConcept,jetbrains.mps.smodel.action.IChildNodeSetter,jetbrains.mps.openapi.editor.EditorContext)" resolve="createChildNodeSubstituteActions" />
                       <node concept="2OqwBi" id="6UhBBUSzLub" role="37wK5m">
                         <node concept="3GMtW1" id="6UhBBUSzLuc" role="2Oq$k0" />
                         <node concept="1mfA1w" id="6UhBBUSzLud" role="2OqNvi" />
@@ -567,7 +567,7 @@
                           <node concept="3GMtW1" id="1xVV58hxk0E" role="2JrQYb" />
                         </node>
                         <node concept="liA8E" id="1xVV58hxs9f" role="2OqNvi">
-                          <ref role="37wK5l" to="mhbf:~SNode.getContainmentLink():org.jetbrains.mps.openapi.language.SContainmentLink" resolve="getContainmentLink" />
+                          <ref role="37wK5l" to="mhbf:~SNode.getContainmentLink()" resolve="getContainmentLink" />
                         </node>
                       </node>
                       <node concept="35c_gC" id="1xVV58hxijG" role="37wK5m">
@@ -739,12 +739,12 @@
                   <node concept="2OqwBi" id="2wdLO7KhY4Z" role="3clFbG">
                     <node concept="3GLrbK" id="2wdLO7KhY50" role="2Oq$k0" />
                     <node concept="liA8E" id="2wdLO7KhY51" role="2OqNvi">
-                      <ref role="37wK5l" to="f4zo:~SubstituteAction.substitute(jetbrains.mps.openapi.editor.EditorContext,java.lang.String):org.jetbrains.mps.openapi.model.SNode" resolve="substitute" />
+                      <ref role="37wK5l" to="f4zo:~SubstituteAction.substitute(jetbrains.mps.openapi.editor.EditorContext,java.lang.String)" resolve="substitute" />
                       <node concept="1Q80Hx" id="2wdLO7KhY52" role="37wK5m" />
                       <node concept="2OqwBi" id="2wdLO7KhY53" role="37wK5m">
                         <node concept="3GLrbK" id="2wdLO7KhY54" role="2Oq$k0" />
                         <node concept="liA8E" id="2wdLO7KhY55" role="2OqNvi">
-                          <ref role="37wK5l" to="f4zo:~SubstituteAction.getMatchingText(java.lang.String):java.lang.String" resolve="getMatchingText" />
+                          <ref role="37wK5l" to="f4zo:~SubstituteAction.getMatchingText(java.lang.String)" resolve="getMatchingText" />
                           <node concept="10Nm6u" id="2wdLO7KhY56" role="37wK5m" />
                         </node>
                       </node>
@@ -759,7 +759,7 @@
                   <node concept="2OqwBi" id="2wdLO7KhY5b" role="3clFbG">
                     <node concept="3GLrbK" id="2wdLO7KhY5c" role="2Oq$k0" />
                     <node concept="liA8E" id="2wdLO7KhY5d" role="2OqNvi">
-                      <ref role="37wK5l" to="f4zo:~SubstituteAction.getMatchingText(java.lang.String):java.lang.String" resolve="getMatchingText" />
+                      <ref role="37wK5l" to="f4zo:~SubstituteAction.getMatchingText(java.lang.String)" resolve="getMatchingText" />
                       <node concept="10Nm6u" id="2wdLO7KhY5e" role="37wK5m" />
                     </node>
                   </node>
@@ -772,7 +772,7 @@
                   <node concept="2OqwBi" id="2wdLO7KhY5i" role="3clFbG">
                     <node concept="3GLrbK" id="2wdLO7KhY5j" role="2Oq$k0" />
                     <node concept="liA8E" id="2wdLO7KhY5k" role="2OqNvi">
-                      <ref role="37wK5l" to="f4zo:~SubstituteAction.getDescriptionText(java.lang.String):java.lang.String" resolve="getDescriptionText" />
+                      <ref role="37wK5l" to="f4zo:~SubstituteAction.getDescriptionText(java.lang.String)" resolve="getDescriptionText" />
                       <node concept="10Nm6u" id="2wdLO7KhY5l" role="37wK5m" />
                     </node>
                   </node>

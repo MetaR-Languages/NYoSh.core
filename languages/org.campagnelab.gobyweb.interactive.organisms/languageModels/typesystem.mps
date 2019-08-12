@@ -182,7 +182,7 @@
               </node>
             </node>
             <node concept="liA8E" id="664r$yjOB3U" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.equalsIgnoreCase(java.lang.String):boolean" resolve="equalsIgnoreCase" />
+              <ref role="37wK5l" to="wyt6:~String.equalsIgnoreCase(java.lang.String)" resolve="equalsIgnoreCase" />
               <node concept="Xl_RD" id="664r$yjOB4N" role="37wK5m">
                 <property role="Xl_RC" value="ORGANISM" />
               </node>
@@ -296,7 +296,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="664r$yjODA7" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equalsIgnoreCase(java.lang.String):boolean" resolve="equalsIgnoreCase" />
+                <ref role="37wK5l" to="wyt6:~String.equalsIgnoreCase(java.lang.String)" resolve="equalsIgnoreCase" />
                 <node concept="Xl_RD" id="664r$yjODB9" role="37wK5m">
                   <property role="Xl_RC" value="ORGANISM" />
                 </node>

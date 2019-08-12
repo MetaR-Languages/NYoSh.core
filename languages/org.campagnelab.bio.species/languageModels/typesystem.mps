@@ -106,7 +106,7 @@
           </node>
           <node concept="3fqX7Q" id="7xbvMFFaIkH" role="3uHU7w">
             <node concept="2YIFZM" id="7xbvMFFaIkJ" role="3fr31v">
-              <ref role="37wK5l" to="wyt6:~Character.isUpperCase(char):boolean" resolve="isUpperCase" />
+              <ref role="37wK5l" to="wyt6:~Character.isUpperCase(char)" resolve="isUpperCase" />
               <ref role="1Pybhc" to="wyt6:~Character" resolve="Character" />
               <node concept="2OqwBi" id="7xbvMFFaIkK" role="37wK5m">
                 <node concept="2OqwBi" id="7xbvMFFaIkL" role="2Oq$k0">
@@ -118,7 +118,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="7xbvMFFaIkO" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.charAt(int):char" resolve="charAt" />
+                  <ref role="37wK5l" to="wyt6:~String.charAt(int)" resolve="charAt" />
                   <node concept="3cmrfG" id="7xbvMFFaIkP" role="37wK5m">
                     <property role="3cmrfH" value="0" />
                   </node>

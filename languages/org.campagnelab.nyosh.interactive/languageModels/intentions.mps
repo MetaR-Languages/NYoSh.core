@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -281,7 +281,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="5uN7hWakffQ" role="2OqNvi">
-                <ref role="37wK5l" to="guwi:~File.getPath():java.lang.String" resolve="getPath" />
+                <ref role="37wK5l" to="guwi:~File.getPath()" resolve="getPath" />
               </node>
             </node>
           </node>
@@ -400,7 +400,7 @@
                       <ref role="3cqZAo" node="6oQbsK$mdIk" resolve="original" />
                     </node>
                     <node concept="liA8E" id="6oQbsK$mlhs" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~File.getName():java.lang.String" resolve="getName" />
+                      <ref role="37wK5l" to="guwi:~File.getName()" resolve="getName" />
                     </node>
                   </node>
                   <node concept="3cpWs3" id="6oQbsK$mgsQ" role="3uHU7B">
@@ -410,7 +410,7 @@
                           <property role="Xl_RC" value="/" />
                         </node>
                         <node concept="2YIFZM" id="6oQbsK$tdAx" role="3uHU7B">
-                          <ref role="37wK5l" to="8oaq:~FilenameUtils.getFullPathNoEndSeparator(java.lang.String):java.lang.String" resolve="getFullPathNoEndSeparator" />
+                          <ref role="37wK5l" to="8oaq:~FilenameUtils.getFullPathNoEndSeparator(java.lang.String)" resolve="getFullPathNoEndSeparator" />
                           <ref role="1Pybhc" to="8oaq:~FilenameUtils" resolve="FilenameUtils" />
                           <node concept="2OqwBi" id="6oQbsK$tdAy" role="37wK5m">
                             <node concept="2GrUjf" id="6oQbsK$tdAz" role="2Oq$k0">
@@ -438,7 +438,7 @@
                 <node concept="3clFbF" id="6oQbsK$m3IJ" role="3cqZAp">
                   <node concept="2YIFZM" id="6oQbsK$m7VL" role="3clFbG">
                     <ref role="1Pybhc" to="8oaq:~FileUtils" resolve="FileUtils" />
-                    <ref role="37wK5l" to="8oaq:~FileUtils.moveFile(java.io.File,java.io.File):void" resolve="moveFile" />
+                    <ref role="37wK5l" to="8oaq:~FileUtils.moveFile(java.io.File,java.io.File)" resolve="moveFile" />
                     <node concept="37vLTw" id="6oQbsK$t9FC" role="37wK5m">
                       <ref role="3cqZAo" node="6oQbsK$mdIk" resolve="original" />
                     </node>
@@ -729,7 +729,7 @@
                             <ref role="3cqZAo" node="G5bxgO55Lt" resolve="mapSampleName2File" />
                           </node>
                           <node concept="liA8E" id="G5bxgO5aWB" role="2OqNvi">
-                            <ref role="37wK5l" to="33ny:~HashMap.get(java.lang.Object):java.lang.Object" resolve="get" />
+                            <ref role="37wK5l" to="33ny:~HashMap.get(java.lang.Object)" resolve="get" />
                             <node concept="37vLTw" id="G5bxgO64ww" role="37wK5m">
                               <ref role="3cqZAo" node="G5bxgO5M$Z" resolve="key" />
                             </node>
@@ -774,7 +774,7 @@
                               <ref role="3cqZAo" node="G5bxgO55Lt" resolve="mapSampleName2File" />
                             </node>
                             <node concept="liA8E" id="G5bxgO5qpd" role="2OqNvi">
-                              <ref role="37wK5l" to="33ny:~HashMap.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
+                              <ref role="37wK5l" to="33ny:~HashMap.put(java.lang.Object,java.lang.Object)" resolve="put" />
                               <node concept="37vLTw" id="G5bxgO5MVG" role="37wK5m">
                                 <ref role="3cqZAo" node="G5bxgO5M$Z" resolve="key" />
                               </node>
@@ -837,7 +837,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="G5bxgO53pA" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                      <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
                       <node concept="2OqwBi" id="G5bxgO54cZ" role="37wK5m">
                         <node concept="2GrUjf" id="G5bxgO54af" role="2Oq$k0">
                           <ref role="2Gs0qQ" node="G5bxgO53vk" resolve="instruction" />

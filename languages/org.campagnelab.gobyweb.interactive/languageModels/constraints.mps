@@ -145,7 +145,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="6odtI2PcaEK" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~File.isDirectory():boolean" resolve="isDirectory" />
+                      <ref role="37wK5l" to="guwi:~File.isDirectory()" resolve="isDirectory" />
                     </node>
                   </node>
                   <node concept="2OqwBi" id="6odtI2Pc8bS" role="3uHU7B">
@@ -156,7 +156,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="6odtI2Pc93X" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
+                      <ref role="37wK5l" to="guwi:~File.exists()" resolve="exists" />
                     </node>
                   </node>
                 </node>
@@ -210,7 +210,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="6odtI2Pcc3O" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~File.isDirectory():boolean" resolve="isDirectory" />
+                      <ref role="37wK5l" to="guwi:~File.isDirectory()" resolve="isDirectory" />
                     </node>
                   </node>
                   <node concept="2OqwBi" id="6odtI2Pcc3P" role="3uHU7B">
@@ -221,7 +221,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="6odtI2Pcc3T" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
+                      <ref role="37wK5l" to="guwi:~File.exists()" resolve="exists" />
                     </node>
                   </node>
                 </node>
