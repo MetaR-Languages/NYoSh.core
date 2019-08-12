@@ -237,18 +237,18 @@
     </node>
     <node concept="m$_wf" id="2mFg1uCEYwB" role="3989C9">
       <property role="m$_wk" value="org.campagnelab.ClusterConfig" />
-      <node concept="2pNNFK" id="3A7G9Ay8FTb" role="20twgj">
+      <node concept="2pNNFK" id="KZrpArQ9$b" role="20twgj">
         <property role="2pNNFO" value="idea-version" />
-        <node concept="2pNUuL" id="3A7G9Ay8FTc" role="2pNNFR">
+        <node concept="2pNUuL" id="KZrpArQ9$c" role="2pNNFR">
           <property role="2pNUuO" value="since-build" />
-          <node concept="2pMdtt" id="3A7G9Ay8FTd" role="2pMdts">
-            <property role="2pMdty" value="181.1254" />
+          <node concept="2pMdtt" id="KZrpArQ9$d" role="2pMdts">
+            <property role="2pMdty" value="191.1593" />
           </node>
         </node>
-        <node concept="2pNUuL" id="3A7G9Ay8FTe" role="2pNNFR">
+        <node concept="2pNUuL" id="KZrpArQ9$e" role="2pNNFR">
           <property role="2pNUuO" value="until-build" />
-          <node concept="2pMdtt" id="3A7G9Ay8FTf" role="2pMdts">
-            <property role="2pMdty" value="182.0000" />
+          <node concept="2pMdtt" id="KZrpArQ9$f" role="2pMdts">
+            <property role="2pMdty" value="192.0000" />
           </node>
         </node>
       </node>
