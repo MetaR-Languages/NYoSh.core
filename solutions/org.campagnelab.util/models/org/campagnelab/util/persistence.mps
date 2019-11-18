@@ -20,6 +20,8 @@
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="z1c3" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
     <import index="8oaq" ref="3b3d39a8-ff6e-47f3-9c9e-1888a27699ed/java:org.apache.commons.io(org.campagnelab.util/)" />
+    <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1223,6 +1225,89 @@
     </node>
     <node concept="2tJIrI" id="3OwSMscpsXy" role="jymVt" />
     <node concept="3Tm1VV" id="3OwSMscp5aR" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="5ASHdINnuNr">
+    <property role="TrG5h" value="MPSPathVariables" />
+    <node concept="2tJIrI" id="5ASHdINnuQ_" role="jymVt" />
+    <node concept="2YIFZL" id="5ASHdINnGZy" role="jymVt">
+      <property role="TrG5h" value="expand" />
+      <node concept="3clFbS" id="5ASHdINnvfR" role="3clF47">
+        <node concept="3clFbF" id="5ASHdINnzKX" role="3cqZAp">
+          <node concept="2OqwBi" id="5ASHdINnzKZ" role="3clFbG">
+            <node concept="2YIFZM" id="5ASHdINnzL0" role="2Oq$k0">
+              <ref role="37wK5l" to="18ew:~MacrosFactory.forModule(org.jetbrains.mps.openapi.module.SModule)" resolve="forModule" />
+              <ref role="1Pybhc" to="18ew:~MacrosFactory" resolve="MacrosFactory" />
+              <node concept="2OqwBi" id="5ASHdINvDXs" role="37wK5m">
+                <node concept="2JrnkZ" id="5ASHdINvDKJ" role="2Oq$k0">
+                  <node concept="2OqwBi" id="5ASHdINvC_E" role="2JrQYb">
+                    <node concept="37vLTw" id="5ASHdINvCq0" role="2Oq$k0">
+                      <ref role="3cqZAo" node="5ASHdINnvTW" resolve="node" />
+                    </node>
+                    <node concept="I4A8Y" id="5ASHdINvD0W" role="2OqNvi" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="5ASHdINvFcF" role="2OqNvi">
+                  <ref role="37wK5l" to="mhbf:~SModel.getModule()" resolve="getModule" />
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="5ASHdINnzL7" role="2OqNvi">
+              <ref role="37wK5l" to="18ew:~MacroHelper.expandPath(java.lang.String)" resolve="expandPath" />
+              <node concept="37vLTw" id="5ASHdINn$og" role="37wK5m">
+                <ref role="3cqZAo" node="5ASHdINnvio" resolve="variable" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="5ASHdINnvTW" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="5ASHdINnwup" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="5ASHdINnvio" role="3clF46">
+        <property role="TrG5h" value="variable" />
+        <node concept="17QB3L" id="5ASHdINnvin" role="1tU5fm" />
+      </node>
+      <node concept="17QB3L" id="5ASHdINnvg$" role="3clF45" />
+      <node concept="3Tm1VV" id="5ASHdINnvfQ" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="5ASHdINvuXi" role="jymVt" />
+    <node concept="2YIFZL" id="5ASHdINvtZW" role="jymVt">
+      <property role="TrG5h" value="expand" />
+      <node concept="3clFbS" id="5ASHdINvtZX" role="3clF47">
+        <node concept="3clFbF" id="5ASHdINvtZY" role="3cqZAp">
+          <node concept="2OqwBi" id="5ASHdINvtZZ" role="3clFbG">
+            <node concept="2YIFZM" id="5ASHdINvu00" role="2Oq$k0">
+              <ref role="37wK5l" to="18ew:~MacrosFactory.forModule(org.jetbrains.mps.openapi.module.SModule)" resolve="forModule" />
+              <ref role="1Pybhc" to="18ew:~MacrosFactory" resolve="MacrosFactory" />
+              <node concept="37vLTw" id="5ASHdINvuUU" role="37wK5m">
+                <ref role="3cqZAo" node="5ASHdINvuxo" resolve="module" />
+              </node>
+            </node>
+            <node concept="liA8E" id="5ASHdINvu07" role="2OqNvi">
+              <ref role="37wK5l" to="18ew:~MacroHelper.expandPath(java.lang.String)" resolve="expandPath" />
+              <node concept="37vLTw" id="5ASHdINvu08" role="37wK5m">
+                <ref role="3cqZAo" node="5ASHdINvu0b" resolve="variable" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="5ASHdINvuxo" role="3clF46">
+        <property role="TrG5h" value="module" />
+        <node concept="3uibUv" id="5ASHdINvuA0" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="5ASHdINvu0b" role="3clF46">
+        <property role="TrG5h" value="variable" />
+        <node concept="17QB3L" id="5ASHdINvu0c" role="1tU5fm" />
+      </node>
+      <node concept="17QB3L" id="5ASHdINvu0d" role="3clF45" />
+      <node concept="3Tm1VV" id="5ASHdINvu0e" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="5ASHdINvtXw" role="jymVt" />
+    <node concept="3Tm1VV" id="5ASHdINnuNs" role="1B3o_S" />
   </node>
 </model>
 
